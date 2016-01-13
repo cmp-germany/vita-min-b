@@ -1,0 +1,63 @@
+.vmb .carousel-control .icon-next, .vmb .carousel-control .icon-prev
+{
+	width: 36px;
+	height: 78px;
+	margin-top: -39px;
+}
+
+.vmb .carousel .carousel-caption {
+	text-transform: uppercase;
+}
+
+.vmb .carousel .carousel-caption h4 {
+	font-weight: 700;
+	padding-bottom: 15px;
+	border-bottom: 3px dotted #FF5E00;
+}
+
+.vmb .carousel .carousel-caption p {
+	font-weight: 700;
+}
+
+@media screen and (min-width: 480px) {
+	.vmb .carousel .carousel-caption h4 {
+		font-size: 150%;
+	}
+	.vmb .carousel .carousel-caption p {
+		font-size: 200%;
+	}
+}
+
+
+@media screen and (min-width: 850px) {
+	.vmb .carousel .carousel-caption h4 {
+		font-size: 230%;
+	}
+	.vmb .carousel .carousel-caption p {
+		font-size: 370%;
+	}
+}
+
+
+
+.vmb .carousel .carousel-caption button {
+	text-transform: uppercase;
+	font-size: 24px;
+	color: #FF5E00;
+    background-color:  Transparent;
+    background-repeat: no-repeat;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    border: 1px solid #FF5E00;
+    border-radius: 0;
+}
+
+.vmb .carousel .item {
+	max-height: 800px;
+}
+
+.vmb .carousel .item img {
+	max-width: inherit;
+	width: 100%;
+}

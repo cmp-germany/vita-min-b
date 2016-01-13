@@ -1,0 +1,13 @@
+.vmb * {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.vmb {
+	background-color: #F1E8E2;
+}
+
+.vmb .center {
+     float: none;
+     margin-left: auto;
+     margin-right: auto;
+}

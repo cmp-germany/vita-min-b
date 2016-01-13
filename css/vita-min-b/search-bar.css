@@ -1,0 +1,116 @@
+.vmb .vmb-search-bar-col {
+	background-color: #FC4C1E;
+	min-height: 100px;
+}
+
+@media screen and (min-width: 992px) {
+  .vmb .vmb-search-bar-col .center-block{
+    width: 960px;
+  }
+}
+
+.vmb .vmb-search-bar-col form {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.vmb .vmb-search-bar-col .form-group {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.vmb .vmb-search-bar-col input[type="text"], .vmb .vmb-search-bar-col select, .vmb .vmb-search-bar-col button[type="submit"]{
+  display: block;
+  margin: 0;
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-border: 0px;
+  -moz-border: 0px;
+  -ms-border: 0px;
+  -o-border: 0px;
+  border: 0px;
+
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+
+  height: 40px;
+}
+
+.vmb .vmb-search-bar-col input[type="text"] {
+  font-size: 16px;
+}
+
+.vmb .vmb-search-bar-col select{
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #FC4C1E;
+}
+
+.vmb .vmb-search-bar-col button[type="submit"]{
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #FC4C1E;
+}
+
+.vmb input::-webkit-input-placeholder {
+    color: #FC4C1E;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.vmb input:-moz-placeholder {
+    /* FF 4-18 */
+    color: #FC4C1E;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.vmb input::-moz-placeholder {
+    /* FF 19+ */
+    color: #FC4C1E;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.vmb input:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #FC4C1E;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+
+
+
+.vmb input[type="text"]:focus {
+  outline: none;
+}
+.vmb .vmb-search-bar-col .has-feedback-left .inline-feedback img.form-control-feedback.lupe{
+  width: 14px;
+  height: 14px;
+  top: 14px;
+  left: 12px;
+}
+
+.vmb .vmb-search-bar-col .inline-feedback img.form-control-feedback.select{
+  height: 7px;
+  width: 12px;
+  top: 17px;
+  right: 8px;
+}
+
+.vmb .vmb-search-bar-col .has-feedback-left .inline-feedback img.form-control-feedback.ort{
+  width: 12px;
+  height: 24px;
+  top: 8px;
+  left: 11px;
+
+}

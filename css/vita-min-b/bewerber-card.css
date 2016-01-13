@@ -1,0 +1,18 @@
+.vmb .vmb-bewerber-card {
+	border: solid 1px #FC4C1E;
+	margin-top: 20px;
+	background-color: #FC4C1E;
+	color: #fff;
+	
+}
+
+.vmb .vmb-bewerber-card h4 {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 18px;
+}
+
+.vmb .vmb-bewerber-card .media-body {
+	padding-top: 20px;
+	font-size: 16px;
+}
