@@ -16,7 +16,7 @@
           </div>
         </div>
         <div class="item">
-          <img alt="Carousel" src="<?= get_template_directory_uri()?>/gfx/carousel/carousel-2.jpg" />
+          <img alt="Carousel" src="<?= get_template_directory_uri()?>/gfx/carousel/Fotolia_79234053_L.jpg" />
           <div class="carousel-caption">
             <h4>
               Bewerber Videos
@@ -40,7 +40,7 @@
           </div>
         </div>
         <div class="item">
-          <img alt="Carousel" src="<?= get_template_directory_uri()?>/gfx/carousel/carousel-3.jpg" />
+          <img alt="Carousel" src="<?= get_template_directory_uri()?>/gfx/carousel/fairwaltungskatalog-teaser-04-1.jpg" />
           <div class="carousel-caption">
             <h4>
               Imagefilme
@@ -52,7 +52,7 @@
           </div>
         </div>
         <div class="item">
-          <img alt="Carousel" src="<?= get_template_directory_uri()?>/gfx/carousel/carousel-3.jpg" />
+          <img alt="Carousel" src="<?= get_template_directory_uri()?>/gfx/carousel/xtrafit-shop.png" />
           <div class="carousel-caption">
             <h4>
               Shop in Shop Systeme
@@ -64,7 +64,7 @@
           </div>
         </div>
         <div class="item">
-          <img alt="Carousel" src="<?= get_template_directory_uri()?>/gfx/carousel/carousel-3.jpg" />
+          <img alt="Carousel" src="<?= get_template_directory_uri()?>/gfx/carousel/mkg-fressnapf-weihnachtsgruss.jpg" />
           <div class="carousel-caption">
             <h4>
               Jugendförderung
