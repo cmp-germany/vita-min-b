@@ -10,7 +10,7 @@
               Bewerber Videos
             </h4>
             <p>
-              Mit Motivations-Videos die <em>echten</em> Bewerber finden!
+              Mit Motivations-Videos die <em>echten</em> Bewerber finden
             </p>
             <button class="btn">Bewerber jetzt finden</button>
             <p class="slogan">Die Sneak Preview vor dem ersten Bewerbungsgespräch</p>
