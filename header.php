@@ -14,6 +14,11 @@
 
 
 
+
+
+    <link rel="stylesheet" href="<?= get_template_directory_uri()?>/superslides/dist/stylesheets/superslides.css">
+
+
     <!-- Load local jQuery. This can be overridden with a ?jquery=___ param. -->
     <script src="<?= get_template_directory_uri()?>/superslides/libs/jquery-loader.js"></script>
     <!-- Load local QUnit. -->
