@@ -1,9 +1,14 @@
+html {
+	height: 100%;
+}
+
 .vmb * {
 	font-family: 'Source Sans Pro', sans-serif;
 }
 
 .vmb {
 	background-color: #F1E8E2;
+	height: 100%;
 }
 
 .vmb .center {

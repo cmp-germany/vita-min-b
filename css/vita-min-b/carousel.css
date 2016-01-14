@@ -53,8 +53,13 @@
     border-radius: 0;
 }
 
-.vmb .carousel .item {
-	max-height: 800px;
+.vmb .carousel {
+	display: block;
+	height: 100%;
+}
+
+.vmb .carousel .item{
+	max-height: auto;
 }
 
 .vmb .carousel .item img {
