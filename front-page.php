@@ -10,7 +10,7 @@
               Bewerber Videos
             </h4>
             <p>
-              Mit Motivations-Video die <em>echten</em> Bewerber finden!
+              Mit Motivations-Videos die <em>echten</em> Bewerber finden!
             </p>
             <button class="btn">Bewerber jetzt finden</button>
             <p class="slogan">Hol dir die Hauptrolle im Film deines Lebens</p>
@@ -38,7 +38,7 @@
               Mit eigener Nachrichtenstudio Technologie Mitarbeiter und Kunden im TV Format tagesaktuell informieren
             </p>
             <button>Beispiel Video anschauen</button>
-            
+
           </div>
         </div>
         <div class="item">
