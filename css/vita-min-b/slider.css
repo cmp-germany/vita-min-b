@@ -1,0 +1,11 @@
+#slides .slides-navigation {
+  background: none;
+}
+
+#slides .slides-pagination {
+  background: none;
+}
+
+#slides .icon-next {
+  margin: 0 2em 0 2em;
+}

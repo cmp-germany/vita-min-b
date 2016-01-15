@@ -14,6 +14,8 @@ wp_enqueue_style( 'footer', get_template_directory_uri() . '/css/vita-min-b/foot
 wp_enqueue_style( 'general', get_template_directory_uri() . '/css/vita-min-b/general.css' );
 wp_enqueue_style( 'header', get_template_directory_uri() . '/css/vita-min-b/header.css' );
 wp_enqueue_style( 'search-bar', get_template_directory_uri() . '/css/vita-min-b/search-bar.css' );
+wp_enqueue_style( 'slider-default', get_template_directory_uri() . '/superslides/dist/stylesheets/superslides.css' );
+wp_enqueue_style( 'slider', get_template_directory_uri() . '/css/vita-min-b/slider.css' );
 
 //wp_enqueue_style( 'qunit', get_template_directory_uri() . '/superslides/libs/qunit/qunit.css');
 
