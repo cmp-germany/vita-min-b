@@ -23,3 +23,20 @@
 .vmb .site-footer a {
     color: rgb(255, 255, 255);
 }
+
+.vmb .dropdown .dropdown-menu > li > a {
+  color: #FF5E00;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.vmb .navbar-toggle {
+  background-color: #FF5E00;
+}
+
+/*
+.vmb .navbar-collapse, .navbar-inverse .navbar-form {
+  border-color: #FF5E00;
+  background-color: #fff;
+}*/
