@@ -66,9 +66,6 @@
       </nav>
     </div>
 
-
-
-
   </div>
 </div>
 
@@ -98,3 +95,4 @@ var $ = jQuery.noConflict();
 
 </script>
 <?php get_footer(); ?>
+</div>
