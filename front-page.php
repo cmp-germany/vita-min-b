@@ -1,15 +1,42 @@
 <?php get_header(); ?>
 <div class="container-fluid" >
   <div class="row">
-    <nav class="navbar navbar-inverse navbar-fixed-top navvmb">
+    <nav class="navbar navbar-inverse navbar-fixed-top navvmb" role="navigation">
       <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="http://vita-min-b.cmpg.eu/wp-content/themes/vita-min-b/gfx/vita-min-b-logo-300.png" class="vmb-logo"></a>
+      </div>
 
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse-1">
-             <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-          </button> <a class="navbar-brand" href="#"><img src="http://vita-min-b.cmpg.eu/wp-content/themes/vita-min-b/gfx/vita-min-b-logo-300.png" class="vmb-logo"></a>
-        </div>
+      <div class="collapse navbar-collapse navbar-ex1-collapse navbar-right" id="bs-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shop <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="http://ekom21.cmpg.eu">ekom21</a></li>
+              <li><a href="http://ekom21.cmpg.eu">FAIRwaltungskatalog</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">TV <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="//videos.united-studios.com/mkg-fressnapf-weihnachtsgruss">MKG: Weihnachtsgrüße</a></li>
+              <li><a href="//videos.united-studios.com/teaser-vita-min-b">Teaser Vita Min B</a></li>
+              <li><a href="//videos.united-studios.com/sacred-heart-alumni-channel-2">Sacred Heart University - Alumni Channel</a></li>
+              <li><a href="//videos.united-studios.com/fairwaltungskatalog-teaser-04">FAIRwaltungskatalog Teaser</a></li>
+              <li><a href="//videos.united-studios.com/footprints-teaser">Footprints Teaser</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Studio Produktionen <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="//www.united-studios.com/de/video/imagefilme.html">UnitedStudios: Imagefilme</a></li>
+              <li><a href="//www.united-studios.com/de/video/produktfilme.html">UnitedStudios: Produktfilme</a></li>
+              <li><a href="//www.united-studios.com/de/video/studioproduktionen.html">UnitedStudios: Studioproduktionen</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
 
-        <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+        <!--<div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li>
               <div class="form-group has-feedback has-feedback">
@@ -85,7 +112,7 @@
               </ul>
             </li>
           </ul>
-        </div>
+        </div>-->
     </nav>
   </div>
   <div class="row" >
@@ -173,6 +200,16 @@
     </div>
 
   </div>
+
+  <div class="row">
+    <footer class="site-footer" id="colophon" role="contentinfo">
+      <div class="site-info">
+        <a href="/impressum">Impressum</a> <span class="sep">|</span> <a href=
+        "/datenschutzerklaerung">Datenschutz</a>
+      </div><!-- .site-info -->
+    </footer>
+  </div>
+
 </div>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>

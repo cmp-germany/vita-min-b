@@ -2,3 +2,24 @@
   background: none;
   padding: 0 7% 0 7%;
 }
+
+.vmb footer {
+  position: fixed;
+  text-align: right;
+  bottom: 0;
+  width: 100%;
+  z-index: 1030;
+}
+
+.vmb .site-footer {
+  padding-right: 50px;
+  padding-bottom: 20px;
+  font-size: 18px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 300;
+}
+
+.vmb .site-footer a {
+    color: rgb(255, 255, 255);
+}
