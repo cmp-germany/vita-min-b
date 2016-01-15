@@ -35,84 +35,6 @@
           </li>
         </ul>
       </div>
-
-        <!--<div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li>
-              <div class="form-group has-feedback has-feedback">
-                <div class="inline-feedback">
-                  <select onChange="window.location=this.value" style="width: 130px;">
-                    <option>Motivation</option>
-                    <option value="#">Motivation #1</option>
-                    <option value="#">Motivation #2</option>
-                    <option value="#">Motivation #3</option>
-                  </select>
-                  <img src="http://vita-min-b.cmpg.eu/wp-content/themes/vita-min-b/gfx/search-bar/search-bar-dropdown.png" class="form-control-feedback select">
-                </div>
-              </div>
-            </li>
-            <li>
-              <select onChange="window.location=this.value" style="width: 75px;">
-                <option>Stars</option>
-                <option value="#">Stars #1</option>
-                <option value="#">Stars #2</option>
-                <option value="#">Stars #3</option>
-              </select>
-            </li>
-            <li>
-              <select onChange="window.location=this.value" style="width: 55px;">
-                <option>TV</option>
-                <option value="//videos.united-studios.com/mkg-fressnapf-weihnachtsgruss">MKG: Weihnachtsgrüße</option>
-                <option value="//videos.united-studios.com/teaser-vita-min-b">Teaser Vita Min B</option>
-                <option value="//videos.united-studios.com/sacred-heart-alumni-channel-2">Sacred Heart University - Alumni Channel</option>
-                <option value="//videos.united-studios.com/fairwaltungskatalog-teaser-04">FAIRwaltungskatalog Teaser</option>
-                <option value="//videos.united-studios.com/footprints-teaser">Footprints Teaser</option>
-              </select>
-            </li>
-            <li>
-              <select onChange="window.location=this.value" style="width: 215px;">
-                <option>Studio Produktionen</option>
-                <option value="//www.united-studios.com/de/video/imagefilme.html">UnitedStudios: Imagefilme</option>
-                <option value="//www.united-studios.com/de/video/produktfilme.html">UnitedStudios: Produktfilme</option>
-                <option value="//www.united-studios.com/de/video/studioproduktionen.html">UnitedStudios: Studioproduktionen</option>
-              </select>
-            </li>
-            <li>
-              <select onChange="window.location=this.value" style="width: 75px;">
-                <option>Shop</option>
-                <option value="http://ekom21.cmpg.eu">ekom21</option>
-                <option value="http://ekom21.cmpg.eu">FAIRwaltungskatalog</option>
-              </select>
-            </li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li>
-              <a href="#"><img src="http://vita-min-b.cmpg.eu/wp-content/themes/vita-min-b/gfx/nav/warenkorb-100.png" class="vmb-nav-icon"></a>
-            </li>
-            <li>
-              <a href="#"><img src="http://vita-min-b.cmpg.eu/wp-content/themes/vita-min-b/gfx/nav/lupe-100.png" class="vmb-nav-icon"></a>
-            </li>
-            <li class="dropdown">
-               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="http://vita-min-b.cmpg.eu/wp-content/themes/vita-min-b/gfx/nav/profil-100.png" class="vmb-nav-icon"><strong class="caret"></strong></a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="#">Action</a>
-                </li>
-                <li>
-                  <a href="#">Another action</a>
-                </li>
-                <li>
-                  <a href="#">Something else here</a>
-                </li>
-                <li class="divider">
-                </li>
-                <li>
-                  <a href="#">Separated link</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>-->
     </nav>
   </div>
   <div class="row" >
@@ -138,62 +60,82 @@
         <li>
           <img src="<?= get_template_directory_uri()?>/gfx/carousel/Fotolia_79234053_L.jpg" alt="">
           <div class="slide-container">
-            <h4>
-              Bewerber Videos
-            </h4>
-            <p>
-              Mit eigenem Motivationsvideo den <em>Traumjob</em> finden
-            </p>
-            <a href="#" class="btn">Traumjob jetzt finden</a>
-            <p class="slogan">Hol dir die Hauptrolle im Film deines Lebens</p>
+            <div class="container-centered">
+              <div class="container-heading">
+                <h4>
+                  Bewerber Videos
+                </h4>
+                <p>
+                  Mit eigenem Motivationsvideo den <em>Traumjob</em> finden
+                </p>
+              </div>
+              <p><a href="#" class="btn">Traumjob jetzt finden</a></p>
+              <p class="slogan">Hol dir die Hauptrolle im Film deines Lebens</p>
+            </div>
           </div>
         </li>
         <li>
           <img src="<?= get_template_directory_uri()?>/gfx/carousel/carousel-3.jpg" alt="">
           <div class="slide-container">
-            <h4>
-              Studio Productions
-            </h4>
-            <p>
-              Mit eigener Nachrichtenstudio Technologie Mitarbeiter und Kunden im TV Format tagesaktuell informieren
-            </p>
-            <a href="#" class="btn">Beispiel Video anschauen</a>
+            <div class="container-centered">
+              <div class="container-heading">
+                <h4>
+                  Studio Productions
+                </h4>
+                <p>
+                  Mit eigener Nachrichtenstudio Technologie Mitarbeiter und Kunden im TV Format tagesaktuell informieren
+                </p>
+              </div>
+              <p><a href="#" class="btn">Beispiel Video anschauen</a></p>
+            </div>
           </div>
         </li>
         <li>
           <img src="<?= get_template_directory_uri()?>/gfx/carousel/fairwaltungskatalog-teaser-04-1.jpg" alt="">
           <div class="slide-container">
-            <h4 id="fairwaltungskatalog-logo">
-              fairwaltungskatalog
-            </h4>
-            <p>
-              Mit eigenem Imagefilm Kundengruppen emotional ansprechen
-            </p>
-            <a href="#" class="btn">Beispiel Video anschauen</a>
+            <div class="container-centered">
+              <div class="container-heading">
+                <h4 id="fairwaltungskatalog-logo">
+                  fairwaltungskatalog
+                </h4>
+                <p>
+                  Mit eigenem Imagefilm Kundengruppen emotional ansprechen
+                </p>
+              </div>
+              <p><a href="#" class="btn">Beispiel Video anschauen</a></p>
+            </div>
           </div>
         </li>
         <li>
           <img src="<?= get_template_directory_uri()?>/gfx/carousel/xtrafit-shop.png" alt="">
           <div class="slide-container">
-            <h4>
-              Shop in Shop Systeme
-            </h4>
-            <p>
-              Mit eigenem Online Shop die internet affine Kundengruppe ansprechen und Vertriebspartnern Whitelabel Lösungen anbieten
-            </p>
-            <a href="#" class="btn">Beispiel Shop ansehen</a>
+            <div class="container-centered">
+              <div class="container-heading">
+                <h4>
+                  Shop in Shop Systeme
+                </h4>
+                <p>
+                  Mit eigenem Online Shop die internet affine Kundengruppe ansprechen und Vertriebspartnern Whitelabel Lösungen anbieten
+                </p>
+              </div>
+              <p><a href="#" class="btn">Beispiel Shop ansehen</a></p>
+            </div>
           </div>
         </li>
         <li>
           <img src="<?= get_template_directory_uri()?>/gfx/carousel/carousel-2.jpg" alt="">
           <div class="slide-container">
-            <h4>
-              Jugendförderung
-            </h4>
-            <p>
-              Unterstützen Sie junge Talente aus Ihrer Umgebung
-            </p>
-            <a href="http://videos.united-studios.com/mkg-fressnapf-weihnachtsgruss" class="btn">Talente jetzt finden</a>
+            <div class="container-centered">
+              <div class="container-heading">
+                <h4>
+                  Jugendförderung
+                </h4>
+                <p>
+                  Unterstützen Sie junge Talente aus Ihrer Umgebung
+                </p>
+              </div>
+              <p><a href="http://videos.united-studios.com/mkg-fressnapf-weihnachtsgruss" class="btn">Talente jetzt finden</a></p>
+            </div>
           </div>
         </li>
       </ul>
