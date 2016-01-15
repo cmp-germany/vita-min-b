@@ -6,11 +6,6 @@
   background: none;
 }
 
-#slides .slides-navigation a {
-  height: 500px;
-}
-
-
 #slides .slides-navigation a:hover.next {
   background-image: -webkit-linear-gradient(left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
   background-image: -o-linear-gradient(left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
