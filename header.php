@@ -9,5 +9,22 @@
 
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
     <?php wp_head(); ?>
+
+
+
+
+
+
+
+    <link rel="stylesheet" href="<?= get_template_directory_uri()?>/superslides/dist/stylesheets/superslides.css">
+
+
+    
+    <script>window._$ = jQuery.noConflict(true);</script>
+
+
+
+
+
   </head>
   <body class="vmb">
