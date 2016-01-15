@@ -224,7 +224,8 @@
 var $ = jQuery.noConflict();
   $(function() {
     $('#slides').superslides({
-      hashchange: false
+      hashchange: false,
+      play : 5000
     });
   });
 
