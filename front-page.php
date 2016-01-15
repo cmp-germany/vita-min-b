@@ -64,7 +64,7 @@
           </div>
         </div>
         <div class="item">
-          <img alt="Carousel" src="<?= get_template_directory_uri()?>/gfx/carousel/mkg-fressnapf-weihnachtsgruss.jpg" />
+          <img alt="Carousel" src="<?= get_template_directory_uri()?>/gfx/carousel/carousel-2.jpg" />
           <div class="carousel-caption">
             <h4>
               Jugendförderung
@@ -72,7 +72,7 @@
             <p>
               Unterstützen Sie junge Talente aus Ihrer Umgebung
             </p>
-            <button>Talente jetzt finden</button>
+            <a href="http://videos.united-studios.com/mkg-fressnapf-weihnachtsgruss" class="button">Talente jetzt finden</a>
           </div>
         </div>
       </div>
