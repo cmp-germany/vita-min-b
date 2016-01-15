@@ -50,13 +50,27 @@
         <li>
           <img src="<?= get_template_directory_uri()?>/gfx/carousel/carousel-1.jpg" alt="">
           <div class="container">
-            Slide one
+            <h4>
+              Bewerber Videos
+            </h4>
+            <p>
+              Mit Motivations-Videos die <em>echten</em> Bewerber finden
+            </p>
+            <button class="btn">Bewerber jetzt finden</button>
+            <p class="slogan">Die Sneak Preview vor dem ersten Bewerbungsgespräch</p>
           </div>
         </li>
         <li>
           <img src="<?= get_template_directory_uri()?>/gfx/carousel/carousel-2.jpg" alt="">
           <div class="container">
-            Slide two
+            <h4>
+              Bewerber Videos
+            </h4>
+            <p>
+              Mit eigenem Motivationsvideo den <em>Traumjob</em> finden
+            </p>
+            <button>Traumjob jetzt finden</button>
+            <p class="slogan">Hol dir die Hauptrolle im Film deines Lebens</p>
           </div>
         </li>
       </ul>
