@@ -120,7 +120,7 @@
       <ul class="slides-container">
         <li>
           <img src="<?= get_template_directory_uri()?>/gfx/carousel/carousel-1.jpg" alt="">
-          <div class="container">
+          <div class="slide-container">
             <div class="container-centered">
               <div class="container-heading">
                 <h4>
@@ -130,14 +130,14 @@
                   Mit Motivations-Videos die <em>echten</em> Bewerber finden
                 </p>
               </div>
-            <a href="#" class="btn">Bewerber jetzt finden</a>
+            <p><a href="#" class="btn">Bewerber jetzt finden</a></p>
             <p class="slogan">Die Sneak Preview vor dem ersten Bewerbungsgespräch</p>
             </div>
           </div>
         </li>
         <li>
           <img src="<?= get_template_directory_uri()?>/gfx/carousel/Fotolia_79234053_L.jpg" alt="">
-          <div class="container">
+          <div class="slide-container">
             <h4>
               Bewerber Videos
             </h4>
@@ -150,7 +150,7 @@
         </li>
         <li>
           <img src="<?= get_template_directory_uri()?>/gfx/carousel/carousel-3.jpg" alt="">
-          <div class="container">
+          <div class="slide-container">
             <h4>
               Studio Productions
             </h4>
@@ -162,7 +162,7 @@
         </li>
         <li>
           <img src="<?= get_template_directory_uri()?>/gfx/carousel/fairwaltungskatalog-teaser-04-1.jpg" alt="">
-          <div class="container">
+          <div class="slide-container">
             <h4 id="fairwaltungskatalog-logo">
               fairwaltungskatalog
             </h4>
@@ -174,7 +174,7 @@
         </li>
         <li>
           <img src="<?= get_template_directory_uri()?>/gfx/carousel/xtrafit-shop.png" alt="">
-          <div class="container">
+          <div class="slide-container">
             <h4>
               Shop in Shop Systeme
             </h4>
@@ -186,7 +186,7 @@
         </li>
         <li>
           <img src="<?= get_template_directory_uri()?>/gfx/carousel/carousel-2.jpg" alt="">
-          <div class="container">
+          <div class="slide-container">
             <h4>
               Jugendförderung
             </h4>
