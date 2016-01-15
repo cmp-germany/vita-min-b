@@ -12,7 +12,7 @@
             <p>
               Mit Motivations-Videos die <em>echten</em> Bewerber finden
             </p>
-            <button class="btn">Bewerber jetzt finden</button>
+            <a href="#" class="btn">Bewerber jetzt finden</a>
             <p class="slogan">Die Sneak Preview vor dem ersten Bewerbungsgespräch</p>
           </div>
         </li>
@@ -25,8 +25,56 @@
             <p>
               Mit eigenem Motivationsvideo den <em>Traumjob</em> finden
             </p>
-            <button>Traumjob jetzt finden</button>
+            <a href="#" class="btn">Traumjob jetzt finden</a>
             <p class="slogan">Hol dir die Hauptrolle im Film deines Lebens</p>
+          </div>
+        </li>
+        <li>
+          <img src="<?= get_template_directory_uri()?>/gfx/carousel/carousel-3.jpg" alt="">
+          <div class="container">
+            <h4>
+              Studio Productions
+            </h4>
+            <p>
+              Mit eigener Nachrichtenstudio Technologie Mitarbeiter und Kunden im TV Format tagesaktuell informieren
+            </p>
+            <a href="#" class="btn">Beispiel Video anschauen</a>
+          </div>
+        </li>
+        <li>
+          <img src="<?= get_template_directory_uri()?>/gfx/carousel/fairwaltungskatalog-teaser-04-1.jpg" alt="">
+          <div class="container">
+            <h4>
+              Imagefilme
+            </h4>
+            <p>
+              Mit eigenen Imagefilmen Kundengruppen emotional ansprechen
+            </p>
+            <a href="#" class="btn">Beispiel Video anschauen</a>
+          </div>
+        </li>
+        <li>
+          <img src="<?= get_template_directory_uri()?>/gfx/carousel/xtrafit-shop.png" alt="">
+          <div class="container">
+            <h4>
+              Shop in Shop Systeme
+            </h4>
+            <p>
+              Mit eigenem Online Shop die internet affine Kundengruppe ansprechen und Vertriebspartnern Whitelabel Lösungen anbieten
+            </p>
+            <a href="#" class="btn">Beispiel Shop ansehen</a>
+          </div>
+        </li>
+        <li>
+          <img src="<?= get_template_directory_uri()?>/gfx/carousel/carousel-2.jpg" alt="">
+          <div class="container">
+            <h4>
+              Jugendförderung
+            </h4>
+            <p>
+              Unterstützen Sie junge Talente aus Ihrer Umgebung
+            </p>
+            <a href="http://videos.united-studios.com/mkg-fressnapf-weihnachtsgruss" class="btn">Talente jetzt finden</a>
           </div>
         </li>
       </ul>
