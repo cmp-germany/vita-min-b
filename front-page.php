@@ -17,7 +17,7 @@
           </div>
         </li>
         <li>
-          <img src="<?= get_template_directory_uri()?>/gfx/carousel/carousel-2.jpg" alt="">
+          <img src="<?= get_template_directory_uri()?>/gfx/carousel/Fotolia_79234053_L.jpg" alt="">
           <div class="container">
             <h4>
               Bewerber Videos
