@@ -60,9 +60,9 @@
           </div>
         </li>
       </ul>
-      <nav class="slides-navigation">
+      <nav class="slides-navigation" style="top: 0; padding-top: 0;">
         <a href="#" class="next"><img src="<?= get_template_directory_uri()?>/gfx/carousel/carousel-pfeil-rechts.png" class="icon-next"></a>
-        <a href="#" class="prev"><img src="<?= get_template_directory_uri()?>/gfx/carousel/carousel-pfeil-links.png" class="icon-next"></a>
+        <a href="#" class="prev"><img src="<?= get_template_directory_uri()?>/gfx/carousel/carousel-pfeil-links.png" class="icon-prev"></a>
       </nav>
     </div>
 
@@ -83,5 +83,7 @@ var $ = jQuery.noConflict();
       hashchange: false
     });
   });
+
+
 </script>
 <?php get_footer(); ?>
