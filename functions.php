@@ -26,3 +26,10 @@ wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.mi
 wp_enqueue_script( 'ie10', get_template_directory_uri() . '/js/ie10-viewport-bug-workaround.js', array( 'jquery' ), null, true );
 
 //wp_enqueue_script( 'jquery-loader', get_template_directory_uri() . '/superslides/libs/jquery-loader.js', array( 'jquery' ), null, true);
+
+//fuer WP-Menue
+if ( function_exists('register_nav_menus') ) {
+    register_nav_menus(array(
+        'main-navi' => __( 'Hauptnavigation' )
+    ));
+}
