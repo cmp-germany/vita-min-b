@@ -44,11 +44,11 @@
         <li>
           <img src="<?= get_template_directory_uri()?>/gfx/carousel/fairwaltungskatalog-teaser-04-1.jpg" alt="">
           <div class="container">
-            <h4>
-              Imagefilme
+            <h4 id="fairwaltungskatalog-logo">
+              fairwaltungskatalog
             </h4>
             <p>
-              Mit eigenen Imagefilmen Kundengruppen emotional ansprechen
+              Mit eigenem Imagefilm Kundengruppen emotional ansprechen
             </p>
             <a href="#" class="btn">Beispiel Video anschauen</a>
           </div>
