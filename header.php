@@ -16,11 +16,11 @@
 
 
 
-    <link rel="stylesheet" href="<?= get_template_directory_uri()?>/superslides/dist/stylesheets/superslides.css">
+    <!--<link rel="stylesheet" href="<?= get_template_directory_uri()?>/superslides/dist/stylesheets/superslides.css">-->
 
 
     
-    <script>window._$ = jQuery.noConflict(true);</script>
+    <!--<script>window._$ = jQuery.noConflict(true);</script>-->
 
 
 
