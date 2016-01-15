@@ -36,9 +36,6 @@
       </nav>
     </div>
 
-
-
-
   </div>
 </div>
 
@@ -54,6 +51,18 @@ var $ = jQuery.noConflict();
     });
   });
 
+  $(document).ready(function(){
+				var height = $(window).height();
+				$(".next").height(height);
+        $(".prev").height(height);
+				$(window).resize(function(){
+					height  = $(window).height();
+					$(".next").height(height);
+					$(".prev").height(height);
+				});
+			});
+
 
 </script>
 <?php get_footer(); ?>
+</div>
