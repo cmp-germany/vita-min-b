@@ -94,14 +94,18 @@
         <li>
           <img src="<?= get_template_directory_uri()?>/gfx/carousel/carousel-1.jpg" alt="">
           <div class="container">
-            <h4>
-              Bewerber Videos
-            </h4>
-            <p>
-              Mit Motivations-Videos die <em>echten</em> Bewerber finden
-            </p>
+            <div class="container-centered">
+              <div class="container-heading">
+                <h4>
+                  Bewerber Videos
+                </h4>
+                <p>
+                  Mit Motivations-Videos die <em>echten</em> Bewerber finden
+                </p>
+              </div>
             <a href="#" class="btn">Bewerber jetzt finden</a>
             <p class="slogan">Die Sneak Preview vor dem ersten Bewerbungsgespräch</p>
+            </div>
           </div>
         </li>
         <li>
