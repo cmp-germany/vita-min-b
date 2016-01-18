@@ -42,17 +42,18 @@
       <ul class="slides-container">
         <li>
           <img src="<?= get_template_directory_uri()?>/gfx/carousel/entwurf/fotolia_37852370.jpg" alt="">
+          <div class="img-shadow"></div>
           <div class="slide-container">
             <div class="container-centered">
               <div class="container-heading">
                 <h4>
                   Bewerber Videos
                 </h4>
-                <p>
+                <p class="subtitle">
                   Mit Motivations-Videos die <em>echten</em> Bewerber finden
                 </p>
               </div>
-            <p><a href="#" class="btn">Bewerber jetzt finden</a></p>
+            <p><a href="#" class="btn btn-primary btn-big">Bewerber jetzt finden</a></p>
             <p class="slogan">Die Sneak Preview vor dem ersten Bewerbungsgespräch</p>
             </div>
           </div>
@@ -65,62 +66,65 @@
                 <h4>
                   Bewerber Videos
                 </h4>
-                <p>
+                <p class="subtitle-2">
                   Mit Motivations-Videos die <em>echten</em> Bewerber finden
                 </p>
               </div>
-            <p><a href="#" class="btn">Bewerber jetzt finden</a></p>
+            <p><a href="#" class="btn btn-primary btn-big">Bewerber jetzt finden</a></p>
             <p class="slogan">Die Sneak Preview vor dem ersten Bewerbungsgespräch</p>
             </div>
           </div>
         </li>
         <li>
           <img src="<?= get_template_directory_uri()?>/gfx/carousel/entwurf/fotolia_62688806.jpg" alt="">
+          <div class="img-shadow"></div>
           <div class="slide-container">
             <div class="container-centered">
               <div class="container-heading">
                 <h4>
                   Bewerber Videos
                 </h4>
-                <p>
+                <p class="subtitle">
                   Mit Motivations-Videos die <em>echten</em> Bewerber finden
                 </p>
               </div>
-            <p><a href="#" class="btn">Bewerber jetzt finden</a></p>
+            <p><a href="#" class="btn btn-primary btn-big">Bewerber jetzt finden</a></p>
             <p class="slogan">Die Sneak Preview vor dem ersten Bewerbungsgespräch</p>
             </div>
           </div>
         </li>
         <li>
           <img src="<?= get_template_directory_uri()?>/gfx/carousel/entwurf/fotolia_77005181.jpg" alt="">
+          <div class="img-shadow"></div>
           <div class="slide-container">
             <div class="container-centered">
               <div class="container-heading">
                 <h4>
                   Bewerber Videos
                 </h4>
-                <p>
+                <p class="subtitle">
                   Mit Motivations-Videos die <em>echten</em> Bewerber finden
                 </p>
               </div>
-            <p><a href="#" class="btn">Bewerber jetzt finden</a></p>
+            <p><a href="#" class="btn btn-primary btn-big">Bewerber jetzt finden</a></p>
             <p class="slogan">Die Sneak Preview vor dem ersten Bewerbungsgespräch</p>
             </div>
           </div>
         </li>
         <li>
           <img src="<?= get_template_directory_uri()?>/gfx/carousel/entwurf/fotolia_94585587.jpg" alt="">
+          <div class="img-shadow"></div>
           <div class="slide-container">
             <div class="container-centered">
               <div class="container-heading">
                 <h4>
                   Bewerber Videos
                 </h4>
-                <p>
+                <p class="subtitle">
                   Mit Motivations-Videos die <em>echten</em> Bewerber finden
                 </p>
               </div>
-            <p><a href="#" class="btn">Bewerber jetzt finden</a></p>
+            <p><a href="#" class="btn btn-primary btn-big">Bewerber jetzt finden</a></p>
             <p class="slogan">Die Sneak Preview vor dem ersten Bewerbungsgespräch</p>
             </div>
           </div>
@@ -128,85 +132,90 @@
 
         <!-- Ende der Beispiele für Seite 1 -->
 
-      <!--
         <li>
           <img src="<?= get_template_directory_uri()?>/gfx/carousel/Fotolia_79234053_L.jpg" alt="">
+          <div class="img-shadow"></div>
           <div class="slide-container">
             <div class="container-centered">
               <div class="container-heading">
                 <h4>
                   Bewerber Videos
                 </h4>
-                <p>
+                <p class="subtitle">
                   Mit eigenem Motivationsvideo den <em>Traumjob</em> finden
                 </p>
               </div>
-              <p><a href="#" class="btn">Traumjob jetzt finden</a></p>
+              <p><a href="#" class="btn btn-primary btn-big">Traumjob jetzt finden</a></p>
               <p class="slogan">Hol dir die Hauptrolle im Film deines Lebens</p>
             </div>
           </div>
         </li>
+        <!--
         <li>
           <img src="<?= get_template_directory_uri()?>/gfx/carousel/carousel-3.jpg" alt="">
+          <div class="img-shadow"></div>
           <div class="slide-container">
             <div class="container-centered">
               <div class="container-heading">
                 <h4>
                   Studio Productions
                 </h4>
-                <p>
+                <p class="subtitle">
                   Mit eigener Nachrichtenstudio Technologie Mitarbeiter und Kunden im TV Format tagesaktuell informieren
                 </p>
               </div>
-              <p><a href="#" class="btn">Beispiel Video anschauen</a></p>
+              <p><a href="#" class="btn btn-primary btn-big">Beispiel Video anschauen</a></p>
             </div>
           </div>
         </li>
         <li>
           <img src="<?= get_template_directory_uri()?>/gfx/carousel/fairwaltungskatalog-teaser-04-1.jpg" alt="">
+          <div class="img-shadow"></div>
           <div class="slide-container">
             <div class="container-centered">
               <div class="container-heading">
                 <h4 id="fairwaltungskatalog-logo">
                   fairwaltungskatalog
                 </h4>
-                <p>
+                <p class="subtitle">
                   Mit eigenem Imagefilm Kundengruppen emotional ansprechen
                 </p>
               </div>
-              <p><a href="#" class="btn">Beispiel Video anschauen</a></p>
+              <p><a href="#" class="btn btn-primary btn-big">Beispiel Video anschauen</a></p>
             </div>
           </div>
         </li>
         <li>
           <img src="<?= get_template_directory_uri()?>/gfx/carousel/xtrafit-shop.png" alt="">
+          <div class="img-shadow"></div>
           <div class="slide-container">
             <div class="container-centered">
               <div class="container-heading">
                 <h4>
                   Shop in Shop Systeme
                 </h4>
-                <p>
+                <p class="subtitle">
                   Mit eigenem Online Shop die internet affine Kundengruppe ansprechen und Vertriebspartnern Whitelabel Lösungen anbieten
                 </p>
               </div>
-              <p><a href="#" class="btn">Beispiel Shop ansehen</a></p>
+              <p><a href="#" class="btn btn-primary btn-big">Beispiel Shop ansehen</a></p>
             </div>
           </div>
         </li>
         <li>
           <img src="<?= get_template_directory_uri()?>/gfx/carousel/carousel-2.jpg" alt="">
+          <div class="img-shadow"></div>
           <div class="slide-container">
             <div class="container-centered">
               <div class="container-heading">
                 <h4>
                   Jugendförderung
                 </h4>
-                <p>
+                <p class="subtitle">
                   Unterstützen Sie junge Talente aus Ihrer Umgebung
                 </p>
               </div>
-              <p><a href="http://videos.united-studios.com/mkg-fressnapf-weihnachtsgruss" class="btn">Talente jetzt finden</a></p>
+              <p><a href="http://videos.united-studios.com/mkg-fressnapf-weihnachtsgruss" class="btn btn-primary btn-big">Talente jetzt finden</a></p>
             </div>
           </div>
         </li>

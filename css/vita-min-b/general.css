@@ -21,3 +21,17 @@
 	font-family: 'supernett-italic';
 	src: url('fonts/supernett-italic.otf') format('opentype');
 }
+
+.btn.btn-primary {
+	background-color: #EE4D00;
+	border-color: #EE4D00;
+}
+
+.btn.btn-primary:hover {
+	background-color: #FF5E00;
+}
+
+.btn.btn-big {
+  text-transform: uppercase;
+  font-size: 24px;
+}
