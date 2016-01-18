@@ -41,7 +41,7 @@
     <div id="slides">
       <ul class="slides-container">
         <li>
-          <img src="<?= get_template_directory_uri()?>/gfx/carousel/carousel-1.jpg" alt="">
+          <img src="<?= get_template_directory_uri()?>/gfx/carousel/entwurf/fotolia_37852370.jpg" alt="">
           <div class="slide-container">
             <div class="container-centered">
               <div class="container-heading">
@@ -57,6 +57,76 @@
             </div>
           </div>
         </li>
+        <li>
+          <img src="<?= get_template_directory_uri()?>/gfx/carousel/entwurf/fotolia_47204148.jpg" alt="">
+          <div class="slide-container">
+            <div class="container-centered">
+              <div class="container-heading">
+                <h4>
+                  Bewerber Videos
+                </h4>
+                <p>
+                  Mit Motivations-Videos die <em>echten</em> Bewerber finden
+                </p>
+              </div>
+            <p><a href="#" class="btn">Bewerber jetzt finden</a></p>
+            <p class="slogan">Die Sneak Preview vor dem ersten Bewerbungsgespräch</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <img src="<?= get_template_directory_uri()?>/gfx/carousel/entwurf/fotolia_62688806.jpg" alt="">
+          <div class="slide-container">
+            <div class="container-centered">
+              <div class="container-heading">
+                <h4>
+                  Bewerber Videos
+                </h4>
+                <p>
+                  Mit Motivations-Videos die <em>echten</em> Bewerber finden
+                </p>
+              </div>
+            <p><a href="#" class="btn">Bewerber jetzt finden</a></p>
+            <p class="slogan">Die Sneak Preview vor dem ersten Bewerbungsgespräch</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <img src="<?= get_template_directory_uri()?>/gfx/carousel/entwurf/fotolia_77005181.jpg" alt="">
+          <div class="slide-container">
+            <div class="container-centered">
+              <div class="container-heading">
+                <h4>
+                  Bewerber Videos
+                </h4>
+                <p>
+                  Mit Motivations-Videos die <em>echten</em> Bewerber finden
+                </p>
+              </div>
+            <p><a href="#" class="btn">Bewerber jetzt finden</a></p>
+            <p class="slogan">Die Sneak Preview vor dem ersten Bewerbungsgespräch</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <img src="<?= get_template_directory_uri()?>/gfx/carousel/entwurf/fotolia_94585587.jpg" alt="">
+          <div class="slide-container">
+            <div class="container-centered">
+              <div class="container-heading">
+                <h4>
+                  Bewerber Videos
+                </h4>
+                <p>
+                  Mit Motivations-Videos die <em>echten</em> Bewerber finden
+                </p>
+              </div>
+            <p><a href="#" class="btn">Bewerber jetzt finden</a></p>
+            <p class="slogan">Die Sneak Preview vor dem ersten Bewerbungsgespräch</p>
+            </div>
+          </div>
+        </li>
+
+
         <li>
           <img src="<?= get_template_directory_uri()?>/gfx/carousel/Fotolia_79234053_L.jpg" alt="">
           <div class="slide-container">
