@@ -1,0 +1,58 @@
+.vmb nav.navvmb {
+  background: none;
+  padding: 0 7% 0 7%;
+}
+
+.vmb footer {
+  position: fixed;
+  text-align: right;
+  bottom: 0;
+  width: 100%;
+  z-index: 1030;
+}
+
+.vmb .site-footer {
+  padding-right: 50px;
+  padding-bottom: 20px;
+  font-size: 18px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 300;
+}
+
+.vmb .site-footer a {
+    color: rgb(255, 255, 255);
+}
+
+.vmb .dropdown .dropdown-menu > li > a {
+  color: #FF5E00;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.vmb .navbar-toggle {
+  background-color: #FF5E00;
+}
+
+/*
+.vmb .navbar-collapse, .navbar-inverse .navbar-form {
+  border-color: #FF5E00;
+  background-color: #fff;
+}*/
+
+@media (max-width: 767px) {
+  .vmb .navbar-collapse, .navbar-inverse .navbar-form {
+  border-color: #FF5E00;
+  background-image: -webkit-linear-gradient(left,rgba(0,0,0,.8) 0,rgba(0,0,0,.8) 100%);
+  background-image: -o-linear-gradient(left,rgba(0,0,0,.8) 0,rgba(0,0,0,.8) 100%);
+  background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.8)),to(rgba(0,0,0,.8)));
+  background-image: linear-gradient(to right,rgba(0,0,0,.8) 0,rgba(0,0,0,.8) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#800000000', endColorstr='#80000000', GradientType=1);
+  background-repeat: repeat;
+}
+@media (min-width: 768px) {
+  .vmb .navbar-collapse, .navbar-inverse .navbar-form {
+    background: none;
+  }
+}

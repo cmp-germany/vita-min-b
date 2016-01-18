@@ -29,3 +29,94 @@
   padding: 0 2em 0 2em;
   top: 46%;
 }
+
+/* Image Replacements für Logos & Co */
+
+#fairwaltungskatalog-logo {
+  background-image: url(../../gfx/carousel/faiwaltungskatalog-logo.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 400px;
+  padding-top: 17.5%;
+  height: 0;
+  text-indent: -9999px;
+}
+
+
+
+
+
+/* Design der Texte */
+
+
+#slides .container-centered {
+  margin: 0 15%;
+  width: 70%;
+  position: absolute;
+  top: 40%;
+}
+
+#slides .container-centered *{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 850px;
+}
+
+#slides .container-heading {
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6)
+}
+
+#slides .container-heading h4 {
+  font-weight: 700;
+  padding-bottom: 15px;
+  border-bottom: 3px dotted #FF5E00;
+}
+
+#slides .container-heading p {
+  font-weight: 700;
+}
+
+@media screen and (min-width: 480px) {
+  #slides .container-heading h4 {
+    font-size: 150%;
+  }
+  #slides .container-heading p {
+    font-size: 200%;
+  }
+}
+
+
+@media screen and (min-width: 850px) {
+  #slides .container-heading h4 {
+    font-size: 230%;
+  }
+  #slides .container-heading p {
+    font-size: 370%;
+  }
+}
+
+
+
+#slides .container-centered .btn {
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #FF5E00;
+    background-color:  Transparent;
+    background-repeat: no-repeat;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    border: 1px solid #FF5E00;
+    border-radius: 0;
+}
+
+#slides .slogan {
+  font-family: 'supernett';
+  font-size: 30px;
+  color: #FF5E00;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6)
+}
