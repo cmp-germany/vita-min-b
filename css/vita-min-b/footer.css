@@ -6,6 +6,7 @@ body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
 }
+
 .footer {
   position: fixed;
   bottom: 0;
@@ -34,4 +35,8 @@ body {
 
 .vmb .site-footer a {
     color: rgb(255, 255, 255);
+}
+
+.vmb .site-footer {
+    color: rgb(150, 150, 150);
 }

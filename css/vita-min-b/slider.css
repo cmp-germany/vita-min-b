@@ -147,11 +147,11 @@
 /* PAGINATION */
 
 .slides-pagination a {
-  border-color: #ddd;
+  border-color: rgb(150, 150, 150);
 }
 
 .slides-pagination a.current {
-  background-color: #ddd;
+  background-color: rgb(150, 150, 150);
 }
 
 nav.slides-pagination {
