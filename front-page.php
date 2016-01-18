@@ -232,28 +232,6 @@
 <script src="<?= get_template_directory_uri()?>/superslides/examples/javascripts/jquery.easing.1.3.js"></script>
 <script src="<?= get_template_directory_uri()?>/superslides/examples/javascripts/jquery.animate-enhanced.min.js"></script>
 <script src="<?= get_template_directory_uri()?>/superslides/dist/jquery.superslides.js" type="text/javascript" charset="utf-8"></script>
-<script>
-var $ = jQuery.noConflict();
-  $(function() {
-    $('#slides').superslides({
-      hashchange: false,
-      play : 8000
-
-    });
-  });
-
-  $(document).ready(function(){
-				var height = $(window).height();
-				$(".next").height(height);
-        $(".prev").height(height);
-				$(window).resize(function(){
-					height  = $(window).height();
-					$(".next").height(height);
-					$(".prev").height(height);
-				});
-			});
-
-
-</script>
+<script src="<?= get_template_directory_uri()?>/js/front-page-slides.js" type="text/javascript" charset="utf-8"></script>
 <?php get_footer(); ?>
 </div>
