@@ -126,7 +126,9 @@
           </div>
         </li>
 
+        <!-- Ende der Beispiele für Seite 1 -->
 
+      <!--
         <li>
           <img src="<?= get_template_directory_uri()?>/gfx/carousel/Fotolia_79234053_L.jpg" alt="">
           <div class="slide-container">
@@ -208,6 +210,7 @@
             </div>
           </div>
         </li>
+      -->
       </ul>
       <nav class="slides-navigation" style="top: 0; padding-top: 0;">
         <a href="#" class="next"><img src="<?= get_template_directory_uri()?>/gfx/carousel/carousel-pfeil-rechts.png" class="icon-next"></a>
@@ -225,13 +228,6 @@
       </div><!-- .site-info -->
     </footer>
   </div>
-
 </div>
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src="<?= get_template_directory_uri()?>/superslides/examples/javascripts/jquery.easing.1.3.js"></script>
-<script src="<?= get_template_directory_uri()?>/superslides/examples/javascripts/jquery.animate-enhanced.min.js"></script>
-<script src="<?= get_template_directory_uri()?>/superslides/dist/jquery.superslides.js" type="text/javascript" charset="utf-8"></script>
-<script src="<?= get_template_directory_uri()?>/js/front-page-slides.js" type="text/javascript" charset="utf-8"></script>
 <?php get_footer(); ?>
 </div>
