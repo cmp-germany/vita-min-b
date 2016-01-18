@@ -150,7 +150,6 @@
             </div>
           </div>
         </li>
-        <!--
         <li>
           <img src="<?= get_template_directory_uri()?>/gfx/carousel/carousel-3.jpg" alt="">
           <div class="img-shadow"></div>
@@ -219,7 +218,6 @@
             </div>
           </div>
         </li>
-      -->
       </ul>
       <nav class="slides-navigation" style="top: 0; padding-top: 0;">
         <a href="#" class="next"><img src="<?= get_template_directory_uri()?>/gfx/carousel/carousel-pfeil-rechts.png" class="icon-next"></a>

@@ -101,7 +101,6 @@
 
 #slides .container-heading .subtitle em {
   font-family: 'supernett-italic';
-  color: #FF5E00;
   font-style: normal;
 }
 
@@ -142,4 +141,19 @@
   font-family: 'supernett';
   font-size: 30px;
   color: #fff;
+}
+
+
+/* PAGINATION */
+
+.slides-pagination a {
+  border-color: #ddd;
+}
+
+.slides-pagination a.current {
+  background-color: #ddd;
+}
+
+nav.slides-pagination {
+  padding-bottom: 5px;
 }
