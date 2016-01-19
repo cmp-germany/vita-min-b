@@ -32,7 +32,7 @@
 
 /* Image Replacements für Logos & Co */
 
-#fairwaltungskatalog-logo {
+#slides #fairwaltungskatalog-logo {
   background-image: url(../../gfx/carousel/faiwaltungskatalog-logo.png);
   background-size: 100%;
   background-repeat: no-repeat;

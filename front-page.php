@@ -160,10 +160,11 @@
                   Studio Productions
                 </h4>
                 <p class="subtitle">
-                  Mit eigener Nachrichtenstudio Technologie Mitarbeiter und Kunden im TV Format tagesaktuell informieren
+                  Eigenes Nachrichtenstudio
                 </p>
               </div>
               <p><a href="#" class="btn btn-primary btn-big">Beispiel Video anschauen</a></p>
+              <p class="slogan">Mit eigenem TV Studio Mitarbeiter und Kunden tagesaktuell informieren</p>
             </div>
           </div>
         </li>
@@ -173,14 +174,12 @@
           <div class="slide-container">
             <div class="container-centered">
               <div class="container-heading">
-                <h4 id="fairwaltungskatalog-logo">
-                  fairwaltungskatalog
-                </h4>
-                <p class="subtitle">
-                  Mit eigenem Imagefilm Kundengruppen emotional ansprechen
+                <h4>Imagefilme</h4>
+                <p class="subtitle" id="fairwaltungskatalog-logo">
                 </p>
               </div>
               <p><a href="#" class="btn btn-primary btn-big">Beispiel Video anschauen</a></p>
+              <p class="slogan">Mit eigenem Imagefilm Kundengruppen emotional ansprechen</p>
             </div>
           </div>
         </li>
