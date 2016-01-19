@@ -6,7 +6,7 @@
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse-1">
           <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#"><img src="http://vita-min-b.cmpg.eu/wp-content/themes/vita-min-b/gfx/vita-min-b-logo-300.png" class="vmb-logo"></a>
+        <a class="navbar-brand" href="#"><img src="<?= get_template_directory_uri(); ?>/gfx/vita-min-b-logo-300.png" class="vmb-logo"></a>
       </div>
 
       <div class="collapse navbar-collapse navbar-ex1-collapse navbar-right" id="bs-navbar-collapse-1">
