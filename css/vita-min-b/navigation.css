@@ -1,6 +1,7 @@
-.vmb nav.navvmb {
+.vmb .navvmb {
   background: none;
-  padding: 0 7% 0 7%;
+  /*padding: 0 7% 0 7%;*/
+  border: none;
 }
 
 .vmb .dropdown .dropdown-menu > li > a {
@@ -15,15 +16,9 @@
   border-color: #FF5E00;
 }
 
-.vmb .navbar-inverse .navbar-toggle .icon-bar {
+.vmb .navbar-toggle .icon-bar {
   background-color: #FF5E00;
 }
-
-/*
-.vmb .navbar-collapse, .navbar-inverse .navbar-form {
-  border-color: #FF5E00;
-  background-color: #fff;
-}*/
 
 @media (max-width: 767px) {
   .vmb .navbar-collapse, .navbar-inverse .navbar-form {
@@ -35,7 +30,7 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#800000000', endColorstr='#80000000', GradientType=1);
     background-repeat: repeat;
   }
-  .vmb nav .vmb-logo {
+  .vmb .vmb-logo {
     height: 34px;
   }
 }
