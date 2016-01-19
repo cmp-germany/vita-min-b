@@ -67,7 +67,7 @@
                   Bewerber Videos
                 </h4>
                 <p class="subtitle-2">
-                  Mit Motivations-Videos die <em>echten</em> Bewerber finden
+                  <span>Mit Motivations-Videos die <em>echten</em> Bewerber finden</span>
                 </p>
               </div>
             <p><a href="#" class="btn btn-primary btn-big">Bewerber jetzt finden</a></p>

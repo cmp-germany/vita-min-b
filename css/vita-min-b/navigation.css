@@ -27,13 +27,17 @@
 
 @media (max-width: 767px) {
   .vmb .navbar-collapse, .navbar-inverse .navbar-form {
-  border-color: #FF5E00;
-  background-image: -webkit-linear-gradient(left,rgba(0,0,0,.8) 0,rgba(0,0,0,.8) 100%);
-  background-image: -o-linear-gradient(left,rgba(0,0,0,.8) 0,rgba(0,0,0,.8) 100%);
-  background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.8)),to(rgba(0,0,0,.8)));
-  background-image: linear-gradient(to right,rgba(0,0,0,.8) 0,rgba(0,0,0,.8) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#800000000', endColorstr='#80000000', GradientType=1);
-  background-repeat: repeat;
+    border-color: #FF5E00;
+    background-image: -webkit-linear-gradient(left,rgba(0,0,0,.8) 0,rgba(0,0,0,.8) 100%);
+    background-image: -o-linear-gradient(left,rgba(0,0,0,.8) 0,rgba(0,0,0,.8) 100%);
+    background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.8)),to(rgba(0,0,0,.8)));
+    background-image: linear-gradient(to right,rgba(0,0,0,.8) 0,rgba(0,0,0,.8) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#800000000', endColorstr='#80000000', GradientType=1);
+    background-repeat: repeat;
+  }
+  .vmb nav .vmb-logo {
+    height: 34px;
+  }
 }
 @media (min-width: 768px) {
   .vmb .navbar-collapse, .navbar-inverse .navbar-form {
