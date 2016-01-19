@@ -11,6 +11,11 @@
 }
 
 .vmb .navbar-toggle {
+  background-color: transparent;
+  border-color: #FF5E00;
+}
+
+.vmb .navbar-inverse .navbar-toggle .icon-bar {
   background-color: #FF5E00;
 }
 
@@ -34,4 +39,11 @@
   .vmb .navbar-collapse, .navbar-inverse .navbar-form {
     background: none;
   }
+}
+
+.vmb .navbar-collapse li {
+  text-align: right;
+}
+.vmb .navbar-nav .open .dropdown-menu>li>a {
+  padding: 5px 25px 5px 5px;
 }

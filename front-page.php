@@ -21,7 +21,7 @@
             <ul class="dropdown-menu">
               <li><a href="//videos.united-studios.com/mkg-fressnapf-weihnachtsgruss">MKG: Weihnachtsgrüße</a></li>
               <li><a href="//videos.united-studios.com/teaser-vita-min-b">Teaser Vita Min B</a></li>
-              <li><a href="//videos.united-studios.com/sacred-heart-alumni-channel-2">Sacred Heart University - Alumni Channel</a></li>
+              <li><a href="//videos.united-studios.com/sacred-heart-alumni-channel-2">Sacred Heart University</a></li>
               <li><a href="//videos.united-studios.com/fairwaltungskatalog-teaser-04">FAIRwaltungskatalog Teaser</a></li>
               <li><a href="//videos.united-studios.com/footprints-teaser">Footprints Teaser</a></li>
             </ul>
