@@ -58,7 +58,6 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <p>Test</p>
   </div>
 
 
