@@ -1,3 +1,9 @@
+@media (min-width : 768px) {
+  .vmb .navbar-toggle {
+    display: block;
+  }
+}
+
 .vmb .navvmb {
   background: none;
   /*padding: 0 7% 0 7%;*/
