@@ -18,6 +18,7 @@ wp_enqueue_style( 'search-bar', get_template_directory_uri() . '/css/vita-min-b/
 wp_enqueue_style( 'slider-default', get_template_directory_uri() . '/superslides/dist/stylesheets/superslides.css' );
 wp_enqueue_style( 'slider', get_template_directory_uri() . '/css/vita-min-b/slider.css' );
 wp_enqueue_style( 'navigation', get_template_directory_uri() . '/css/vita-min-b/navigation.css' );
+wp_enqueue_style( 'general-content', get_template_directory_uri() . '/css/vita-min-b/general-content.css' );
 
 
 // JS: Bootstrap
