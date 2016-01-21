@@ -155,7 +155,7 @@
             <!--<p class="logo-sign">for sports</p>-->
 
             <div class="cop-mark">
-              <p>in cooperation with:</p>
+              <p>in cooperation with</p>
               <img src="<?= get_template_directory_uri(); ?>/gfx/mkg-logo.png" class="preserve">
             </div>
           <div class="img-shadow"></div>
