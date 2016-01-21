@@ -11,6 +11,12 @@
   margin-top: 1em;
 }
 
+.vmb .navvmb .vmb-logo {
+  margin-left: 5.5em;
+  width: 5em;
+  height: auto;
+}
+
 .vmb .dropdown .dropdown-menu > li > a {
   color: #FF5E00;
   font-family: inherit;
