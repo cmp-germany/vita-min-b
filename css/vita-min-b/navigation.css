@@ -19,11 +19,11 @@
 
 .vmb .navbar-toggle {
   background-color: transparent;
-  border-color: #FF5E00;
+  border-color: #969696;
 }
 
 .vmb .navbar-toggle .icon-bar {
-  background-color: #FF5E00;
+  background-color: #969696;
 }
 
 @media (max-width: 767px) {

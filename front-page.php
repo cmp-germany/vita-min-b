@@ -103,6 +103,24 @@
     <div id="slides">
       <ul class="slides-container">
         <li>
+          <img src="<?= get_template_directory_uri()?>/gfx/carousel/Fotolia_79234053_L.jpg" alt="">
+          <div class="img-shadow"></div>
+          <div class="slide-container">
+            <div class="container-centered">
+              <div class="container-heading">
+                <h4>
+                  Bewerber Videos
+                </h4>
+                <p class="subtitle">
+                  Mit eigenem Motivationsvideo den <em>Traumjob</em> finden
+                </p>
+              </div>
+              <p><a href="#" class="btn btn-primary btn-big">Traumjob jetzt finden</a></p>
+              <p class="slogan">Hol dir die Hauptrolle im Film deines Lebens</p>
+            </div>
+          </div>
+        </li>
+        <li>
           <img src="<?= get_template_directory_uri()?>/gfx/carousel/entwurf/fotolia_37852370.jpg" alt="">
           <div class="img-shadow"></div>
           <div class="slide-container">
@@ -120,7 +138,7 @@
             </div>
           </div>
         </li>
-        <li>
+        <!--<li>
           <img src="<?= get_template_directory_uri()?>/gfx/carousel/entwurf/fotolia_47204148.jpg" alt="">
           <div class="slide-container">
             <div class="container-centered">
@@ -190,25 +208,37 @@
             <p class="slogan">Die Sneak Preview vor dem ersten Bewerbungsgespräch</p>
             </div>
           </div>
-        </li>
-
-        <!-- Ende der Beispiele für Seite 1 -->
-
+        </li>-->
         <li>
-          <img src="<?= get_template_directory_uri()?>/gfx/carousel/Fotolia_79234053_L.jpg" alt="">
+          <img src="<?= get_template_directory_uri()?>/gfx/carousel/fairwaltungskatalog-teaser-04-1.jpg" alt="">
+          <div class="img-shadow"></div>
+          <div class="slide-container">
+            <div class="container-centered">
+              <div class="container-heading">
+                <h4>Imagefilme</h4>
+                <p class="subtitle" id="fairwaltungskatalog-logo">
+                </p>
+              </div>
+              <p><a href="#" class="btn btn-primary btn-big">Beispiel Video anschauen</a></p>
+              <p class="slogan">Mit eigenem Imagefilm Kundengruppen emotional ansprechen</p>
+            </div>
+          </div>
+        </li>
+        <!-- Ende der Beispiele für Seite 1 -->
+        <li>
+          <img src="<?= get_template_directory_uri()?>/gfx/carousel/carousel-2.jpg" alt="">
           <div class="img-shadow"></div>
           <div class="slide-container">
             <div class="container-centered">
               <div class="container-heading">
                 <h4>
-                  Bewerber Videos
+                  Jugendförderung
                 </h4>
                 <p class="subtitle">
-                  Mit eigenem Motivationsvideo den <em>Traumjob</em> finden
+                  Unterstützen Sie junge Talente aus Ihrer Umgebung
                 </p>
               </div>
-              <p><a href="#" class="btn btn-primary btn-big">Traumjob jetzt finden</a></p>
-              <p class="slogan">Hol dir die Hauptrolle im Film deines Lebens</p>
+              <p><a href="http://videos.united-studios.com/mkg-fressnapf-weihnachtsgruss" class="btn btn-primary btn-big">Talente jetzt finden</a></p>
             </div>
           </div>
         </li>
@@ -230,22 +260,7 @@
             </div>
           </div>
         </li>
-        <li>
-          <img src="<?= get_template_directory_uri()?>/gfx/carousel/fairwaltungskatalog-teaser-04-1.jpg" alt="">
-          <div class="img-shadow"></div>
-          <div class="slide-container">
-            <div class="container-centered">
-              <div class="container-heading">
-                <h4>Imagefilme</h4>
-                <p class="subtitle" id="fairwaltungskatalog-logo">
-                </p>
-              </div>
-              <p><a href="#" class="btn btn-primary btn-big">Beispiel Video anschauen</a></p>
-              <p class="slogan">Mit eigenem Imagefilm Kundengruppen emotional ansprechen</p>
-            </div>
-          </div>
-        </li>
-        <li>
+        <!--<li>
           <img src="<?= get_template_directory_uri()?>/gfx/carousel/xtrafit-shop.png" alt="">
           <div class="img-shadow"></div>
           <div class="slide-container">
@@ -261,24 +276,7 @@
               <p><a href="#" class="btn btn-primary btn-big">Beispiel Shop ansehen</a></p>
             </div>
           </div>
-        </li>
-        <li>
-          <img src="<?= get_template_directory_uri()?>/gfx/carousel/carousel-2.jpg" alt="">
-          <div class="img-shadow"></div>
-          <div class="slide-container">
-            <div class="container-centered">
-              <div class="container-heading">
-                <h4>
-                  Jugendförderung
-                </h4>
-                <p class="subtitle">
-                  Unterstützen Sie junge Talente aus Ihrer Umgebung
-                </p>
-              </div>
-              <p><a href="http://videos.united-studios.com/mkg-fressnapf-weihnachtsgruss" class="btn btn-primary btn-big">Talente jetzt finden</a></p>
-            </div>
-          </div>
-        </li>
+        </li>-->
       </ul>
       <nav class="slides-navigation" style="top: 0; padding-top: 0;">
         <a href="#" class="next"><img src="<?= get_template_directory_uri()?>/gfx/carousel/carousel-pfeil-rechts.png" class="icon-next"></a>
