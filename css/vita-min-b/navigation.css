@@ -87,7 +87,7 @@
 /*CSS zur rechten Fade */
 
 .vmb .navmenu-inverse {
-  background-image: url(http://localhost/vita-min-b/wp-content/themes/vita-min-b/gfx/carousel/carousel-2.jpg);
+  background-image: url(/vita-min-b/wp-content/themes/vita-min-b/gfx/carousel/carousel-2.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
