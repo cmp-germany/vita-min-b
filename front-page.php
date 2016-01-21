@@ -60,7 +60,7 @@
           </div>
         </li>
         <li>
-          <img src="<?= get_template_directory_uri()?>/gfx/carousel/entwurf/fotolia_37852370.jpg" alt="">
+          <img src="<?= get_template_directory_uri()?>/gfx/carousel/Fotolia_54735549_L.jpg" alt="">
           <a href="#"><img src="<?= get_template_directory_uri(); ?>/gfx/vita-min-b-logo-300.png" class="vmb-logo preserve"></a>
           <div class="img-shadow"></div>
           <div class="slide-container">
@@ -69,8 +69,8 @@
                 <h4>
                   Bewerber Videos
                 </h4>
-                <p class="subtitle">
-                  Mit Motivations-Videos die <em>echten</em> Bewerber finden
+                <p class="subtitle" style="font-size: 300%;">
+                  Oftmals verzweifelt, den <em>richtigen</em> Mitarbeiter zu finden?
                 </p>
               </div>
             <p><a href="#" class="btn btn-primary btn-big">Bewerber jetzt finden</a></p>
