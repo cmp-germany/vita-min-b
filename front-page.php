@@ -151,13 +151,19 @@
         </li>-->
         <li>
           <img src="<?= get_template_directory_uri()?>/gfx/carousel/carousel-2.jpg" alt="">
-          <a href="#"><img src="<?= get_template_directory_uri(); ?>/gfx/vita-min-b-logo-300.png" class="vmb-logo preserve"></a>
+            <a href="#"><img src="<?= get_template_directory_uri(); ?>/gfx/vita-min-b-logo-300.png" class="vmb-logo preserve"></a>
+            <p class="logo-sign">for sports</p>
+
+            <div class="cop-mark">
+              <p>in cooperation with:</p>
+              <img src="<?= get_template_directory_uri(); ?>/gfx/mkg-logo.png" class="preserve">
+            </div>
           <div class="img-shadow"></div>
           <div class="slide-container">
             <div class="container-centered">
               <div class="container-heading">
                 <h4>
-                  Jugendförderung
+                  Sportler Videos
                 </h4>
                 <p class="subtitle">
                   Unterstützen Sie junge Talente aus Ihrer Umgebung

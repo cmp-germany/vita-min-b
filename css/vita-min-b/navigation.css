@@ -24,6 +24,15 @@
   height: auto;
 }
 
+.vmb .slides-container .logo-sign {
+  margin-left: 4.7em;
+  width: 7em;
+  font-family: 'supernett';
+  font-size: 1.8em;
+  color: #FF5E00;
+}
+
+
 .vmb .dropdown .dropdown-menu > li > a {
   color: #FF5E00;
   font-family: inherit;
