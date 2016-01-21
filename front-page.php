@@ -227,7 +227,6 @@
           </div>
         </li>
         <li>
-        <li>
           <img src="<?= get_template_directory_uri()?>/gfx/carousel/fairwaltungskatalog-teaser-04-1.jpg" alt="">
           <div class="img-shadow"></div>
           <div class="slide-container">
@@ -243,7 +242,7 @@
           </div>
         </li>
         <!-- Ende der Beispiele für Seite 1 -->
-
+        <li>
           <img src="<?= get_template_directory_uri()?>/gfx/carousel/carousel-3.jpg" alt="">
           <div class="img-shadow"></div>
           <div class="slide-container">
