@@ -26,11 +26,6 @@
                 Andreas Adams<br />
                 Geschäftsführer
               </p>
-              <p>
-                Dipl.-Wirtsch.-Ing.<br />
-                Maximiliano Lombardi<br />
-                Geschäftsführer
-              </p>
             </div>
             <div class="col-lg-4">
               <h2>Kontakt:</h2>

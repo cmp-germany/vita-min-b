@@ -186,7 +186,7 @@
                 </p>
               </div>
               <p><a href="#" class="btn btn-primary btn-big">Film anschauen</a></p>
-              <p class="slogan">Mit Imagefilmen neue Kunden emotional erreichen</p>
+              <p class="slogan">Mit Imagefilmen neue Kundengruppen emotional erreichen</p>
             </div>
           </div>
         </li>
