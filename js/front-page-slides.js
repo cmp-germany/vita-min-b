@@ -3,7 +3,7 @@ var $ = jQuery.noConflict();
 $(function() {
   $('#slides').superslides({
     hashchange: false,
-    play: 8000,
+    //play: 8000,
     animation_speed: 'slow'
   });
 });
