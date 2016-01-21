@@ -169,6 +169,33 @@
 
 }
 
+.vmb .slides-container .cop-mark {
+  float: right;
+  margin-right: 7em;
+  margin-top: 2em;
+  padding-left: 4em;
+  font-size: 1.8em;
+  color: #FF5E00;
+  -moz-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
+}
+
+.vmb .slides-container .cop-mark p {
+  font-family: 'supernett';
+}
+
+@media (max-width: 767px) {
+  .vmb .slides-container .cop-mark {
+    margin-top: 10em;
+    -moz-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+  }
+}
+
 
 /* PAGINATION */
 
