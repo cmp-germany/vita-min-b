@@ -185,7 +185,7 @@
                 </p> -->
               </div>
               <p><a href="#" class="btn btn-primary btn-big">Film anschauen</a></p>
-              <p class="slogan">Mit eigenem Imagefilm Kundengruppen emotional ansprechen</p>
+              <p class="slogan">Mit eigenem Imagefilm Kunden emotional erreichen</p>
             </div>
           </div>
         </li>
@@ -201,11 +201,11 @@
                   Studio Productions
                 </h4>
                 <p class="subtitle">
-                  Eigenes Nachrichtenstudio
+                  Bekommen Ihre Kunden auch einen langweiligen Newsletter?
                 </p>
               </div>
               <p><a href="#" class="btn btn-primary btn-big">Studio anschauen</a></p>
-              <p class="slogan">Mit eigenem TV Studio Mitarbeiter und Kunden tagesaktuell informieren</p>
+              <p class="slogan">Mit eigenem TV Studio Mitarbeiter und Kunden informieren</p>
             </div>
           </div>
         </li>
