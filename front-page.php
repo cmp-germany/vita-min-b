@@ -174,17 +174,17 @@
           </div>
         </li>
         <li>
-          <img src="<?= get_template_directory_uri()?>/gfx/carousel/fairwaltungskatalog-teaser-04-1.jpg" alt="">
+          <img src="<?= get_template_directory_uri()?>/gfx/carousel/imagefilme.jpg" alt="">
           <a href="#"><img src="<?= get_template_directory_uri(); ?>/gfx/vita-min-b-logo-300.png" class="vmb-logo preserve"></a>
           <div class="img-shadow"></div>
           <div class="slide-container">
             <div class="container-centered">
               <div class="container-heading">
                 <h4>Imagefilme</h4>
-                <p class="subtitle" id="fairwaltungskatalog-logo">
-                </p>
+                <!-- <p class="subtitle" id="fairwaltungskatalog-logo">
+                </p> -->
               </div>
-              <p><a href="#" class="btn btn-primary btn-big">Beispiel Video anschauen</a></p>
+              <p><a href="#" class="btn btn-primary btn-big">Film anschauen</a></p>
               <p class="slogan">Mit eigenem Imagefilm Kundengruppen emotional ansprechen</p>
             </div>
           </div>
@@ -204,7 +204,7 @@
                   Eigenes Nachrichtenstudio
                 </p>
               </div>
-              <p><a href="#" class="btn btn-primary btn-big">Beispiel Video anschauen</a></p>
+              <p><a href="#" class="btn btn-primary btn-big">Studio anschauen</a></p>
               <p class="slogan">Mit eigenem TV Studio Mitarbeiter und Kunden tagesaktuell informieren</p>
             </div>
           </div>
