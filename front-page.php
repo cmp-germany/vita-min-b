@@ -181,11 +181,12 @@
             <div class="container-centered">
               <div class="container-heading">
                 <h4>Imagefilme</h4>
-                <!-- <p class="subtitle" id="fairwaltungskatalog-logo">
-                </p> -->
+                <p class="subtitle">
+                  Gewinnen auch Sie Ihre Neukunden über herkömmliche Vertriebswege?
+                </p>
               </div>
               <p><a href="#" class="btn btn-primary btn-big">Film anschauen</a></p>
-              <p class="slogan">Mit eigenem Imagefilm Kunden emotional erreichen</p>
+              <p class="slogan">Mit Imagefilmen neue Kunden emotional erreichen</p>
             </div>
           </div>
         </li>
