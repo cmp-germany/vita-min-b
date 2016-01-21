@@ -104,7 +104,7 @@
       <ul class="slides-container">
         <li>
           <img src="<?= get_template_directory_uri()?>/gfx/carousel/Fotolia_79234053_L.jpg" alt="">
-          <div class="img-shadow"></div>
+          <!--<div class="img-shadow"></div>-->
           <div class="slide-container">
             <div class="container-centered">
               <div class="container-heading">
