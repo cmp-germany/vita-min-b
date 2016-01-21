@@ -10,10 +10,17 @@
   border: none;
   margin-top: 1em;
 }
-
+/*
 .vmb .navvmb .vmb-logo {
   margin-left: 5.5em;
   width: 5em;
+  height: auto;
+}*/
+
+.vmb .slides-container .vmb-logo {
+  margin-left: 8em;
+  margin-top: 1.5em;
+  width: 7em;
   height: auto;
 }
 

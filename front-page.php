@@ -52,7 +52,7 @@
   </div>
 
   <div class="navbar navbar-inverse navbar-fixed-top navvmb">
-    <a class="navbar-brand" href="#"><img src="<?= get_template_directory_uri(); ?>/gfx/vita-min-b-logo-300.png" class="vmb-logo"></a>
+    <!--<a class="navbar-brand" href="#"><img src="<?= get_template_directory_uri(); ?>/gfx/vita-min-b-logo-300.png" class="vmb-logo"></a>-->
     <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body">
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
@@ -104,8 +104,10 @@
       <ul class="slides-container">
         <li>
           <img src="<?= get_template_directory_uri()?>/gfx/carousel/Fotolia_79234053_L.jpg" alt="">
-          <!--<div class="img-shadow"></div>-->
+          <a href="#"><img src="<?= get_template_directory_uri(); ?>/gfx/vita-min-b-logo-300.png" class="vmb-logo preserve"></a>
+          <div class="img-shadow"></div>
           <div class="slide-container">
+
             <div class="container-centered">
               <div class="container-heading">
                 <h4>
@@ -122,6 +124,7 @@
         </li>
         <li>
           <img src="<?= get_template_directory_uri()?>/gfx/carousel/entwurf/fotolia_37852370.jpg" alt="">
+          <a href="#"><img src="<?= get_template_directory_uri(); ?>/gfx/vita-min-b-logo-300.png" class="vmb-logo preserve"></a>
           <div class="img-shadow"></div>
           <div class="slide-container">
             <div class="container-centered">
@@ -211,6 +214,7 @@
         </li>-->
         <li>
           <img src="<?= get_template_directory_uri()?>/gfx/carousel/carousel-2.jpg" alt="">
+          <a href="#"><img src="<?= get_template_directory_uri(); ?>/gfx/vita-min-b-logo-300.png" class="vmb-logo preserve"></a>
           <div class="img-shadow"></div>
           <div class="slide-container">
             <div class="container-centered">
@@ -228,6 +232,7 @@
         </li>
         <li>
           <img src="<?= get_template_directory_uri()?>/gfx/carousel/fairwaltungskatalog-teaser-04-1.jpg" alt="">
+          <a href="#"><img src="<?= get_template_directory_uri(); ?>/gfx/vita-min-b-logo-300.png" class="vmb-logo preserve"></a>
           <div class="img-shadow"></div>
           <div class="slide-container">
             <div class="container-centered">
@@ -244,6 +249,7 @@
         <!-- Ende der Beispiele für Seite 1 -->
         <li>
           <img src="<?= get_template_directory_uri()?>/gfx/carousel/carousel-3.jpg" alt="">
+          <a href="#"><img src="<?= get_template_directory_uri(); ?>/gfx/vita-min-b-logo-300.png" class="vmb-logo preserve"></a>
           <div class="img-shadow"></div>
           <div class="slide-container">
             <div class="container-centered">

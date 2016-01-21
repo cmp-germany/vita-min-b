@@ -24,7 +24,7 @@
   background-repeat: repeat-x;
 }
 
-#slides a img {
+#slides .slides-navigation a img {
   position: relative;
   padding: 0 2em 0 2em;
   top: 46%;
