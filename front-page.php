@@ -152,7 +152,7 @@
         <li>
           <img src="<?= get_template_directory_uri()?>/gfx/carousel/carousel-2.jpg" alt="">
             <a href="#"><img src="<?= get_template_directory_uri(); ?>/gfx/vita-min-b-logo-300.png" class="vmb-logo preserve"></a>
-            <p class="logo-sign">for sports</p>
+            <!--<p class="logo-sign">for sports</p>-->
 
             <div class="cop-mark">
               <p>in cooperation with:</p>
