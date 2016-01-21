@@ -52,7 +52,7 @@
   </div>
 
   <div class="navbar navbar-inverse navbar-fixed-top navvmb">
-    <a class="navbar-brand" href="#"><img src="<?= get_template_directory_uri(); ?>/gfx/vita-min-b-logo-300.png" class="vmb-logo"></a>
+    <!--<a class="navbar-brand" href="#"><img src="<?= get_template_directory_uri(); ?>/gfx/vita-min-b-logo-300.png" class="vmb-logo"></a>-->
     <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body">
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
@@ -112,6 +112,7 @@
                   Bewerber Videos
                 </h4>
                 <p class="subtitle">
+                  <a class="navbar-brand" href="#"><img src="<?= get_template_directory_uri(); ?>/gfx/vita-min-b-logo-300.png" class="vmb-logo"></a>
                   Mit Motivations-Videos die <em>echten</em> Bewerber finden
                 </p>
               </div>
