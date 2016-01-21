@@ -181,7 +181,7 @@
             <div class="container-centered">
               <div class="container-heading">
                 <h4>Imagefilme</h4>
-                <p class="subtitle">
+                <p class="subtitle" style="font-size: 250%;">
                   Gewinnen auch Sie Ihre Neukunden über herkömmliche Vertriebswege?
                 </p>
               </div>
