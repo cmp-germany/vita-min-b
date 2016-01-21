@@ -51,9 +51,24 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#800000000', endColorstr='#80000000', GradientType=1);
     background-repeat: repeat;
   }
-  .vmb .vmb-logo {
-    height: 34px;
+
+  .vmb .navbar-toggle {
+    background-color: transparent;
+    border-color: #969696;
+    margin-right: 0.8em;
   }
+
+  .vmb .navvmb {
+    margin-top: 0em;
+  }
+
+  .vmb .slides-container .vmb-logo {
+    margin-left: 1em;
+    margin-top: 1em;
+    width: 5.5em;
+    height: auto;
+  }
+
 
 }
 @media (min-width: 768px) {
