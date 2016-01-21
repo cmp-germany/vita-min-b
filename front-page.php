@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <div class="container-fluid" >
   <div class="navmenu navmenu-default navmenu-inverse navmenu-fixed-right offcanvas">
-    <a class="navmenu-brand" href="#">Vita Min B</a>
+    <a href="#"><img src="<?= get_template_directory_uri(); ?>/gfx/vita-min-b-logo-300.png" class="vmb-logo"/></a>
     <ul class="nav navmenu-nav">
       <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shop <b class="caret"></b></a>
         <ul class="dropdown-menu navmenu-nav">
@@ -52,7 +52,7 @@
   </div>
 
   <div class="navbar navbar-inverse navbar-fixed-top navvmb">
-    <!--<a class="navbar-brand" href="#"><img src="<?= get_template_directory_uri(); ?>/gfx/vita-min-b-logo-300.png" class="vmb-logo"></a>-->
+    <a class="navbar-brand" href="#"><img src="<?= get_template_directory_uri(); ?>/gfx/vita-min-b-logo-300.png" class="vmb-logo"></a>
     <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body">
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>

@@ -8,6 +8,7 @@
   background: none;
   /*padding: 0 7% 0 7%;*/
   border: none;
+  margin-top: 1em;
 }
 
 .vmb .dropdown .dropdown-menu > li > a {
@@ -20,6 +21,7 @@
 .vmb .navbar-toggle {
   background-color: transparent;
   border-color: #969696;
+  margin-right: 5.5em;
 }
 
 .vmb .navbar-toggle .icon-bar {
@@ -51,4 +53,37 @@
 }
 .vmb .navbar-nav .open .dropdown-menu>li>a {
   padding: 5px 25px 5px 5px;
+}
+
+/*CSS zur rechten Fade */
+
+.vmb .navmenu-inverse {
+  background-image: url(http://localhost/vita-min-b/wp-content/themes/vita-min-b/gfx/carousel/carousel-2.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-color: #EE4D00;
+}
+
+.vmb .navmenu-inverse .navmenu-nav {
+  margin-top: 1em;
+}
+
+.vmb .navmenu-inverse .navmenu-nav>li>a {
+  margin-top: 0.4em;
+  font-family: 'supernett';
+  color: #FFF;
+  font-size: 1.9em;
+  text-align: left;
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+}
+
+/*LOGO ZENTRIERT*/
+.vmb .offcanvas .vmb-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
 }
