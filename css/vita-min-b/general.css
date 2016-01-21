@@ -12,23 +12,24 @@
      margin-right: auto;
 }
 
-@font-face { 
+@font-face {
 	font-family: 'supernett';
-	src: url('fonts/supernett-light.otf') format('opentype'); 
+	src: url('fonts/supernett-light.otf') format('opentype');
 }
 
-@font-face { 
+@font-face {
 	font-family: 'supernett-italic';
 	src: url('fonts/supernett-italic.otf') format('opentype');
 }
 
 .btn.btn-primary {
-	background-color: #EE4D00;
+	background: none;
 	border-color: #EE4D00;
+	color: #EE4D00;
 }
 
 .btn.btn-primary:hover {
-	background-color: #FF5E00;
+	background-color: #969696;
 }
 
 .btn.btn-big {
