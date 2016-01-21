@@ -31,3 +31,13 @@
 .vmb .site-footer {
     color: rgb(150, 150, 150);
 }
+
+
+@media (max-width: 767px) {
+  .vmb .site-footer {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 1.3em;
+  }
+}

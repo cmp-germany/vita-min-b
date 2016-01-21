@@ -4,6 +4,7 @@
 
 #slides .slides-pagination {
   background: none;
+  padding-left: 0;
 }
 
 #slides .slides-navigation a:hover.next {

@@ -54,6 +54,7 @@
   .vmb .vmb-logo {
     height: 34px;
   }
+
 }
 @media (min-width: 768px) {
   .vmb .navbar-collapse, .navbar-inverse .navbar-form {
