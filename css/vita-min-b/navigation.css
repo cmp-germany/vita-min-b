@@ -24,6 +24,15 @@
   height: auto;
 }
 
+.vmb .slides-container .logo-sign {
+  margin-left: 4.7em;
+  width: 7em;
+  font-family: 'supernett';
+  font-size: 1.8em;
+  color: #FF5E00;
+}
+
+
 .vmb .dropdown .dropdown-menu > li > a {
   color: #FF5E00;
   font-family: inherit;
@@ -87,7 +96,7 @@
 /*CSS zur rechten Fade */
 
 .vmb .navmenu-inverse {
-  background-image: url(../../gfx/carousel/carousel-2.jpg);
+  background-image: url(../../gfx/nav/textur.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
