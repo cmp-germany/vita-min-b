@@ -1,27 +1,27 @@
-.vmb nav.navvmb {
+@media (min-width : 768px) {
+  .vmb .navbar-toggle {
+    display: block;
+  }
+}
+
+.vmb .navvmb {
   background: none;
-  padding: 0 7% 0 7%;
+  /*padding: 0 7% 0 7%;*/
+  border: none;
+  margin-top: 1em;
 }
+/*
+.vmb .navvmb .vmb-logo {
+  margin-left: 5.5em;
+  width: 5em;
+  height: auto;
+}*/
 
-.vmb footer {
-  position: fixed;
-  text-align: right;
-  bottom: 0;
-  width: 100%;
-  z-index: 1030;
-}
-
-.vmb .site-footer {
-  padding-right: 50px;
-  padding-bottom: 20px;
-  font-size: 18px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 300;
-}
-
-.vmb .site-footer a {
-    color: rgb(255, 255, 255);
+.vmb .slides-container .vmb-logo {
+  margin-left: 8em;
+  margin-top: 1.5em;
+  width: 7em;
+  height: auto;
 }
 
 .vmb .dropdown .dropdown-menu > li > a {
@@ -32,27 +32,87 @@
 }
 
 .vmb .navbar-toggle {
-  background-color: #FF5E00;
+  background-color: transparent;
+  border-color: #969696;
+  margin-right: 5.5em;
 }
 
-/*
-.vmb .navbar-collapse, .navbar-inverse .navbar-form {
-  border-color: #FF5E00;
-  background-color: #fff;
-}*/
+.vmb .navbar-toggle .icon-bar {
+  background-color: #969696;
+}
 
 @media (max-width: 767px) {
   .vmb .navbar-collapse, .navbar-inverse .navbar-form {
-  border-color: #FF5E00;
-  background-image: -webkit-linear-gradient(left,rgba(0,0,0,.8) 0,rgba(0,0,0,.8) 100%);
-  background-image: -o-linear-gradient(left,rgba(0,0,0,.8) 0,rgba(0,0,0,.8) 100%);
-  background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.8)),to(rgba(0,0,0,.8)));
-  background-image: linear-gradient(to right,rgba(0,0,0,.8) 0,rgba(0,0,0,.8) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#800000000', endColorstr='#80000000', GradientType=1);
-  background-repeat: repeat;
+    border-color: #FF5E00;
+    background-image: -webkit-linear-gradient(left,rgba(0,0,0,.8) 0,rgba(0,0,0,.8) 100%);
+    background-image: -o-linear-gradient(left,rgba(0,0,0,.8) 0,rgba(0,0,0,.8) 100%);
+    background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.8)),to(rgba(0,0,0,.8)));
+    background-image: linear-gradient(to right,rgba(0,0,0,.8) 0,rgba(0,0,0,.8) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#800000000', endColorstr='#80000000', GradientType=1);
+    background-repeat: repeat;
+  }
+
+  .vmb .navbar-toggle {
+    background-color: transparent;
+    border-color: #969696;
+    margin-right: 0.8em;
+  }
+
+  .vmb .navvmb {
+    margin-top: 0em;
+  }
+
+  .vmb .slides-container .vmb-logo {
+    margin-left: 1em;
+    margin-top: 1em;
+    width: 5.5em;
+    height: auto;
+  }
+
+
 }
 @media (min-width: 768px) {
   .vmb .navbar-collapse, .navbar-inverse .navbar-form {
     background: none;
   }
+}
+
+.vmb .navbar-collapse li {
+  text-align: right;
+}
+.vmb .navbar-nav .open .dropdown-menu>li>a {
+  padding: 5px 25px 5px 5px;
+}
+
+/*CSS zur rechten Fade */
+
+.vmb .navmenu-inverse {
+  background-image: url(../../gfx/nav/textur.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-color: #EE4D00;
+}
+
+.vmb .navmenu-inverse .navmenu-nav {
+  margin-top: 1em;
+}
+
+.vmb .navmenu-inverse .navmenu-nav>li>a {
+  margin-top: 0.4em;
+  font-family: 'supernett';
+  color: #FFF;
+  font-size: 1.9em;
+  text-align: left;
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+}
+
+/*LOGO ZENTRIERT*/
+.vmb .offcanvas .vmb-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
 }

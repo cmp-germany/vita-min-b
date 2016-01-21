@@ -4,6 +4,7 @@
 
 #slides .slides-pagination {
   background: none;
+  padding-left: 0;
 }
 
 #slides .slides-navigation a:hover.next {
@@ -24,15 +25,15 @@
   background-repeat: repeat-x;
 }
 
-#slides a img {
+#slides .slides-navigation a img {
   position: relative;
-  padding: 0 2em 0 2em;
+  padding: 0 1em 0 1em;
   top: 46%;
 }
 
 /* Image Replacements für Logos & Co */
 
-#fairwaltungskatalog-logo {
+#slides #fairwaltungskatalog-logo {
   background-image: url(../../gfx/carousel/faiwaltungskatalog-logo.png);
   background-size: 100%;
   background-repeat: no-repeat;
@@ -44,10 +45,27 @@
 }
 
 
-
-
-
 /* Design der Texte */
+
+/* Schatten für den Container */
+
+#slides .img-shadow {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0+25,0.4+77,0.4+92,1+100 */
+  background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0) 25%, rgba(0,0,0,0.4) 77%, rgba(0,0,0,0.4) 92%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 25%,rgba(0,0,0,0.4) 77%,rgba(0,0,0,0.4) 92%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 25%,rgba(0,0,0,0.4) 77%,rgba(0,0,0,0.4) 92%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+/* Schatten für die Texte*/
+
+#slides .container-heading h4,
+#slides .container-heading .subtitle,
+#slides .container-heading .subtitle em,
+#slides .slogan
+{
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, .7);
+}
 
 
 #slides .container-centered {
@@ -55,6 +73,7 @@
   width: 70%;
   position: absolute;
   top: 40%;
+
 }
 
 #slides .container-centered *{
@@ -67,7 +86,6 @@
 #slides .container-heading {
   color: #fff;
   text-transform: uppercase;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, .6)
 }
 
 #slides .container-heading h4 {
@@ -76,9 +94,29 @@
   border-bottom: 3px dotted #FF5E00;
 }
 
-#slides .container-heading p {
-  font-weight: 700;
+#slides .container-heading .subtitle {
+  font-family: 'supernett';
+  color: #FFF;
 }
+
+#slides .container-heading .subtitle em {
+  font-family: 'supernett-italic';
+  font-style: normal;
+}
+
+#slides .container-heading .subtitle-2 span {
+  font-family: 'supernett';
+  color: #FFF;
+  background-color: #FF5E00;
+}
+
+#slides .container-heading .subtitle-2 em {
+  font-family: 'supernett-italic';
+  color: #FFF;
+  font-style: normal;
+}
+
+
 
 @media screen and (min-width: 480px) {
   #slides .container-heading h4 {
@@ -99,24 +137,49 @@
   }
 }
 
-
-
-#slides .container-centered .btn {
-  text-transform: uppercase;
-  font-size: 24px;
-  color: #FF5E00;
-    background-color:  Transparent;
-    background-repeat: no-repeat;
-    cursor:pointer;
-    overflow: hidden;
-    outline:none;
-    border: 1px solid #FF5E00;
-    border-radius: 0;
-}
-
 #slides .slogan {
   font-family: 'supernett';
   font-size: 30px;
-  color: #FF5E00;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, .6)
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  #slides .container-centered {
+    top: 60px;
+  }
+
+  #slides .subtitle,
+  #slides .subtitle-2
+  {
+    font-size: 30px;
+  }
+
+  #slides .img-shadow {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.4+16,0.4+92,1+100 */
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 16%, rgba(0,0,0,0.4) 92%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.4) 16%,rgba(0,0,0,0.4) 92%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.4) 16%,rgba(0,0,0,0.4) 92%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+  }
+
+  .btn.btn-big {
+    text-transform: none;
+    font-size: 18px;
+  }
+
+}
+
+
+/* PAGINATION */
+
+.slides-pagination a {
+  border-color: rgb(150, 150, 150);
+}
+
+.slides-pagination a.current {
+  background-color: rgb(150, 150, 150);
+}
+
+nav.slides-pagination {
+  padding-bottom: 5px;
 }
