@@ -2,7 +2,7 @@
   <div class="row" >
     <div id="slides">
       <ul class="slides-container">
-        <li>
+        <li id="slide1">
           <img src="<?= get_template_directory_uri()?>/gfx/carousel/Fotolia_79234053_L.jpg" alt="">
           <a href="#"><img src="<?= get_template_directory_uri(); ?>/gfx/vita-min-b-logo-300.png" class="vmb-logo preserve"></a>
           <div class="img-shadow"></div>
@@ -22,7 +22,7 @@
             </div>
           </div>
         </li>
-        <li>
+        <li id="slide2">
           <img src="<?= get_template_directory_uri()?>/gfx/carousel/Fotolia_54735549_L.jpg" alt="">
           <a href="#"><img src="<?= get_template_directory_uri(); ?>/gfx/vita-min-b-logo-300.png" class="vmb-logo preserve"></a>
           <div class="img-shadow"></div>
@@ -32,7 +32,7 @@
                 <h4>
                   Bewerber Videos
                 </h4>
-                <p class="subtitle" style="font-size: 300%;">
+                <p class="subtitle" style="">
                   Oftmals verzweifelt, den <em>richtigen</em> Mitarbeiter zu finden?
                 </p>
               </div>
@@ -41,7 +41,7 @@
             </div>
           </div>
         </li>
-        <li>
+        <li id="slide3">
           <img src="<?= get_template_directory_uri()?>/gfx/carousel/carousel-2.jpg" alt="">
             <a href="#"><img src="<?= get_template_directory_uri(); ?>/gfx/vita-min-b-logo-300.png" class="vmb-logo preserve"></a>
             <!--<p class="logo-sign">for sports</p>-->
