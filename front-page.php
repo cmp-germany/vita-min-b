@@ -51,11 +51,11 @@
                   Bewerber Videos
                 </h4>
                 <p class="subtitle">
-                  Mit eigenem Motivationsvideo den <em>Traumjob</em> finden
+                  Suchst auch Du deinen <em>Traumjob</em>?
                 </p>
               </div>
               <p><a href="#" class="btn btn-primary btn-big">Traumjob finden</a></p>
-              <p class="slogan">Hol dir die Hauptrolle im Film deines Lebens</p>
+              <p class="slogan">Hol' dir die Hauptrolle im Film deines Lebens</p>
             </div>
           </div>
         </li>
@@ -173,7 +173,7 @@
             </div>
           </div>
         </li>
-        <li>
+        <!--<li>
           <img src="<?= get_template_directory_uri()?>/gfx/carousel/imagefilme.jpg" alt="">
           <a href="#"><img src="<?= get_template_directory_uri(); ?>/gfx/vita-min-b-logo-300.png" class="vmb-logo preserve"></a>
           <div class="img-shadow"></div>
@@ -190,7 +190,6 @@
             </div>
           </div>
         </li>
-        <!-- Ende der Beispiele für Seite 1 -->
         <li>
           <img src="<?= get_template_directory_uri()?>/gfx/carousel/carousel-3.jpg" alt="">
           <a href="#"><img src="<?= get_template_directory_uri(); ?>/gfx/vita-min-b-logo-300.png" class="vmb-logo preserve"></a>
@@ -209,7 +208,7 @@
               <p class="slogan">Mit eigenem TV Studio Mitarbeiter und Kunden informieren</p>
             </div>
           </div>
-        </li>
+        </li>-->
         <!--<li>
           <img src="<?= get_template_directory_uri()?>/gfx/carousel/xtrafit-shop.png" alt="">
           <div class="img-shadow"></div>
