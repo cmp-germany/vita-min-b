@@ -189,6 +189,7 @@
 
 @media (max-width: 767px) {
   .vmb .slides-container .cop-mark {
+    display: none;
     margin-top: 10em;
     -moz-transform: rotate(-20deg);
     -ms-transform: rotate(-20deg);

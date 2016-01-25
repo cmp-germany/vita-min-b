@@ -62,6 +62,7 @@
                 </p>
               </div>
               <p><a href="http://videos.united-studios.com/mkg-fressnapf-weihnachtsgruss" class="btn btn-primary btn-big">Talente finden</a></p>
+              <p class="slogan">Unterstütze Junge Talente aus Deiner Umgebung</p>
             </div>
           </div>
         </li>
