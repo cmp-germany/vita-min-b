@@ -58,7 +58,7 @@
                   Sportler Videos
                 </h4>
                 <p class="subtitle">
-                  Unterstützen Sie junge Talente aus Ihrer Umgebung
+                  Hast auch Du den richtigen <em>Riecher für Talente</em>?
                 </p>
               </div>
               <p><a href="http://videos.united-studios.com/mkg-fressnapf-weihnachtsgruss" class="btn btn-primary btn-big">Talente finden</a></p>
