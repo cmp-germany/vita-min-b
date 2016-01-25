@@ -184,6 +184,7 @@
 
 .vmb .slides-container .cop-mark p {
   font-family: 'supernett';
+  margin: 0 0 -5px;
 }
 
 @media (max-width: 767px) {
