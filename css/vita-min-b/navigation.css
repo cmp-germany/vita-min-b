@@ -19,7 +19,7 @@
 
 .vmb .slides-container .vmb-logo {
   margin-left: 8em;
-  margin-top: 1.5em;
+  margin-top: 1.8em;
   width: 7em;
   height: auto;
 }
@@ -78,6 +78,7 @@
   }
 
 
+
 }
 @media (min-width: 768px) {
   .vmb .navbar-collapse, .navbar-inverse .navbar-form {
@@ -133,10 +134,21 @@
   background: transparent;
 }
 
-/*LOGO ZENTRIERT*/
+/* LOGO */
 .vmb .offcanvas .vmb-logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 2em;
+  width: 7em;
+  height: auto;
+  
+}
+
+@media (max-width: 767px) {
+  .vmb .offcanvas .vmb-logo {
+    width: 5.5em;
+    height: auto;
+    margin-top: 14px;
+  }
 }
