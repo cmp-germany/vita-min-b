@@ -15,28 +15,28 @@
       <div class="navmenu navmenu-default navmenu-inverse navmenu-fixed-right offcanvas">
         <a href="#"><img src="<?= get_template_directory_uri(); ?>/gfx/vita-min-b-logo-300.png" class="vmb-logo"/></a>
         <ul class="nav navmenu-nav">
-          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shop <b class="caret"></b></a>
+
+          <li><a href="#" >Bewerbervideos</a></li>
+
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Corporate Film <b class="caret"></b></a>
             <ul class="dropdown-menu navmenu-nav">
-              <li><a href="http://ekom21.cmpg.eu">ekom21</a></li>
-              <li><a href="http://ekom21.cmpg.eu">FAIRwaltungskatalog</a></li>
+              <li><a href="#">Imagefilme</a></li>
+              <li><a href="#">Teaser</a></li>
+              <li><a href="#">Tutorial Videos</a></li>
+              <li><a href="#">Video FAQ's</a></li>
+              <li><a href="#">Produkt Präsentationen</a></li>
             </ul>
           </li>
-          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">TV <b class="caret"></b></a>
-            <ul class="dropdown-menu navmenu-nav">
-              <li><a href="//videos.united-studios.com/mkg-fressnapf-weihnachtsgruss">MKG: Weihnachtsgrüße</a></li>
-              <li><a href="//videos.united-studios.com/teaser-vita-min-b">Teaser Vita Min B</a></li>
-              <li><a href="//videos.united-studios.com/sacred-heart-alumni-channel-2">Sacred Heart University</a></li>
-              <li><a href="//videos.united-studios.com/fairwaltungskatalog-teaser-04">FAIRwaltungskatalog Teaser</a></li>
-              <li><a href="//videos.united-studios.com/footprints-teaser">Footprints Teaser</a></li>
-            </ul>
-          </li>
+
           <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Studio Produktionen <b class="caret"></b></a>
             <ul class="dropdown-menu navmenu-nav">
-              <li><a href="//www.united-studios.com/de/video/imagefilme.html">UnitedStudios: Imagefilme</a></li>
-              <li><a href="//www.united-studios.com/de/video/produktfilme.html">UnitedStudios: Produktfilme</a></li>
-              <li><a href="//www.united-studios.com/de/video/studioproduktionen.html">UnitedStudios: Studioproduktionen</a></li>
+              <li><a href="#">Studio Broadcast</a></li>
+              <li><a href="#">Video Newsletter</a></li>
             </ul>
           </li>
+
+          <li><a href="#" >Shop - Systeme</a></li>
+
         </ul>
         <!-- <ul class="nav navmenu-nav">
           <li><a href="../navmenu/">Slide in</a></li>
