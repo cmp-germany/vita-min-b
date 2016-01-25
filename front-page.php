@@ -54,7 +54,7 @@
                   Mit eigenem Motivationsvideo den <em>Traumjob</em> finden
                 </p>
               </div>
-              <p><a href="#" class="btn btn-primary btn-big">Traumjob jetzt finden</a></p>
+              <p><a href="#" class="btn btn-primary btn-big">Traumjob finden</a></p>
               <p class="slogan">Hol dir die Hauptrolle im Film deines Lebens</p>
             </div>
           </div>
@@ -73,7 +73,7 @@
                   Oftmals verzweifelt, den <em>richtigen</em> Mitarbeiter zu finden?
                 </p>
               </div>
-            <p><a href="#" class="btn btn-primary btn-big">Bewerber jetzt finden</a></p>
+            <p><a href="#" class="btn btn-primary btn-big">Bewerber finden</a></p>
             <p class="slogan">Die Sneak Preview vor dem ersten Bewerbungsgespräch</p>
             </div>
           </div>
@@ -90,7 +90,7 @@
                   <span>Mit Motivations-Videos die <em>echten</em> Bewerber finden</span>
                 </p>
               </div>
-            <p><a href="#" class="btn btn-primary btn-big">Bewerber jetzt finden</a></p>
+            <p><a href="#" class="btn btn-primary btn-big">Bewerber finden</a></p>
             <p class="slogan">Die Sneak Preview vor dem ersten Bewerbungsgespräch</p>
             </div>
           </div>
@@ -108,7 +108,7 @@
                   Mit Motivations-Videos die <em>echten</em> Bewerber finden
                 </p>
               </div>
-            <p><a href="#" class="btn btn-primary btn-big">Bewerber jetzt finden</a></p>
+            <p><a href="#" class="btn btn-primary btn-big">Bewerber finden</a></p>
             <p class="slogan">Die Sneak Preview vor dem ersten Bewerbungsgespräch</p>
             </div>
           </div>
@@ -126,7 +126,7 @@
                   Mit Motivations-Videos die <em>echten</em> Bewerber finden
                 </p>
               </div>
-            <p><a href="#" class="btn btn-primary btn-big">Bewerber jetzt finden</a></p>
+            <p><a href="#" class="btn btn-primary btn-big">Bewerber finden</a></p>
             <p class="slogan">Die Sneak Preview vor dem ersten Bewerbungsgespräch</p>
             </div>
           </div>
@@ -144,7 +144,7 @@
                   Mit Motivations-Videos die <em>echten</em> Bewerber finden
                 </p>
               </div>
-            <p><a href="#" class="btn btn-primary btn-big">Bewerber jetzt finden</a></p>
+            <p><a href="#" class="btn btn-primary btn-big">Bewerber finden</a></p>
             <p class="slogan">Die Sneak Preview vor dem ersten Bewerbungsgespräch</p>
             </div>
           </div>
@@ -169,7 +169,7 @@
                   Unterstützen Sie junge Talente aus Ihrer Umgebung
                 </p>
               </div>
-              <p><a href="http://videos.united-studios.com/mkg-fressnapf-weihnachtsgruss" class="btn btn-primary btn-big">Talente jetzt finden</a></p>
+              <p><a href="http://videos.united-studios.com/mkg-fressnapf-weihnachtsgruss" class="btn btn-primary btn-big">Talente finden</a></p>
             </div>
           </div>
         </li>
