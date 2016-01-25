@@ -36,8 +36,7 @@
 .vmb .dropdown .dropdown-menu > li > a {
   color: #FF5E00;
   font-family: inherit;
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 16px;
 }
 
 .vmb .navbar-toggle {
@@ -116,6 +115,22 @@
   text-align: left;
   padding-right: 1.5em;
   padding-left: 1.5em;
+  background: transparent;
+}
+
+.vmb .navmenu-inverse .navmenu-nav>li li a {
+  font-size: 1.6em;
+
+  margin-top: 0;
+  padding-left: 90px;
+  background: transparent;
+}
+
+.vmb .navmenu-inverse .navmenu-nav.dropdown-menu,
+.vmb .navmenu-inverse .navmenu-nav>.open>a:hover,
+.vmb .navmenu-inverse .navmenu-nav>.open>a,
+.vmb .navmenu-inverse .navmenu-nav>.open>a:focus {
+  background: transparent;
 }
 
 /*LOGO ZENTRIERT*/
