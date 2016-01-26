@@ -10,13 +10,16 @@
         $content = apply_filters( 'the_content', $page->post_content );
         print $content;
       ?>
-      <?php while ( have_posts() ) : the_post(); ?>
-
-			<h1><?php the_field('subtitle'); ?></h1>
-
-			<img src="<?php the_field('slide-img'); ?>" />
-
-		<?php endwhile; // end of the loop. ?>
+      <?php
+      $args = array( 'post_type' => 'vb_superslides', 'posts_per_page' => 10 );
+      $loop = new WP_Query( $args );
+      while ( $loop->have_posts() ) : $loop->the_post();
+      the_title();
+      echo '<div class="entry-content">';
+      the_content();
+      echo '</div>';
+      endwhile;
+      ?>
     </div>
   </div>
 <?php get_footer(); ?>
