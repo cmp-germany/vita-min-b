@@ -8,7 +8,7 @@
         $page = get_page_by_title( 'page-name' );
         $content = apply_filters( 'the_content', $page->post_content );
         print $content;
-        echo ("Test" + $page);
+        print ("Test" + $page);
       ?>
     </div>
   </div>
