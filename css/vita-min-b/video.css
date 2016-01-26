@@ -1,0 +1,39 @@
+#controlContainer, #controls {
+  width: 195px;
+  height: 29px
+}
+#controls div, #video {
+  cursor: pointer
+}
+#videoContainer {
+  max-width: 1000px;
+  height: auto;
+  margin: 3px auto 0;
+  cursor: pointer
+}
+#controlContainer {
+  margin: 10px auto 0
+}
+#controls div {
+  float: left;
+  width: 39px;
+  height: 29px;
+  text-align: center
+}
+img#img-logo {
+  height: 50px
+}
+video#video {
+  width: 100%!important;
+  height: auto!important
+}
+#all-videos .media {
+  margin-bottom: 50px
+}
+#all-videos h2 {
+  margin-top: 20px
+}
+
+#controlContainer {
+  margin-bottom: 30px;
+}

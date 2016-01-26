@@ -9,6 +9,7 @@ wp_enqueue_style( 'bootstrap-css', get_template_directory_uri() . '/css/bootstra
 wp_enqueue_style( 'left-icons', get_template_directory_uri() . '/css/left-icons.css' );
 wp_enqueue_style( 'jasny-bootstrap-css', get_template_directory_uri() . '/css/jasny-bootstrap.min.css' );
 
+wp_enqueue_style( 'video', get_template_directory_uri() . '/css/vita-min-b/video.css' );
 wp_enqueue_style( 'bewerber-card', get_template_directory_uri() . '/css/vita-min-b/bewerber-card.css' );
 wp_enqueue_style( 'carousel', get_template_directory_uri() . '/css/vita-min-b/carousel.css' );
 wp_enqueue_style( 'footer', get_template_directory_uri() . '/css/vita-min-b/footer.css' );
@@ -31,6 +32,9 @@ wp_enqueue_script( 'jquery-easing', get_template_directory_uri() . '/superslides
 wp_enqueue_script( 'jquery-animate-enhanced', get_template_directory_uri() . '/superslides/examples/javascripts/jquery.animate-enhanced.min.js', array( 'jquery-easing' ), null, true );
 wp_enqueue_script( 'superslides', get_template_directory_uri() . '/superslides/dist/jquery.superslides.js', array( 'jquery-animate-enhanced' ), null, true );
 wp_enqueue_script( 'front-page-slides', get_template_directory_uri() . '/js/front-page-slides.js', array( 'superslides' ), null, true );
+
+// JS: Video
+wp_enqueue_script( 'video-js', get_template_directory_uri() . '/js/video.js', null , null, true );
 
 
 //fuer WP-Menue
