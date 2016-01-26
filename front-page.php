@@ -2,7 +2,30 @@
   <div class="row" >
     <div id="slides">
       <ul class="slides-container">
-        
+
+
+
+<!---->        <li id="slide1">
+<!---->          <img src="IMG" alt="">
+          <a href="#"><img src="<?= get_template_directory_uri(); ?>/gfx/vita-min-b-logo-300.png" class="vmb-logo preserve"></a>
+          <div class="img-shadow"></div>
+          <div class="slide-container">
+
+            <div class="container-centered">
+              <div class="container-heading">
+                <h4>
+<!----> <p><?php the_field('field_name'); ?></p>
+                </h4>
+                <p class="subtitle">
+<!----> SUBTITLE
+                </p>
+              </div>
+<!---->              <p><a href="#" class="btn btn-primary btn-big">BUTTON</a></p>
+<!---->              <p class="slogan">SLOGAN</p>
+            </div>
+          </div>
+        </li>
+
         <!--<li id="slide1">
           <img src="<?= get_template_directory_uri()?>/gfx/carousel/Fotolia_79234053_L.jpg" alt="">
           <a href="#"><img src="<?= get_template_directory_uri(); ?>/gfx/vita-min-b-logo-300.png" class="vmb-logo preserve"></a>
