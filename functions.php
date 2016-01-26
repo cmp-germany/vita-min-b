@@ -78,6 +78,7 @@ function create_post_type2() {
             ),
         'public' => true,
         'has_archive' => false,
+        'show_in_menu'=> true,
         'show_in_nav_menus' => true,
         'rewrite' => array('slug' => 'video'),
         )
