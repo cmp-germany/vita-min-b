@@ -10,7 +10,13 @@
         $content = apply_filters( 'the_content', $page->post_content );
         print $content;
       ?>
-      <?php the_field('vb_superslides'); ?>
+      <?php while ( have_posts() ) : the_post(); ?>
+
+			<h1><?php the_field('subtitle'); ?></h1>
+
+			<img src="<?php the_field('slide-img'); ?>" />
+
+		<?php endwhile; // end of the loop. ?>
     </div>
   </div>
 <?php get_footer(); ?>
