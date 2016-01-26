@@ -14,7 +14,7 @@
             <div class="container-centered">
               <div class="container-heading">
                 <h4>
-<!----> <p><?php the_field('field_name'); ?></p>
+<!----> <p><?php the_field('Slider'); ?></p>
                 </h4>
                 <p class="subtitle">
 <!----> SUBTITLE
