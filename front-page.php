@@ -7,7 +7,7 @@
         <?php
         $args = array(
           'post_type' => 'vb_superslides',
-          'order'   => 'DESC',
+          'order'   => 'ASC',
         );
         $loop = new WP_Query( $args );
         while ( $loop->have_posts() ) : $loop->the_post();
