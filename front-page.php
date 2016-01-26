@@ -16,6 +16,7 @@
         <li id="<?= the_title(); ?>">
           <img src="<?= the_field("slide-img"); ?>" alt="">
           <a href="#"><img src="<?= get_template_directory_uri(); ?>/gfx/vita-min-b-logo-300.png" class="vmb-logo preserve"></a>
+          <?php the_content(); ?>
           <div class="img-shadow"></div>
           <div class="slide-container">
 
