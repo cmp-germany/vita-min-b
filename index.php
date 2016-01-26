@@ -5,10 +5,13 @@
         <h1>Impressum</h1>
       </div>
       <?php
-        $page = get_page_by_title( 'page-name' );
+        /*$page = get_page_by_title( 'page-name' );
         $content = apply_filters( 'the_content', $page->post_content );
         print $content;
-        print ("Test" + $page);
+        print ("Test" + $page);*/
+        $article =    get_post(6);
+        $content =    $article->post_content;
+        return '<p>'.$content.'</p>';
       ?>
     </div>
   </div>
