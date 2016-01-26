@@ -2,16 +2,13 @@
   <div class="row">
     <div class="col-sm-3 col-md-6 col-lg-6 col-lg-offset-3">
       <div class="page-header col-lg-12">
-        <h1>Impressum</h1>
+        <h1><?php the_title() ?></h1>
       </div>
       <?php
-        /*$page = get_page_by_title( 'page-name' );
+        $pageID = get_the_id();
+        $page = get_page( $pageID );
         $content = apply_filters( 'the_content', $page->post_content );
         print $content;
-        print ("Test" + $page);*/
-        $article =    get_post(1);
-        $content =    $article->post_content;
-        return '<p>'.$content.'</p>';
       ?>
     </div>
   </div>
