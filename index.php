@@ -10,7 +10,7 @@
         $content = apply_filters( 'the_content', $page->post_content );
         print $content;
       ?>
-      <?php echo "Test" ?>
+      <?php the_field('vb_superslides'); ?>
     </div>
   </div>
 <?php get_footer(); ?>
