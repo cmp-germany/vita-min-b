@@ -10,6 +10,7 @@
         $content = apply_filters( 'the_content', $page->post_content );
         print $content;
       ?>
+      <?php the_field('Slider'); ?>
     </div>
   </div>
 <?php get_footer(); ?>
