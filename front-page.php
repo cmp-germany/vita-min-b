@@ -5,7 +5,7 @@
 
 
         <?php
-        $args = array( 'post_type' => 'vb_superslides');
+        $args = array( 'post_type' => 'vb_superslides', 'orderby' => 'title');
         $loop = new WP_Query( $args );
         while ( $loop->have_posts() ) : $loop->the_post();
         ?>
@@ -49,103 +49,6 @@
               </div>
               <p><a href="#" class="btn btn-primary btn-big">Traumjob finden</a></p>
               <p class="slogan">Hol' dir die Hauptrolle im Film deines Lebens</p>
-            </div>
-          </div>
-        </li>
-        <li id="slide2">
-          <img src="<?= get_template_directory_uri()?>/gfx/carousel/Fotolia_54735549_L.jpg" alt="">
-          <a href="#"><img src="<?= get_template_directory_uri(); ?>/gfx/vita-min-b-logo-300.png" class="vmb-logo preserve"></a>
-          <div class="img-shadow"></div>
-          <div class="slide-container">
-            <div class="container-centered">
-              <div class="container-heading">
-                <h4>
-                  Bewerber Videos
-                </h4>
-                <p class="subtitle" style="">
-                  Oftmals verzweifelt, den <em>richtigen</em> Mitarbeiter zu finden?
-                </p>
-              </div>
-            <p><a href="#" class="btn btn-primary btn-big">Bewerber finden</a></p>
-            <p class="slogan">Die Sneak Preview vor dem ersten Bewerbungsgespräch</p>
-            </div>
-          </div>
-        </li>-->
-        <li id="slide3">
-          <img src="<?= get_template_directory_uri()?>/gfx/carousel/carousel-2.jpg" alt="">
-            <a href="#"><img src="<?= get_template_directory_uri(); ?>/gfx/vita-min-b-logo-300.png" class="vmb-logo preserve"></a>
-            <!--<p class="logo-sign">for sports</p>-->
-
-            <div class="cop-mark">
-              <p>in cooperation with</p>
-              <img src="<?= get_template_directory_uri(); ?>/gfx/mkg-logo.png" class="preserve">
-            </div>
-          <div class="img-shadow"></div>
-          <div class="slide-container">
-            <div class="container-centered">
-              <div class="container-heading">
-                <h4>
-                  Sportler Videos
-                </h4>
-                <p class="subtitle">
-                  Hast auch Du den richtigen <em>Riecher für Talente</em>?
-                </p>
-              </div>
-              <p><a href="http://videos.united-studios.com/mkg-fressnapf-weihnachtsgruss" class="btn btn-primary btn-big">Talente finden</a></p>
-              <p class="slogan">Unterstütze Junge Talente aus Deiner Umgebung</p>
-            </div>
-          </div>
-        </li>
-        <!--<li>
-          <img src="<?= get_template_directory_uri()?>/gfx/carousel/imagefilme.jpg" alt="">
-          <a href="#"><img src="<?= get_template_directory_uri(); ?>/gfx/vita-min-b-logo-300.png" class="vmb-logo preserve"></a>
-          <div class="img-shadow"></div>
-          <div class="slide-container">
-            <div class="container-centered">
-              <div class="container-heading">
-                <h4>Imagefilme</h4>
-                <p class="subtitle" style="font-size: 250%;">
-                  Gewinnen auch Sie Ihre Neukunden über herkömmliche Vertriebswege?
-                </p>
-              </div>
-              <p><a href="#" class="btn btn-primary btn-big">Film anschauen</a></p>
-              <p class="slogan">Mit Imagefilmen neue Kundengruppen emotional erreichen</p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <img src="<?= get_template_directory_uri()?>/gfx/carousel/carousel-3.jpg" alt="">
-          <a href="#"><img src="<?= get_template_directory_uri(); ?>/gfx/vita-min-b-logo-300.png" class="vmb-logo preserve"></a>
-          <div class="img-shadow"></div>
-          <div class="slide-container">
-            <div class="container-centered">
-              <div class="container-heading">
-                <h4>
-                  Studio Productions
-                </h4>
-                <p class="subtitle">
-                  Bekommen Ihre Kunden auch einen langweiligen Newsletter?
-                </p>
-              </div>
-              <p><a href="#" class="btn btn-primary btn-big">Studio anschauen</a></p>
-              <p class="slogan">Mit eigenem TV Studio Mitarbeiter und Kunden informieren</p>
-            </div>
-          </div>
-        </li>-->
-        <!--<li>
-          <img src="<?= get_template_directory_uri()?>/gfx/carousel/xtrafit-shop.png" alt="">
-          <div class="img-shadow"></div>
-          <div class="slide-container">
-            <div class="container-centered">
-              <div class="container-heading">
-                <h4>
-                  Shop in Shop Systeme
-                </h4>
-                <p class="subtitle">
-                  Mit eigenem Online Shop die internet affine Kundengruppe ansprechen und Vertriebspartnern Whitelabel Lösungen anbieten
-                </p>
-              </div>
-              <p><a href="#" class="btn btn-primary btn-big">Beispiel Shop ansehen</a></p>
             </div>
           </div>
         </li>-->
