@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<?php while ( have_posts() ) : the_post(); ?>
 <div class="row" >
   <div id="slides">
     <ul class="slides-container">
@@ -9,13 +10,13 @@
         <div class="slide-container">
           <div class="container-centered">
             <div class="container-heading">
-              <h4>Imagefilme</h4>
+              <h4><?php the_field('header_titel'); ?></h4>
               <p class="subtitle" style="font-size: 250%;">
-                Gewinnen auch Sie Ihre Neukunden über herkömmliche Vertriebswege?
+                <?php the_field('header_untertitel'); ?>
               </p>
             </div>
-            <p><a href="#" class="btn btn-primary btn-big">Film anschauen</a></p>
-            <p class="slogan">Mit Imagefilmen neue Kundengruppen emotional erreichen</p>
+            <p><a href="#" class="btn btn-primary btn-big"><?php the_field('header_button'); ?></a></p>
+            <p class="slogan"><?php the_field('header_slogan'); ?></p>
           </div>
         </div>
       </li>
@@ -105,4 +106,5 @@
     </article>
   </div>
 </div>
+<?php endwhile; // end of the loop. ?>
 <?php get_footer(); ?>
