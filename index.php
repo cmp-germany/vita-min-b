@@ -9,7 +9,7 @@
         $content = apply_filters( 'the_content', $page->post_content );
         print $content;
         print ("Test" + $page);*/
-        $article =    get_post(6);
+        $article =    get_post(1);
         $content =    $article->post_content;
         return '<p>'.$content.'</p>';
       ?>
