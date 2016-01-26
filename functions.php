@@ -42,22 +42,6 @@ if ( function_exists('register_nav_menus') ) {
 
 
 // POST TYPES
-/*
-add_action( 'init', 'create_post_type' );
-function create_post_type() {
-    register_post_type( 'vb_video',
-        array(
-            'labels' => array(
-                'name' => __( 'Videos' ),
-                'singular_name' => __( 'Video' )
-            ),
-        'public' => true,
-        'has_archive' => false,
-        'rewrite' => array('slug' => 'video'),
-        )
-    );
-}*/
-
 add_action( 'init', 'create_post_type' );
 add_action( 'init', 'create_post_type2');
 function create_post_type() {
@@ -94,4 +78,93 @@ function add_my_post_types_to_query( $query ) {
     if ( is_home() && $query->is_main_query() )
         $query->set( 'post_type', array( 'post', 'page', 'vb_video' ) );
     return $query;
+}
+
+//PLUGINS
+//ACF
+if(function_exists("register_field_group"))
+{
+	register_field_group(array (
+		'id' => 'acf_slider',
+		'title' => 'Slider',
+		'fields' => array (
+			array (
+				'key' => 'field_56a75bc6e3ae6',
+				'label' => 'Slide-Bild',
+				'name' => 'slide-img',
+				'type' => 'image',
+				'required' => 1,
+				'save_format' => 'url',
+				'preview_size' => 'thumbnail',
+				'library' => 'all',
+			),
+			array (
+				'key' => 'field_56a75c82e3ae7',
+				'label' => 'Headertitel',
+				'name' => 'headertitle',
+				'type' => 'text',
+				'required' => 1,
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'none',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_56a75cf2e3ae8',
+				'label' => 'Subtitel',
+				'name' => 'subtitle',
+				'type' => 'text',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_56a75d17e3ae9',
+				'label' => 'Buttonbeschriftung',
+				'name' => 'button',
+				'type' => 'text',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'none',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_56a75d3ce3aea',
+				'label' => 'Slogan',
+				'name' => 'slogan',
+				'type' => 'text',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'none',
+				'maxlength' => '',
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'vb_superslides',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'normal',
+			'layout' => 'no_box',
+			'hide_on_screen' => array (
+			),
+		),
+		'menu_order' => 0,
+	));
 }
