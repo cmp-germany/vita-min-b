@@ -83,7 +83,7 @@ function create_post_type2() {
 // Advanced Custom Fields
 
 //define( 'ACF_LITE', true );
-/*include_once('advanced-custom-fields/acf.php');
+include_once('advanced-custom-fields/acf.php');
 
 if(function_exists("register_field_group"))
 {
@@ -253,6 +253,18 @@ if(function_exists("register_field_group"))
 				'formatting' => 'none',
 				'maxlength' => '',
 			),
+			array (
+				'key' => 'field_56a786ebc3ba6',
+				'label' => 'Buttonlink',
+				'name' => 'buttonlink',
+				'type' => 'text',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
 		),
 		'location' => array (
 			array (
@@ -273,4 +285,4 @@ if(function_exists("register_field_group"))
 		),
 		'menu_order' => 0,
 	));
-}*/
+}
