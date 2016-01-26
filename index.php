@@ -16,7 +16,7 @@
       while ( $loop->have_posts() ) : $loop->the_post();
       the_title();
       echo '<div class="entry-content">';
-      the_content();
+      the_field("subtitle");
       echo '</div>';
       endwhile;
       ?>
