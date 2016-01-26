@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <?php while ( have_posts() ) : the_post(); ?>
-<div class="row" >
+<!--<div class="row" >
   <div id="slides">
     <ul class="slides-container">
       <li>
@@ -22,7 +22,7 @@
       </li>
     </ul>
   </div>
-</div>
+</div>-->
 <div class="row">
   <div class="col-sm-12 col-md-12 col-lg-12">
     <div class="page-header col-lg-12">
