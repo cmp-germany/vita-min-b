@@ -13,10 +13,10 @@
   <body class="vmb">
     <div class="container-fluid" >
       <div class="navmenu navmenu-default navmenu-inverse navmenu-fixed-right offcanvas">
-        <a href="#"><img src="<?= get_template_directory_uri(); ?>/gfx/vita-min-b-logo-300.png" class="vmb-logo"/></a>
+        <a href="<?= home_url(); ?>"><img src="<?= get_template_directory_uri(); ?>/gfx/vita-min-b-logo-300.png" class="vmb-logo"/></a>
         <ul class="nav navmenu-nav">
 
-          <li><a href="<?= home_url() ?>" ><img src="<?= get_template_directory_uri(); ?>/gfx/icons/1453752054_user-admin.png" alt="" /> Bewerbervideos</a></li>
+          <li><a href="#" ><img src="<?= get_template_directory_uri(); ?>/gfx/icons/1453752054_user-admin.png" alt="" /> Bewerbervideos</a></li>
 
           <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="<?= get_template_directory_uri(); ?>/gfx/icons/1453752061_home.png" alt="" /> Corporate Film <b class="caret"></b></a>
             <ul class="dropdown-menu navmenu-nav">
