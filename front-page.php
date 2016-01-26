@@ -28,13 +28,13 @@
                   <?php the_field("subtitle"); ?>
                 </p>
               </div>
-             <p><a href="#" class="btn btn-primary btn-big"><?php the_field("button");?></a></p>
+             <p><a href="<?= the_field("buttonlink"); ?>" class="btn btn-primary btn-big"><?php the_field("button");?></a></p>
              <p class="slogan"><?php the_field("slogan");?></p>
             </div>
           </div>
         </li>
         <?php endwhile; ?>
-        
+
       </ul>
       <nav class="slides-navigation" style="top: 0; padding-top: 0;">
         <a href="#" class="next"><img src="<?= get_template_directory_uri()?>/gfx/carousel/carousel-pfeil-rechts.png" class="icon-next"></a>
