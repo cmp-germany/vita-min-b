@@ -41,9 +41,13 @@ if ( function_exists('register_nav_menus') ) {
 }
 
 
+
 // POST TYPES
+
+
+// POST TYPE: Superslides
+
 add_action( 'init', 'create_post_type' );
-add_action( 'init', 'create_post_type2');
 function create_post_type() {
     register_post_type( 'vb_superslides',
         array(
@@ -57,6 +61,10 @@ function create_post_type() {
         )
     );
 }
+
+// POST TYPE: Videos
+
+add_action( 'init', 'create_post_type2');
 function create_post_type2() {
     register_post_type( 'vb_video',
         array(
@@ -71,13 +79,111 @@ function create_post_type2() {
     );
 }
 
-// Show posts of 'post', 'page' and 'movie' post types on home page
-add_action( 'pre_get_posts', 'add_my_post_types_to_query' );
 
-function add_my_post_types_to_query( $query ) {
-    if ( is_home() && $query->is_main_query() )
-        $query->set( 'post_type', array( 'post', 'page', 'vb_video' ) );
-    return $query;
+// Advanced Custom Fields
+
+define( 'ACF_LITE', true );
+include_once('advanced-custom-fields/acf.php');
+
+if(function_exists("register_field_group"))
+{
+	register_field_group(array (
+		'id' => 'acf_video-details',
+		'title' => 'Video Details',
+		'fields' => array (
+			array (
+				'key' => 'field_56a65e24821b3',
+				'label' => 'Video ID',
+				'name' => 'video-id',
+				'type' => 'text',
+				'required' => 1,
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'none',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_56a74991772b8',
+				'label' => 'Header Bild',
+				'name' => 'header_bild',
+				'type' => 'image',
+				'required' => 1,
+				'save_format' => 'url',
+				'preview_size' => 'medium',
+				'library' => 'all',
+			),
+			array (
+				'key' => 'field_56a74afd772b9',
+				'label' => 'Header Titel',
+				'name' => 'header_titel',
+				'type' => 'text',
+				'required' => 1,
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_56a74b3f772ba',
+				'label' => 'Header Untertitel',
+				'name' => 'header_untertitel',
+				'type' => 'text',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_56a74b64772bb',
+				'label' => 'Header Button',
+				'name' => 'header_button',
+				'type' => 'text',
+				'required' => 1,
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+			array (
+				'key' => 'field_56a74b82772bc',
+				'label' => 'Header Slogan',
+				'name' => 'header_slogan',
+				'type' => 'text',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'html',
+				'maxlength' => '',
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'vb_video',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'normal',
+			'layout' => 'no_box',
+			'hide_on_screen' => array (
+			),
+		),
+		'menu_order' => 0,
+	));
 }
 
 //PLUGINS
