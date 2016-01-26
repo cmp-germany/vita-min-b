@@ -34,27 +34,7 @@
           </div>
         </li>
         <?php endwhile; ?>
-
-        <!--<li id="slide1">
-          <img src="<?= get_template_directory_uri()?>/gfx/carousel/Fotolia_79234053_L.jpg" alt="">
-          <a href="#"><img src="<?= get_template_directory_uri(); ?>/gfx/vita-min-b-logo-300.png" class="vmb-logo preserve"></a>
-          <div class="img-shadow"></div>
-          <div class="slide-container">
-
-            <div class="container-centered">
-              <div class="container-heading">
-                <h4>
-                  Bewerber Videos
-                </h4>
-                <p class="subtitle">
-                  Suchst auch Du deinen <em>Traumjob</em>?
-                </p>
-              </div>
-              <p><a href="#" class="btn btn-primary btn-big">Traumjob finden</a></p>
-              <p class="slogan">Hol' dir die Hauptrolle im Film deines Lebens</p>
-            </div>
-          </div>
-        </li>-->
+        
       </ul>
       <nav class="slides-navigation" style="top: 0; padding-top: 0;">
         <a href="#" class="next"><img src="<?= get_template_directory_uri()?>/gfx/carousel/carousel-pfeil-rechts.png" class="icon-next"></a>
