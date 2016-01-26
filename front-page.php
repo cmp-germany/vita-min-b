@@ -4,9 +4,14 @@
       <ul class="slides-container">
 
 
+        <?php
+        $args = array( 'post_type' => 'vb_superslides', 'posts_per_page' => 10 );
+        $loop = new WP_Query( $args );
+        while ( $loop->have_posts() ) : $loop->the_post();
+        ?>
 
-<!---->        <li id="slide1">
-<!---->          <img src="IMG" alt="">
+        <li id="<?= the_title(); ?>">
+          <img src="<?= the_field("slide-img"); ?>" alt="">
           <a href="#"><img src="<?= get_template_directory_uri(); ?>/gfx/vita-min-b-logo-300.png" class="vmb-logo preserve"></a>
           <div class="img-shadow"></div>
           <div class="slide-container">
@@ -14,17 +19,18 @@
             <div class="container-centered">
               <div class="container-heading">
                 <h4>
-<!----> <p></p>
+                  <?php the_field("headertitle");?>
                 </h4>
                 <p class="subtitle">
-<!----> SUBTITLE
+                  <?php the_field("subtitle"); ?>
                 </p>
               </div>
-<!---->              <p><a href="#" class="btn btn-primary btn-big">BUTTON</a></p>
-<!---->              <p class="slogan">SLOGAN</p>
+             <p><a href="#" class="btn btn-primary btn-big"><?php the_field("button");?></a></p>
+             <p class="slogan"><?php the_field("slogan");?></p>
             </div>
           </div>
         </li>
+        <?php endwhile; ?>
 
         <!--<li id="slide1">
           <img src="<?= get_template_directory_uri()?>/gfx/carousel/Fotolia_79234053_L.jpg" alt="">
