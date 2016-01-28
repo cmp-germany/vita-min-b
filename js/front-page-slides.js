@@ -21,7 +21,7 @@ $(document).ready(function(){
     $(".img-shadow").height(height);
   });
 
-  document.setTimeout(function(){
+  setTimeout(function(){
     $('#slides').addClass("loaded");
   }, 1000);
 });
