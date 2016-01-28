@@ -3,6 +3,6 @@
   transition: opacity 1s ease-out;
 }
 
-.vmb #slides .slides-container .slide-container:hover * {
+.loaded .vmb #slides .slides-container .slide-container * {
   opacity: 100;
 }
