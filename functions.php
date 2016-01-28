@@ -305,6 +305,7 @@ if(function_exists("register_field_group"))
 }
 
 //Navigationsausgabe: wp-Walker
+add_filter( 'wp_calculate_image_srcset', '__return_false' );
 
 class My_Nav_Menu_Walker extends Walker_Nav_Menu
 {
