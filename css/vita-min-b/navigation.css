@@ -108,18 +108,18 @@
   margin-top: 1em;
 }
 
-.vmb .navmenu-inverse .navmenu-nav>li>a> {
+.vmb .navmenu-inverse .navmenu-nav>li>a {
   margin-top: 0.4em;
+  font-size: 1.8em;
   text-align: left;
   padding-right: 1.5em;
   padding-left: 1.5em;
   background: transparent;
 }
 
-.vmb .navmenu-inverse .navmenu-nav>li>a>span {
+.vmb .navmenu-inverse .navmenu-nav>li>a span {
   font-family: 'supernett';
   color: #FFF;
-  font-size: 1.8em;
 }
 
 .vmb .navmenu-inverse .navmenu-nav>li li a {
