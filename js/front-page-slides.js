@@ -31,7 +31,7 @@ $( ".next" ).click(function() {
 
     setTimeout(function(){
       $('#slides').addClass("loaded");
-    }, 1000);
+    }, 500);
 });
 
 $( ".prev" ).click(function() {
@@ -39,6 +39,6 @@ $( ".prev" ).click(function() {
 
     setTimeout(function(){
       $('#slides').addClass("loaded");
-    }, 1000);
+    }, 500);
 
 });
