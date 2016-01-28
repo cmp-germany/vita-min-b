@@ -38,7 +38,10 @@
     width: 100%;
     text-align: center;
     padding: 0;
-    margin-bottom: 1.4em;
+    margin-bottom: 0.3em;
     font-size: 1em;
+  }
+  .vmb #slides .slides-pagination {
+    margin-bottom: 1.4em;
   }
 }
