@@ -29,7 +29,7 @@ $(document).ready(function(){
 $( ".next" ).click(function() {
     $('#slides').removeClass("loaded");
 
-    document.setTimeout(function(){
+    setTimeout(function(){
       $('#slides').addClass("loaded");
     }, 1000);
 });
@@ -37,7 +37,7 @@ $( ".next" ).click(function() {
 $( ".prev" ).click(function() {
     $('#slides').removeClass("loaded");
 
-    document.setTimeout(function(){
+    setTimeout(function(){
       $('#slides').addClass("loaded");
     }, 1000);
 
