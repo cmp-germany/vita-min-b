@@ -20,4 +20,8 @@ $(document).ready(function(){
     $(".prev").height(height);
     $(".img-shadow").height(height);
   });
+
+  setTimeout(function(){
+      $('html').addClass("loaded");
+    }, 1000);  
 });

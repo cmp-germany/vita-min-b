@@ -53,14 +53,6 @@
     </footer>
   </div>
   </div>
-  <script type="text/javascript">
-  /* javascript */
-$(document).ready(function() {
-  setTimeout(function(){
-    $('html').addClass("loaded");
-  }, delay);
-});    
-  </script>
   <?php wp_footer(); ?>
   </body>
   </html>
