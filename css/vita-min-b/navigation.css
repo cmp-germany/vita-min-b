@@ -117,7 +117,7 @@
   background: transparent;
 }
 
-.vmb .navmenu-inverse .navmenu-nav>li>a span {
+.vmb .navmenu-inverse .navmenu-nav>li>a>span {
   font-family: 'supernett';
   color: #FFF;
 }
