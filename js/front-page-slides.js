@@ -25,3 +25,11 @@ $(document).ready(function(){
     $('#slides').addClass("loaded");
   }, 1000);
 });
+
+$( ".next" ).click(function() {
+  alert( "Handler for .click() called." );
+});
+
+$( ".prev" ).click(function() {
+  alert( "Handler for .click() called." );
+});
