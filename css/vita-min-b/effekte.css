@@ -1,6 +1,10 @@
 .vmb #slides .slides-container .slide-container {
   opacity: 0;
-  transition: opacity 1s ease-out;
+  -webkit-transition: opacity 2s ease;
+  -moz-transition: opacity 2s ease;
+  -o-transition: opacity 2s ease;
+  -ms-transition: opacity 2s ease;
+  transition: opacity 2s ease;
 }
 
 .vmb #slides.loaded .slides-container .slide-container {
