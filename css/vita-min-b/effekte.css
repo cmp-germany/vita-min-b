@@ -1,8 +1,8 @@
-.vmb #slides .slides-container .slide-container * {
+.vmb #slides .slides-container .slide-container {
   opacity: 0;
   transition: opacity 1s ease-out;
 }
 
-.vmb #slides.loaded .slides-container .slide-container * {
+.vmb #slides.loaded .slides-container .slide-container {
   opacity: 100;
 }
