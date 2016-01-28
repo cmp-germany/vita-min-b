@@ -27,9 +27,15 @@ $(document).ready(function(){
 });
 
 $( ".next" ).click(function() {
-
+    $('#slides').removeClass("loaded");
+    setTimeout(function(){
+      $('#slides').addClass("loaded");
+    }, 1000);
 });
 
 $( ".prev" ).click(function() {
-  
+    $('#slides').removeClass("loaded");
+    setTimeout(function(){
+      $('#slides').addClass("loaded");
+    }, 1000);
 });
