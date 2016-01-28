@@ -24,5 +24,5 @@ $(document).ready(function(){
   setTimeout(function(){
     $element = document.document.getElementById("slides");
     element.addClass("loaded");
-    }, 1000);  
+  }, delay); 
 });
