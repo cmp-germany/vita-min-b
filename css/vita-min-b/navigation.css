@@ -24,6 +24,14 @@
   height: auto;
 }
 
+.vmb .vmb-logounterschrift {
+  margin-left: 5.8em;
+  margin-top: 0.3em;
+  font-family: 'supernett';
+  color: #FF5E00;
+  font-size: 1.5em;
+}
+
 .vmb .slides-container .logo-sign {
   margin-left: 4.7em;
   width: 7em;
