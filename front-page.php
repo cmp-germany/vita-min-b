@@ -47,7 +47,7 @@
   <div class="row">
     <footer class="site-footer" id="colophon" role="contentinfo" style="position: fixed;">
       <div class="site-info">
-        <a href="/impressum">Impressum</a> <span class="sep">|</span> <a href=
+        <a style="color: rgb(255, 255, 255);" href="/impressum">Impressum</a> <span class="sep">|</span> <a style="color: rgb(255, 255, 255);" href=
         "/datenschutzerklaerung">Datenschutz</a>
       </div><!-- .site-info -->
     </footer>
