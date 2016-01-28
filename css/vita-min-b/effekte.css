@@ -1,3 +1,8 @@
 .vmb #slides .slides-container .slide-container * {
   opacity: 0;
+  transition: height 1s ;
+}
+
+.vmb #slides .slides-container .slide-container * {
+  opacity: 100;
 }
