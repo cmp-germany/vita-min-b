@@ -27,9 +27,9 @@ $(document).ready(function(){
 });
 
 $( ".next" ).click(function() {
-  alert( "Handler for .click() called." );
+
 });
 
 $( ".prev" ).click(function() {
-  alert( "Handler for .click() called." );
+  
 });
