@@ -28,9 +28,17 @@ $(document).ready(function(){
 
 $( ".next" ).click(function() {
     $('#slides').removeClass("loaded");
+
+    setTimeout(function(){
+      $('#slides').addClass("loaded");
+    }, 2000);
 });
 
 $( ".prev" ).click(function() {
     $('#slides').removeClass("loaded");
+
+    setTimeout(function(){
+      $('#slides').addClass("loaded");
+    }, 2000);
 
 });
