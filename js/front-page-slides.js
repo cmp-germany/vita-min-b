@@ -22,7 +22,7 @@ $(document).ready(function(){
   });
 
   setTimeout(function(){
-    $element = document.getElementById("slides");
+    var element = document.getElementById("slides");
     element.addClass("loaded");
   }, 1000);
 });
