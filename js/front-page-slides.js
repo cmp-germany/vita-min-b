@@ -21,9 +21,9 @@ $(document).ready(function(){
     $(".img-shadow").height(height);
   });
 
-  setTimeout(function(){
+  document.setTimeout(function(){
     $('#slides').addClass("loaded");
-  }, 2000);
+  }, 1000);
 });
 
 $( ".next" ).click(function() {
