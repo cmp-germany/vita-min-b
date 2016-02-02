@@ -42,9 +42,6 @@
         <div id="videoBackground">
           <div id="videoContainer" onclick="if (!startedPlaying &amp;&amp; !isFullScreen()){playVideo();}" style=" -webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover;"> <video poster="http://videos.united-studios.com/thumbnail.php?file=<?php the_field('video-id'); ?>.jpg&amp;width=700" id="video" onclick="openVideoLink();" onpause="showPlayButton(true);" onplay="showPlayButton(false);" ontimeupdate="onTimeUpdate();" preload="auto" style="/*display: none;*/"><source src="http://videos.united-studios.com/<?php the_field('video-id'); ?>.mp4" type="video/mp4"></video> </div>
         </div>
-        <div id="videoBackground">
-          <div id="videoContainer" onclick="if (!startedPlaying &amp;&amp; !isFullScreen()){playVideo();}" style=" -webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover;"> <video poster="http://videos.united-studios.com/thumbnail.php?file=<?php the_field('video-id'); ?>.jpg&amp;width=700" id="video" onclick="openVideoLink();" onpause="showPlayButton(true);" onplay="showPlayButton(false);" ontimeupdate="onTimeUpdate();" preload="auto" style="/*display: none;*/"><source src="http://videos.united-studios.com/<?php the_field('video-id'); ?>.mp4" type="video/mp4"></video> </div>
-        </div>
       </div>
     </div>
   </div>
