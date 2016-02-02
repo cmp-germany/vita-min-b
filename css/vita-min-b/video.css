@@ -44,9 +44,7 @@ video#video {
     padding-top: 0.5em;
   }
 
-.videoSideContainer {
-    max-width: 1000px;
-    height: auto;
-    margin: 3px auto 0;
-    cursor: pointer
-  }
+.sidepicture {
+  width:100%;
+  border: border-bottom: 1px solid #FF5E00;
+}
