@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <?php while ( have_posts() ) : the_post(); ?>
 <div class="row">
-  <div class="col-sm-3 col-md-6 col-lg-6 col-lg-offset-3">
+  <div class="col-sm-3 col-md-6 col-lg-6 col-lg-offset-2">
     <div class="page-header col-lg-12">
       <h1><?php the_title() ?></h1>
     </div>
