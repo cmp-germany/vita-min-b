@@ -1,5 +1,7 @@
 <?php get_header(); ?>
-<?php while ( have_posts() ) : the_post(); ?>
+<?php while ( have_posts() ) : the_post();
+$currentVideo = the_field('video-id');
+?>
 <div class="row">
   <div class="col-lg-6 col-lg-offset-2">
     <div class="page-header col-lg-12">
@@ -46,6 +48,7 @@
           );
           $loop = new WP_Query( $args );
           while ( $loop->have_posts() ) : $loop->the_post();
+          if (the_field('video-id')==$currentVideo) continue;
           $count += 1;
           ?>
           <li><a href="#"><img class="sidepicture" src="http://videos.united-studios.com/thumbnail.php?file=<?php the_field('video-id'); ?>.jpg&amp;width=700" /></a></li>
