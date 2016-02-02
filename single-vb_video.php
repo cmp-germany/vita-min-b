@@ -37,8 +37,16 @@
     <div class="row">
       <div class="container-fluid">
         <ul class="videosidebar">
+          <?php
+          $args = array(
+            'post_type' => 'vb_video',
+            'order'   => 'ASC',
+          );
+          $loop = new WP_Query( $args );
+          while ( $loop->have_posts() ) : $loop->the_post();
+          ?>
           <li><a href="#"><img class="sidepicture" src="http://videos.united-studios.com/thumbnail.php?file=<?php the_field('video-id'); ?>.jpg&amp;width=700" /></a></li>
-          <li><a href="#"><img class="sidepicture" src="http://videos.united-studios.com/thumbnail.php?file=<?php the_field('video-id'); ?>.jpg&amp;width=700" /></a></li>
+          <?php endwhile; ?>
       </div>
     </div>
   </div>
