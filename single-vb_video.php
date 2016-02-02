@@ -36,7 +36,7 @@
     </div>
     <div class="row">
       <div class="container-fluid">
-        <img src="http://videos.united-studios.com/thumbnail.php?file=<?php the_field('video-id'); ?>.jpg&amp;width=700" />
+        <img src="http://videos.united-studios.com/thumbnail.php?file=<?php the_field('video-id'); ?>.jpg" style="width:100%;" />
       </div>
     </div>
   </div>
