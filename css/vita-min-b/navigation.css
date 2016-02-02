@@ -30,6 +30,10 @@
   font-family: 'supernett';
   color: #FF5E00;
   font-size: 1.5em;
+  -moz-transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+  -webkit-transform: rotate(-20deg);
 }
 
 .vmb .slides-container .logo-sign {
