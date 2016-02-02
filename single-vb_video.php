@@ -41,6 +41,7 @@
           $args = array(
             'post_type' => 'vb_video',
             'order'   => 'ASC',
+            'orderby' => 'random',
           );
           $loop = new WP_Query( $args );
           while ( $loop->have_posts() ) : $loop->the_post();
