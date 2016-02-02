@@ -46,5 +46,10 @@ video#video {
 
 .sidepicture {
   width:100%;
-  border: border-bottom: 1px solid #FF5E00;
+  border: border-bottom: 3px solid #FF5E00;
+}
+
+ul.videosidebar 
+{
+    list-style-type: none;
 }
