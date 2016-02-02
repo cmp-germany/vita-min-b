@@ -1,12 +1,12 @@
 <?php get_header(); ?>
 <?php while ( have_posts() ) : the_post(); ?>
 <div class="row">
-  <div class="col-lg-9 col-lg-offset-2">
+  <div class="col-lg-8 col-lg-offset-2">
     <div class="page-header col-lg-12">
       <h1><?php the_title() ?></h1>
     </div>
       <div class="row">
-        <div class="col-lg-9">
+        <div class="col-lg-12">
           <article>
             <div class="pre-content">
               <div id="videoBackground">
@@ -28,14 +28,19 @@
             </div>
         </article>
       </div>
-
-      <div class="col-lg-3">
-        <div id="videoBackground" style="padding-left: 2rem;">
+    </div>
+  </div>
+  <div class="col-lg-1">
+    <div class="page-header col-lg-12">
+      <h2>Weitere Videos</h2>
+    </div>
+    <div class="row">
+      <div class="container-fluid">
+        <div id="videoBackground">
           <div id="videoContainer" onclick="if (!startedPlaying &amp;&amp; !isFullScreen()){playVideo();}" style=" -webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover;"> <video poster="http://videos.united-studios.com/thumbnail.php?file=<?php the_field('video-id'); ?>.jpg&amp;width=700" id="video" onclick="openVideoLink();" onpause="showPlayButton(true);" onplay="showPlayButton(false);" ontimeupdate="onTimeUpdate();" preload="auto" style="/*display: none;*/"><source src="http://videos.united-studios.com/<?php the_field('video-id'); ?>.mp4" type="video/mp4"></video> </div>
         </div>
       </div>
     </div>
-  </div>
 </div>
 <?php endwhile; // end of the loop. ?>
 <?php get_footer(); ?>
