@@ -38,16 +38,20 @@
       <div class="container-fluid">
         <ul class="videosidebar">
           <?php
+          $count= 0;
           $args = array(
             'post_type' => 'vb_video',
             'order'   => 'ASC',
-            'orderby' => 'random',
+            'orderby' => 'rand',
           );
           $loop = new WP_Query( $args );
           while ( $loop->have_posts() ) : $loop->the_post();
+          $count += 1;
           ?>
           <li><a href="#"><img class="sidepicture" src="http://videos.united-studios.com/thumbnail.php?file=<?php the_field('video-id'); ?>.jpg&amp;width=700" /></a></li>
-          <?php endwhile; ?>
+          <?php
+          if ($count==3) break;
+          endwhile; ?>
       </div>
     </div>
   </div>
