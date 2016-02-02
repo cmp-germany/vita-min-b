@@ -32,7 +32,7 @@
   </div>
   <div class="col-lg-2">
     <div class="page-header col-lg-12">
-      <h1>Weitere Videos</h1>
+      <h2>Weitere Videos</h2>
     </div>
     <div class="row">
       <div class="container-fluid">
