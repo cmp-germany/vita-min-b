@@ -36,7 +36,9 @@
     </div>
     <div class="row">
       <div class="container-fluid">
-        <img class="sidepicture" src="http://videos.united-studios.com/thumbnail.php?file=<?php the_field('video-id'); ?>.jpg&amp;width=700" />
+        <ul class="videosidebar">
+          <li><a href="#"><img class="sidepicture" src="http://videos.united-studios.com/thumbnail.php?file=<?php the_field('video-id'); ?>.jpg&amp;width=700" /></a></li>
+          <li><a href="#"><img class="sidepicture" src="http://videos.united-studios.com/thumbnail.php?file=<?php the_field('video-id'); ?>.jpg&amp;width=700" /></a></li>
       </div>
     </div>
   </div>
