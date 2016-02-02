@@ -1,32 +1,9 @@
 <?php get_header(); ?>
 <?php while ( have_posts() ) : the_post(); ?>
-<!--<div class="row" >
-  <div id="slides">
-    <ul class="slides-container">
-      <li>
-        <img src="<?= get_template_directory_uri()?>/gfx/carousel/imagefilme.jpg" alt="">
-        <a href="#"><img src="<?= get_template_directory_uri(); ?>/gfx/vita-min-b-logo-300.png" class="vmb-logo preserve"></a>
-        <div class="img-shadow"></div>
-        <div class="slide-container">
-          <div class="container-centered">
-            <div class="container-heading">
-              <h4><?php the_field('header_titel'); ?></h4>
-              <p class="subtitle" style="font-size: 250%;">
-                <?php the_field('header_untertitel'); ?>
-              </p>
-            </div>
-            <p><a href="#videoBackground" class="btn btn-primary btn-big"><?php the_field('header_button'); ?></a></p>
-            <p class="slogan"><?php the_field('header_slogan'); ?></p>
-          </div>
-        </div>
-      </li>
-    </ul>
-  </div>
-</div>-->
 <div class="row">
-  <div class="col-sm-12 col-md-12 col-lg-12">
+  <div class="col-sm-3 col-md-6 col-lg-6 col-lg-offset-3">
     <div class="page-header col-lg-12">
-      <h1><?php the_title(); ?></h1>
+      <h1><?php the_title() ?></h1>
     </div>
       <article>
         <div class="pre-content">
