@@ -23,7 +23,7 @@ $(document).ready(function(){
 
   setTimeout(function(){
     $('#slides').addClass("loaded");
-  }, 2000);
+  }, 2500);
 });
 
 $( ".next" ).click(function() {
@@ -31,7 +31,7 @@ $( ".next" ).click(function() {
 
     setTimeout(function(){
       $('#slides').addClass("loaded");
-    }, 1500);
+    }, 2000);
 });
 
 $( ".prev" ).click(function() {
@@ -39,6 +39,6 @@ $( ".prev" ).click(function() {
 
     setTimeout(function(){
       $('#slides').addClass("loaded");
-    }, 1500);
+    }, 2000);
 
 });
