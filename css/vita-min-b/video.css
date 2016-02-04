@@ -49,7 +49,12 @@ video#video {
   border: border-bottom: 3px solid #FF5E00;
 }
 
-ul.videosidebar 
+ul.videosidebar
 {
     list-style-type: none;
+    padding: 0;
+}
+
+.videosidebar li {
+
 }
