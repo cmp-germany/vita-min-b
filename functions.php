@@ -69,16 +69,6 @@ function create_post_type() {
 
 // POST TYPE: Videos
 
-add_action( 'init', 'register_my_menus' );
-function register_my_menus() {
-  register_nav_menus(
-  array(
-      'main-menu' => __( 'Main Menu' ),
-      'footer-menu' => __( 'Footer Menu' )
-      )
-  );
-}
-
 
 add_action( 'init', 'create_post_type2');
 function create_post_type2() {
@@ -95,6 +85,19 @@ function create_post_type2() {
         'rewrite' => array('slug' => 'video'),
         )
     );
+}
+
+
+// Menü registrieren
+
+add_action( 'init', 'register_my_menus' );
+function register_my_menus() {
+  register_nav_menus(
+  array(
+      'main-menu' => __( 'Main Menu' ),
+      'footer-menu' => __( 'Footer Menu' )
+      )
+  );
 }
 
 
