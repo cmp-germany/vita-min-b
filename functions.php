@@ -96,8 +96,9 @@ function create_post_type_onepagerelement() {
                 'name' => __( 'OnePage Elements' ),
                 'singular_name' => __( 'OnePage Element' )
             ),
-        'public' => true,
-        'has_archive' => false,
+            'taxonomies' => array('category'),
+            'public' => true,
+            'has_archive' => false,
         )
     );
 }
