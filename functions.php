@@ -53,7 +53,7 @@ if ( function_exists('register_nav_menus') ) {
 // POST TYPE: Superslides
 
 add_action( 'init', 'create_post_type_superslide' );
-function create_post_type() {
+function create_post_type_superslide() {
     register_post_type( 'vb_superslides',
         array(
             'labels' => array(
@@ -70,7 +70,7 @@ function create_post_type() {
 // POST TYPE: Videos
 
 add_action( 'init', 'create_post_type_video');
-function create_post_type2() {
+function create_post_type_video() {
     register_post_type( 'vb_video',
         array(
             'labels' => array(
@@ -89,7 +89,7 @@ function create_post_type2() {
 // POST TYPE: OnePagerElement
 
 add_action( 'init', 'create_post_type_onepagerelement' );
-function create_post_type() {
+function create_post_type_onepagerelement() {
     register_post_type( 'vb_onepagerelement',
         array(
             'labels' => array(
