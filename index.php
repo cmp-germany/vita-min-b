@@ -8,6 +8,7 @@
     <h1><?php the_title() ?></h1>
   </div>
 </div>
+<div class="container">
 <div class="row">
   <?php
     $pageID = get_the_id();
@@ -15,5 +16,6 @@
     $content = apply_filters( 'the_content', $page->post_content );
     print $content;
   ?>
+</div>
 </div>
 <?php get_footer(); ?>
