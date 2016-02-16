@@ -1,7 +1,7 @@
 <?php get_header(); ?>
   <div class="row">
     <div class="col-sm-3 col-md-6 col-lg-6 col-lg-offset-3">
-      <div class="page-header col-lg-12">
+      <div class="page-header col-md-12">
         <h1><?php the_title() ?></h1>
       </div>
       <?php

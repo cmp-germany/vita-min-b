@@ -36,3 +36,20 @@
   text-transform: uppercase;
   font-size: 24px;
 }
+
+
+/*Normale Website*/
+.page-header {
+	background: #c05701 url(../images/header_bg.png) no-repeat top center;
+	background: -moz-radial-gradient(center, ellipse cover,  #f79f5b 0%, #f88d38 38%, #bb5a13 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#f79f5b), color-stop(38%,#f88d38), color-stop(100%,#bb5a13));
+	background: -webkit-radial-gradient(center, ellipse cover,  #f79f5b 0%,#f88d38 38%,#bb5a13 100%);
+	background: -o-radial-gradient(center, ellipse cover,  #f79f5b 0%,#f88d38 38%,#bb5a13 100%);
+	background: -ms-radial-gradient(center, ellipse cover,  #f79f5b 0%,#f88d38 38%,#bb5a13 100%);
+	background: radial-gradient(ellipse at center,  #f79f5b 0%,#f88d38 38%,#bb5a13 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f79f5b', endColorstr='#bb5a13',GradientType=1 );
+
+	color:#fff;
+	border-bottom:5px solid #fff;
+	text-align:center;
+}
