@@ -51,11 +51,13 @@
 	position: absolute;
 	width: 100%;
 	text-align: center;
+	top: 70px;
 }
 
 .headerbild {
 	overflow: hidden;
 	height: 30rem;
+	position: relative;
 }
 
 .headerbild img{

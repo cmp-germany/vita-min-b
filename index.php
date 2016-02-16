@@ -8,7 +8,7 @@
     <h1><?php the_title() ?></h1>
   </div>
 </div>
-<div class="row" style="background-color: #fff; min-height: 700px;">
+<div class="row">
   <?php
     $pageID = get_the_id();
     $page = get_page( $pageID );
