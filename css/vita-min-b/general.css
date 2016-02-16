@@ -51,6 +51,10 @@
 	height: 30rem;
 }
 
+.headerbild {
+	overflow: hidden;
+}
+
 .overlay {
 	background: #c05701 url(../images/header_bg.png) no-repeat top center;
 	background: -moz-radial-gradient(center, ellipse cover,  #f79f5b 0%, #f88d38 38%, #bb5a13 100%);
@@ -60,7 +64,7 @@
 	background: -ms-radial-gradient(center, ellipse cover,  #f79f5b 0%,#f88d38 38%,#bb5a13 100%);
 	background: radial-gradient(ellipse at center,  #f79f5b 0%,#f88d38 38%,#bb5a13 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f79f5b', endColorstr='#bb5a13',GradientType=1 );
-	
+
 	position: absolute;
   top: 0;
   left: 0;
