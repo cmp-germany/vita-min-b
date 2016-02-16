@@ -52,8 +52,8 @@ if ( function_exists('register_nav_menus') ) {
 
 // POST TYPE: Superslides
 
-add_action( 'init', 'create_post_type' );
-function create_post_type() {
+add_action( 'init', 'create_post_type_superslide' );
+function create_post_type_superslide() {
     register_post_type( 'vb_superslides',
         array(
             'labels' => array(
@@ -69,19 +69,8 @@ function create_post_type() {
 
 // POST TYPE: Videos
 
-add_action( 'init', 'register_my_menus' );
-function register_my_menus() {
-  register_nav_menus(
-  array(
-      'main-menu' => __( 'Main Menu' ),
-      'footer-menu' => __( 'Footer Menu' )
-      )
-  );
-}
-
-
-add_action( 'init', 'create_post_type2');
-function create_post_type2() {
+add_action( 'init', 'create_post_type_video');
+function create_post_type_video() {
     register_post_type( 'vb_video',
         array(
             'labels' => array(
@@ -95,6 +84,36 @@ function create_post_type2() {
         'rewrite' => array('slug' => 'video'),
         )
     );
+}
+
+// POST TYPE: OnePagerElement
+
+add_action( 'init', 'create_post_type_onepagerelement' );
+function create_post_type_onepagerelement() {
+    register_post_type( 'vb_onepagerelement',
+        array(
+            'labels' => array(
+                'name' => __( 'OnePage Elements' ),
+                'singular_name' => __( 'OnePage Element' )
+            ),
+            'taxonomies' => array('category'),
+            'public' => true,
+            'has_archive' => false,
+        )
+    );
+}
+
+
+// Menü registrieren
+
+add_action( 'init', 'register_my_menus' );
+function register_my_menus() {
+  register_nav_menus(
+  array(
+      'main-menu' => __( 'Main Menu' ),
+      'footer-menu' => __( 'Footer Menu' )
+      )
+  );
 }
 
 
