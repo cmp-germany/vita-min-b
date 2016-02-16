@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<div class="row">
   <div class="page-header col-md-12">
     <h1><?php the_title() ?></h1>
   </div>
@@ -8,4 +9,5 @@
     $content = apply_filters( 'the_content', $page->post_content );
     print $content;
   ?>
+</div>
 <?php get_footer(); ?>
