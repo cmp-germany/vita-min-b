@@ -54,6 +54,10 @@
 	height: 30rem;
 }
 
+.headerbild img{
+	position: absolute;
+}
+
 .overlay {
 	background: #c05701 url(../images/header_bg.png) no-repeat top center;
 	background: -moz-radial-gradient(center, ellipse cover,  #f79f5b 0%, #f88d38 38%, #bb5a13 100%);
