@@ -214,8 +214,6 @@ if(function_exists("register_field_group"))
 				'key' => 'field_56a65e24821b3',
 				'label' => 'Video ID',
 				'name' => 'video-id',
-				'type' => 'text',
-				'required' => 1,
 				'default_value' => '',
 				'placeholder' => '',
 				'prepend' => '',
