@@ -1,0 +1,21 @@
+.onepage-element {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  border-bottom: 3px dotted #FF5E00;
+}
+
+.onepage-element:nth-of-type(2){
+  background-color: #444;
+}
+
+.onepage-image, .onepage-header, .onepage-content {
+  float: left;
+}
+
+.onepage-image {
+  width: 38%;
+}
+
+.onepage-header, .onepage-content {
+  width: 62%;
+}

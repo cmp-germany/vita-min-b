@@ -36,6 +36,8 @@ wp_enqueue_style( 'navigation', get_template_directory_uri() . '/css/vita-min-b/
 wp_enqueue_style( 'general-content', get_template_directory_uri() . '/css/vita-min-b/general-content.css' );
 wp_enqueue_style( 'effekte', get_template_directory_uri() . '/css/vita-min-b/effekte.css' );
 
+// CSS: OnePager
+wp_enqueue_style( 'one-pager-css', get_template_directory_uri() . '/css/vita-min-b/one-pager.css' );
 
 // JS: Bootstrap
 wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array( 'jquery' ), null, true );
