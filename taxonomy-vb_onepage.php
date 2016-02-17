@@ -1,31 +1,39 @@
 <?php get_header(); ?>
-<?php debug_to_console($wp_query->query['vb_onepage']); ?>
 <?php
   $args = array(
     'post_type'  => 'vb_onepagerelement',
+    'tax_query'  =>  array(
+                       array(
+                         'taxonomy' => 'vb_onepage',
+                         'field'    => 'slug',
+                         'terms'    => $wp_query->query['vb_onepage']
+                       )
+                     ),
     'orderby'    => 'menu_order',
     'order'      => 'ASC'
   );
   $the_query = new WP_Query( $args );
 ?>
-  <div class="row">
-    <div class="col-sm-3 col-md-6 col-lg-6 col-lg-offset-3">
-      <?php if ( $the_query->have_posts() ) : ?>
-        <div class="page-header col-lg-12">
-          <h1><?php the_title() ?></h1>
-        </div>
-        <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-          <?php debug_to_console($post); ?>
-          <div class="onepage-element col-lg-12">
-            <div class="onepage-head">
-              <h1><?php the_title() ?></h1>
+<div class="skrollr-body">
+  <section class="onepage-section">
+    <?php if ( $the_query->have_posts() ) : ?>
+      <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+        <?php debug_to_console(get_field('bild')); ?>
+        <article id="<?= $post->post_name ?>" class="onepage-element">
+          <div class="row">
+            <div class="onepage-image">
+              <img src="<?= get_field('bild')['url'] ?>" alt="<?= get_field('bild')['alt'] ?>">
             </div>
-            <div class="onepage-content">
+            <div class="onepage-header" data-bottom-top="opacity:0;" data-center-top="opacity:1;">
+              <h2><?php the_title(); ?></h2>
+            </div>
+            <div class="onepage-content" data-bottom-top="opacity:0;" data-center-top="opacity:1;">
               <?php the_content(); ?>
             </div>
           </div>
-    			<?php endwhile; ?>
-      <?php endif; ?>
-    </div>
-  </div>
+        </article>
+      <?php endwhile; ?>
+    <?php endif; ?>
+  </section>
+</div>
 <?php get_footer(); ?>
