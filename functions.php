@@ -46,7 +46,6 @@ wp_enqueue_script( 'jasny-bootstrap', get_template_directory_uri() . '/js/jasny-
 wp_enqueue_script( 'jquery-easing', get_template_directory_uri() . '/superslides/examples/javascripts/jquery.easing.1.3.js', array( 'jquery' ), null, true );
 wp_enqueue_script( 'jquery-animate-enhanced', get_template_directory_uri() . '/superslides/examples/javascripts/jquery.animate-enhanced.min.js', array( 'jquery-easing' ), null, true );
 wp_enqueue_script( 'superslides', get_template_directory_uri() . '/superslides/dist/jquery.superslides.js', array( 'jquery-animate-enhanced' ), null, true );
-wp_enqueue_script( 'front-page-slides', get_template_directory_uri() . '/js/front-page-slides.js', array( 'superslides' ), null, true );
 // JS: Skrollr
 wp_enqueue_script( 'skrollr', get_template_directory_uri() . '/js/skrollr.min.js', null, null, true );
 

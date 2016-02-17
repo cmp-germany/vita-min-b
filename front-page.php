@@ -1,3 +1,4 @@
+<?php wp_enqueue_script( 'front-page-slides', get_template_directory_uri() . '/js/front-page-slides.js', array( 'superslides' ), null, true ); ?>
 <?php get_header(); ?>
   <div class="row" >
     <div id="slides">
