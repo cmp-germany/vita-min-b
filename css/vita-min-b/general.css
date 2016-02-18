@@ -58,13 +58,11 @@
 
 .headerbild {
 	overflow: hidden;
-	height: 20rem;
+	height: 100%;
 	position: relative;
 }
 
-.headerbild img{
-	position: absolute;
-}
+
 
 .overlay {
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#feb568+0,e88102+49,fd8905+94,fd8905+94,b67102+100 */
@@ -111,4 +109,29 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 
 .vb-content {
 	padding: 5rem;
+}
+
+html {
+	overflow-x: hidden;
+}
+
+.arrow-down {
+	position: absolute;
+	bottom: 50%;
+	width: 100%;
+	text-align: center;
+}
+
+.arrow-down svg circle {
+  stroke: #fff;
+  stroke-width: 2px;
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  fill: rgb(0, 0, 0);
+  opacity: 0.5;
+}
+
+.arrow-down svg line {
+  stroke: #fff;
+  stroke-width: 2px;
 }
