@@ -21,6 +21,7 @@ wp_enqueue_style( 'slider', get_template_directory_uri() . '/css/vita-min-b/slid
 wp_enqueue_style( 'navigation', get_template_directory_uri() . '/css/vita-min-b/navigation.css' );
 wp_enqueue_style( 'general-content', get_template_directory_uri() . '/css/vita-min-b/general-content.css' );
 wp_enqueue_style( 'effekte', get_template_directory_uri() . '/css/vita-min-b/effekte.css' );
+wp_enqueue_style( 'raleway', 'https://fonts.googleapis.com/css?family=Raleway' );
 
 
 // JS: Bootstrap
