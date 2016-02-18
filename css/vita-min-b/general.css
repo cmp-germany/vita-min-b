@@ -52,6 +52,7 @@
 	width: 100%;
 	text-align: center;
 	top: 70px;
+	border-bottom: 1px dotted #000;
 }
 
 .headerbild {
