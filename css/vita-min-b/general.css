@@ -42,6 +42,7 @@
 
 .page-header {
 	color:#fff;
+	border-bottom: 1px solid #000;
 
 	margin: 0;
 	padding: 0;
@@ -52,7 +53,6 @@
 	width: 100%;
 	text-align: center;
 	top: 70px;
-	border-bottom: 1px dotted #000;
 }
 
 .headerbild {
