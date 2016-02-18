@@ -1,0 +1,26 @@
+.onepage-element {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.onepage-image, .onepage-header, .onepage-content {
+  float: left;
+}
+
+.onepage-element:nth-of-type(2n+0) * .onepage-image, .onepage-header, .onepage-content {
+  float: right;
+}
+
+
+.onepage-element:nth-of-type(2n+0){
+  background-color: #ddd;
+}
+
+
+.onepage-image img {
+  max-width: 100%;
+}
+
+/*.onepage-header, .onepage-content {
+  width: 62%;
+}*/

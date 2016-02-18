@@ -5,3 +5,8 @@ Description: Theme for the website of Vita Min B
 Author: Kai Wittmann
 Author URI: http://heart-co.de
 */
+
+/* FOR DEBUGGING: <pre> - styling */
+.vmb pre {
+  font-family: monospace;
+}

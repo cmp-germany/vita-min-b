@@ -1,5 +1,19 @@
 <?php
 
+/**
+	 * Simple helper to debug to the console
+	 *
+	 * @param  object, array, string $data
+	 * @return string
+	 */
+	function debug_to_console( $data ) {
+
+		$output = '<script type="text/javascript">';
+		$output .= 'console.log(' . json_encode( $data ) . ');';
+    $output .= '</script>';
+		echo $output;
+	}
+
 // FONTS
 wp_enqueue_style( 'font-source.sans-pro', 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' );
 
@@ -23,6 +37,8 @@ wp_enqueue_style( 'general-content', get_template_directory_uri() . '/css/vita-m
 wp_enqueue_style( 'effekte', get_template_directory_uri() . '/css/vita-min-b/effekte.css' );
 wp_enqueue_style( 'raleway', 'https://fonts.googleapis.com/css?family=Raleway' );
 
+// CSS: OnePager
+wp_enqueue_style( 'one-pager-css', get_template_directory_uri() . '/css/vita-min-b/one-pager.css' );
 
 // JS: Bootstrap
 wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array( 'jquery' ), null, true );
@@ -33,7 +49,8 @@ wp_enqueue_script( 'jasny-bootstrap', get_template_directory_uri() . '/js/jasny-
 wp_enqueue_script( 'jquery-easing', get_template_directory_uri() . '/superslides/examples/javascripts/jquery.easing.1.3.js', array( 'jquery' ), null, true );
 wp_enqueue_script( 'jquery-animate-enhanced', get_template_directory_uri() . '/superslides/examples/javascripts/jquery.animate-enhanced.min.js', array( 'jquery-easing' ), null, true );
 wp_enqueue_script( 'superslides', get_template_directory_uri() . '/superslides/dist/jquery.superslides.js', array( 'jquery-animate-enhanced' ), null, true );
-wp_enqueue_script( 'front-page-slides', get_template_directory_uri() . '/js/front-page-slides.js', array( 'superslides' ), null, true );
+// JS: Skrollr
+wp_enqueue_script( 'skrollr', get_template_directory_uri() . '/js/skrollr.min.js', null, null, true );
 
 // JS: Video
 wp_enqueue_script( 'video-js', get_template_directory_uri() . '/js/video.js', null , null, true );
@@ -97,12 +114,80 @@ function create_post_type_onepagerelement() {
                 'name' => __( 'OnePage Elements' ),
                 'singular_name' => __( 'OnePage Element' )
             ),
-            'taxonomies' => array('category'),
             'public' => true,
             'has_archive' => false,
+            'supports' => array('page-attributes', 'title', 'editor')
         )
     );
 }
+
+// TAXONOMY: OnePagerElement Strukturierung
+
+function create_taxonomy_onepagerelement() {
+	// create a new taxonomy
+	register_taxonomy(
+		'vb_onepage',
+		'vb_onepagerelement',
+		array(
+			'label' => __( 'OPE Struktur' ),
+			'rewrite' => array( 'slug' => 'onepage' )
+		)
+	);
+}
+add_action( 'init', 'create_taxonomy_onepagerelement' );
+
+// OnePagerElement: In der Liste die Order Values anzeigen
+function add_new_vb_onepagerelement_column($vb_onepagerelement_columns) {
+  $vb_onepagerelement_columns['menu_order'] = "Order";
+  return $vb_onepagerelement_columns;
+}
+add_action('manage_edit-vb_onepagerelement_columns', 'add_new_vb_onepagerelement_column');
+
+function show_order_column($name){
+  global $post;
+
+  switch ($name) {
+    case 'menu_order':
+      $order = $post->menu_order;
+      echo $order;
+      break;
+   default:
+      break;
+   }
+}
+add_action('manage_vb_onepagerelement_posts_custom_column','show_order_column');
+
+function order_column_register_sortable($columns){
+  $columns['menu_order'] = 'menu_order';
+  return $columns;
+}
+add_filter('manage_edit-vb_onepagerelement_sortable_columns','order_column_register_sortable');
+
+
+// OnePagerElement: In der Liste die Strukturierung anzeigen
+function add_new_vb_onepagerelement_taxonomy_column($vb_onepagerelement_columns) {
+  $vb_onepagerelement_columns['vb_onepage'] = "OnePage";
+  return $vb_onepagerelement_columns;
+}
+add_action('manage_edit-vb_onepagerelement_columns', 'add_new_vb_onepagerelement_taxonomy_column');
+
+function show_onepage_column($name){
+  global $post;
+  switch ($name) {
+    case 'vb_onepage':
+      echo get_the_terms($post->ID, 'vb_onepage')[0]->name;
+      break;
+   default:
+      break;
+   }
+}
+add_action('manage_vb_onepagerelement_posts_custom_column','show_onepage_column');
+
+function vb_onepage_column_register_sortable($columns){
+  $columns['vb_onepage'] = 'vb_onepage';
+  return $columns;
+}
+add_filter('manage_edit-vb_onepagerelement_sortable_columns','vb_onepage_column_register_sortable');
 
 
 // Menü registrieren
