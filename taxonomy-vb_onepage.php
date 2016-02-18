@@ -52,7 +52,7 @@
         <div class="overlay-grad"></div>
       </div>
       <h1><?php single_tag_title(); ?></h1>
-      <a class="arrow-down" href="#onepagerstory" data-target="#onepagerstory">
+      <a class="arrow-down" href="#onepagerstory">
 				<svg width="80" height="80" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg"><circle class="" cx="40" cy="40" r="32" /><line x1="20" y1="30" x2="40" y2="50" /><line x1="40" y1="50" x2="60" y2="30" /></svg>
       </a>
     </div>
@@ -87,6 +87,22 @@
 
 </div>
 </section>
-
+<script type="text/javascript">
+$= jQuery.noConflict();
+$(function() {
+$('a[href*="#"]:not([href="#"])').click(function() {
+  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+    if (target.length) {
+      $('html, body').animate({
+        scrollTop: target.offset().top
+      }, 1000);
+      return false;
+    }
+  }
+});
+});
+</script>
 
 <?php get_footer(); ?>
