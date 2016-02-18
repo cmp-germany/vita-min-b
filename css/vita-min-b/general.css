@@ -1,11 +1,10 @@
 .vmb * {
 	/*font-family: 'Source Sans Pro', sans-serif;*/
 	font-family: 'Raleway', sans-serif;
-	background-color: #eee;
 }
 
 .vmb {
-	background-color: #fff;
+	background-color: #eee;
 }
 
 .vmb .center {
@@ -107,5 +106,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	border-radius: 2px;
 	box-shadow: 0 0 1px #ccc;
 	background-color: #fff;
+	padding: 5rem;
+}
+
+.vb-content {
 	padding: 5rem;
 }
