@@ -2,6 +2,9 @@
 <?php while ( have_posts() ) : the_post();
 $currentVideo = get_field('video-id');
 ?>
+
+<?php get_template_part( 'headerleiste'); ?>
+
 <div class="row">
   <div class="col-lg-6 col-lg-offset-2">
     <div class="page-header col-lg-12">
