@@ -226,6 +226,15 @@ if(function_exists("register_field_group"))
 				'maxlength' => '',
 			),
 			array (
+				'key' => 'field_56caf57644fb9',
+				'label' => 'Standalone Video',
+				'name' => 'is-standalone',
+				'type' => 'true_false',
+				'instructions' => 'Bei einem Standalone Video werden keine weiteren Videos angezeigt.',
+				'message' => 'Standalone Video (keine weiteren Videos anzeigen)',
+				'default_value' => 0,
+			),
+			array (
 				'key' => 'field_56a74991772b8',
 				'label' => 'Header Bild',
 				'name' => 'header_bild',
