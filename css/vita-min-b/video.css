@@ -32,6 +32,11 @@
     width: 50%;
     float: left;
   }
+
+  .entry-content {
+    font-size: 16px;
+    line-height: 28px;
+  }
 }
 
 
