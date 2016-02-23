@@ -1,35 +1,83 @@
+/***** Seiten Styling *****/
+
+.site {
+  max-width: 1220px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  padding-top: 80px;
+  padding-bottom: 110px;
+}
+
+.site-content {
+  max-width: 1025px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.entry-content {
+  font-size: 18px;
+  line-height: 35px;
+}
+
+.sidepicture {
+  max-width: 312px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px){
+  .videosidebar li {
+    float: none;
+    width: 50%;
+    float: left;
+  }
+}
+
+
+
+/***** Player Styling *****/
+
 #controlContainer, #controls {
   width: 195px;
   height: 29px
 }
+
 #controls div, #video {
   cursor: pointer
 }
+
 #videoContainer {
   max-width: 1000px;
   height: auto;
   margin: 3px auto 0;
   cursor: pointer
 }
+
 #controlContainer {
   margin: 10px auto 0
 }
+
 #controls div {
   float: left;
   width: 39px;
   height: 29px;
   text-align: center
 }
+
 img#img-logo {
   height: 50px
 }
+
 video#video {
   width: 100%!important;
   height: auto!important
 }
+
 #all-videos .media {
   margin-bottom: 50px
 }
+
 #all-videos h2 {
   margin-top: 20px
 }
@@ -39,10 +87,10 @@ video#video {
 }
 
 .page-header h2 {
-    font-family: 'supernett';
-    font-size: 2.7em;
-    padding-top: 0.5em;
-  }
+  font-family: 'supernett';
+  font-size: 2.7em;
+  padding-top: 0.5em;
+}
 
 .sidepicture {
   width:100%;
@@ -51,8 +99,8 @@ video#video {
 
 ul.videosidebar
 {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 .videosidebar li {
