@@ -1,4 +1,48 @@
 <?php wp_enqueue_style( 'footer-fix', get_template_directory_uri() . '/css/vita-min-b/footer-fix.css' ); ?>
+<?php
+  // Zusätzliche MetaTags für Social Media hinzufügen
+  add_action('wp_head','social_media_tags');
+
+  function social_media_tags() {
+    global $post;
+
+    // The Query
+    $the_query = new WP_Query( array(
+      'name' => $post->post_name,
+      'post_type' => 'any'
+    ));
+    // The Loop
+    if ( $the_query->have_posts() ) {
+  		$the_query->the_post();
+      $output='
+        <meta name="description" content="' . get_the_excerpt() . '" />
+
+        <!-- Schema.org markup for Google+ -->
+        <meta itemprop="name" content="' . get_the_title() . '">
+        <meta itemprop="description" content="' . get_the_excerpt() . '">
+        <meta itemprop="image" content="http://videos.united-studios.com/thumbnail.php?file=' . get_field('video-id') . '.jpg&amp;width=1000">
+
+        <!-- Twitter Card data -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="' . get_the_title() . '">
+        <meta name="twitter:description" content="' . get_the_excerpt() . '">
+        <meta name="twitter:image:src" content="http://videos.united-studios.com/thumbnail.php?file=' . get_field('video-id') . '.jpg&amp;width=1200">
+
+        <!-- Open Graph data -->
+        <meta property="og:title" content="' . get_the_title() . '" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="' . get_permalink() . '" />
+        <meta property="og:image" content="http://videos.united-studios.com/thumbnail.php?file=' . get_field('video-id') . '.jpg&amp;width=1200" />
+        <meta property="og:description" content="' . get_the_excerpt() . '" />
+        <meta property="og:site_name" content="' . get_bloginfo('name') . '" />
+        <meta property="article:published_time" content="' . get_the_time('c') . '" />
+        <meta property="article:modified_time" content="' . get_the_modified_time('c') . '" />
+      ';
+    }
+    wp_reset_postdata();
+  	echo $output;
+  }
+?>
 <?php get_header(); ?>
 <?php while ( have_posts() ) : the_post();
 $currentVideo = get_field('video-id');
