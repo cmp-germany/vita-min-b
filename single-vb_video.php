@@ -1,3 +1,4 @@
+<?php wp_enqueue_style( 'footer-fix', get_template_directory_uri() . '/css/vita-min-b/footer-fix.css' ); ?>
 <?php get_header(); ?>
 <?php while ( have_posts() ) : the_post();
 $currentVideo = get_field('video-id');
