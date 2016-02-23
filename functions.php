@@ -56,15 +56,6 @@ wp_enqueue_script( 'skrollr', get_template_directory_uri() . '/js/skrollr.min.js
 wp_enqueue_script( 'video-js', get_template_directory_uri() . '/js/video.js', null , null, true );
 
 
-//fuer WP-Menue
-if ( function_exists('register_nav_menus') ) {
-    register_nav_menus(array(
-        'main-navi' => __( 'Hauptnavigation' )
-    ));
-}
-
-
-
 // POST TYPES
 
 
@@ -195,10 +186,10 @@ add_filter('manage_edit-vb_onepagerelement_sortable_columns','vb_onepage_column_
 add_action( 'init', 'register_my_menus' );
 function register_my_menus() {
   register_nav_menus(
-  array(
-      'main-menu' => __( 'Main Menu' ),
-      'footer-menu' => __( 'Footer Menu' )
-      )
+  	array(
+      'main-menu' => __( 'Hauptnavigation' ),
+      'footer-menu' => __( 'Footer Links' )
+    )
   );
 }
 
