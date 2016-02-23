@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de" itemscope itemtype="http://schema.org/Article">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,7 +16,7 @@
       <div class="navmenu navmenu-default navmenu-inverse navmenu-fixed-right offcanvas">
         <a href="<?= home_url(); ?>"><img src="<?= get_template_directory_uri(); ?>/gfx/vita-min-b-logo-300.png" class="vmb-logo"/></a>
         <?php wp_nav_menu( array(
-          'menu'      => 'main-menu',
+          'menu'      => 'mainmenu',
           'container' => '',
           'menu_class'=> 'nav navmenu-nav',
           'menu_id'   => '',

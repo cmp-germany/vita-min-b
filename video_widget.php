@@ -14,7 +14,7 @@
       if (get_field('video-id')==$currentVideo) continue;
       $count += 1;
       ?>
-      <li><a href="#"><img class="sidepicture" src="http://videos.united-studios.com/thumbnail.php?file=<?php the_field('video-id'); ?>.jpg&amp;width=312" /></a></li>
+      <li><a href="<?= get_permalink() ?>"><img class="sidepicture" src="http://videos.united-studios.com/thumbnail.php?file=<?php the_field('video-id'); ?>.jpg&amp;width=312" /></a></li>
       <?php
       if ($count==3) break;
       endwhile; ?>
