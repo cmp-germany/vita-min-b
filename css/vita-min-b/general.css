@@ -60,6 +60,8 @@
 	height: 300px;
 	position: relative;
 	background-image: url('http://vita-min-b.info/wp-content/uploads/2016/01/Fotolia_79234053_L.jpg');
+	background-size: cover;
+	background-position: center top;
 }
 
 .vmb .page-header .vmb-logo {

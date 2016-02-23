@@ -56,15 +56,6 @@ wp_enqueue_script( 'skrollr', get_template_directory_uri() . '/js/skrollr.min.js
 wp_enqueue_script( 'video-js', get_template_directory_uri() . '/js/video.js', null , null, true );
 
 
-//fuer WP-Menue
-if ( function_exists('register_nav_menus') ) {
-    register_nav_menus(array(
-        'main-navi' => __( 'Hauptnavigation' )
-    ));
-}
-
-
-
 // POST TYPES
 
 
@@ -195,10 +186,10 @@ add_filter('manage_edit-vb_onepagerelement_sortable_columns','vb_onepage_column_
 add_action( 'init', 'register_my_menus' );
 function register_my_menus() {
   register_nav_menus(
-  array(
-      'main-menu' => __( 'Main Menu' ),
-      'footer-menu' => __( 'Footer Menu' )
-      )
+  	array(
+      'main-menu' => __( 'Hauptnavigation' ),
+      'footer-menu' => __( 'Footer Links' )
+    )
   );
 }
 
@@ -233,66 +224,6 @@ if(function_exists("register_field_group"))
 				'instructions' => 'Bei einem Standalone Video werden keine weiteren Videos angezeigt.',
 				'message' => 'Standalone Video (keine weiteren Videos anzeigen)',
 				'default_value' => 0,
-			),
-			array (
-				'key' => 'field_56a74991772b8',
-				'label' => 'Header Bild',
-				'name' => 'header_bild',
-				'type' => 'image',
-				'required' => 1,
-				'save_format' => 'url',
-				'preview_size' => 'medium',
-				'library' => 'all',
-			),
-			array (
-				'key' => 'field_56a74afd772b9',
-				'label' => 'Header Titel',
-				'name' => 'header_titel',
-				'type' => 'text',
-				'required' => 1,
-				'default_value' => '',
-				'placeholder' => '',
-				'prepend' => '',
-				'append' => '',
-				'formatting' => 'html',
-				'maxlength' => '',
-			),
-			array (
-				'key' => 'field_56a74b3f772ba',
-				'label' => 'Header Untertitel',
-				'name' => 'header_untertitel',
-				'type' => 'text',
-				'default_value' => '',
-				'placeholder' => '',
-				'prepend' => '',
-				'append' => '',
-				'formatting' => 'html',
-				'maxlength' => '',
-			),
-			array (
-				'key' => 'field_56a74b64772bb',
-				'label' => 'Header Button',
-				'name' => 'header_button',
-				'type' => 'text',
-				'required' => 1,
-				'default_value' => '',
-				'placeholder' => '',
-				'prepend' => '',
-				'append' => '',
-				'formatting' => 'html',
-				'maxlength' => '',
-			),
-			array (
-				'key' => 'field_56a74b82772bc',
-				'label' => 'Header Slogan',
-				'name' => 'header_slogan',
-				'type' => 'text',
-				'default_value' => '',
-				'placeholder' => '',
-				'prepend' => '',
-				'append' => '',
-				'formatting' => 'html',
-				'maxlength' => '',
 			),
 		),
 		'location' => array (

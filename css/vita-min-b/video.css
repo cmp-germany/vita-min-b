@@ -20,6 +20,24 @@
   line-height: 35px;
 }
 
+.entry-content h4 {
+  margin-top: 35px;
+}
+
+.entry-content h3 {
+  margin-top: 45px;
+}
+
+.entry-content h2 {
+  margin-top: 55px;
+}
+
+.entry-content h3 + h4 {
+  margin-top: 20px;
+}
+
+
+
 .sidepicture {
   max-width: 312px;
   margin-right: 10px;
@@ -31,6 +49,11 @@
     float: none;
     width: 50%;
     float: left;
+  }
+
+  .entry-content {
+    font-size: 16px;
+    line-height: 28px;
   }
 }
 
