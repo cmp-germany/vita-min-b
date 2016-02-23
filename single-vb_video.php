@@ -14,7 +14,7 @@ $currentVideo = get_field('video-id');
             -moz-background-size:cover;
             -o-background-size:cover;
             background-size:cover;">
-          <video poster="//videos.united-studios.com/thumbnail.php?file=<?= get_field('video-id') ?>.jpg&amp;width=1000" id="video" onclick="openVideoLink();" onpause="showPlayButton(true);" onplay="showPlayButton(false);" ontimeupdate="onTimeUpdate();" preload="auto">
+          <video controls poster="//videos.united-studios.com/thumbnail.php?file=<?= get_field('video-id') ?>.jpg&amp;width=1000" id="video" onclick="openVideoLink();" onpause="showPlayButton(true);" onplay="showPlayButton(false);" ontimeupdate="onTimeUpdate();" preload="auto">
             <source src="//videos.united-studios.com/<?= get_field('video-id') ?>.mp4" type="video/mp4">
           </video>
         </div>
