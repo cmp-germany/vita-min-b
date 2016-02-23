@@ -80,36 +80,37 @@ function create_post_type_superslide() {
 
 add_action( 'init', 'create_post_type_video');
 function create_post_type_video() {
-    register_post_type( 'vb_video',
-        array(
-            'labels' => array(
-                'name' => __( 'Videos' ),
-                'singular_name' => __( 'Video' )
-            ),
-        'public' => true,
-        'has_archive' => false,
-        'show_in_menu'=> true,
-        'show_in_nav_menus' => true,
-        'rewrite' => array('slug' => 'video'),
-        )
-    );
+  register_post_type( 'vb_video',
+    array(
+      'labels' => array(
+        'name' => __( 'Videos' ),
+        'singular_name' => __( 'Video' )
+      ),
+      'public' => true,
+      'has_archive' => false,
+      'show_in_menu'=> true,
+      'show_in_nav_menus' => true,
+      'rewrite' => array('slug' => 'video'),
+    )
+  );
 }
 
 // POST TYPE: OnePagerElement
 
 add_action( 'init', 'create_post_type_onepagerelement' );
 function create_post_type_onepagerelement() {
-    register_post_type( 'vb_onepagerelement',
-        array(
-            'labels' => array(
-                'name' => __( 'OnePage Elements' ),
-                'singular_name' => __( 'OnePage Element' )
-            ),
-            'public' => true,
-            'has_archive' => false,
-            'supports' => array('page-attributes', 'title', 'editor')
-        )
-    );
+  register_post_type( 'vb_onepagerelement',
+    array(
+      'labels' => array(
+        'name' => __( 'OnePage Elements' ),
+        'singular_name' => __( 'OnePage Element' )
+      ),
+      'public' => true,
+      'has_archive' => false,
+			'show_in_nav_menus' => false,
+      'supports' => array('page-attributes', 'title', 'editor')
+    )
+  );
 }
 
 // TAXONOMY: OnePagerElement Strukturierung
@@ -120,7 +121,7 @@ function create_taxonomy_onepagerelement() {
 		'vb_onepage',
 		'vb_onepagerelement',
 		array(
-			'label' => __( 'OPE Struktur' ),
+			'label' => __( 'OnePage Seite' ),
 			'rewrite' => array( 'slug' => 'onepage' )
 		)
 	);
@@ -187,8 +188,8 @@ add_action( 'init', 'register_my_menus' );
 function register_my_menus() {
   register_nav_menus(
   	array(
-      'main-menu' => __( 'Hauptnavigation' ),
-      'footer-menu' => __( 'Footer Links' )
+      'mainmenu' => __( 'Hauptnavigation' ),
+      'footermenu' => __( 'Footer Links' )
     )
   );
 }
