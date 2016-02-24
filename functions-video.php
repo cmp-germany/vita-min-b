@@ -61,7 +61,7 @@ function create_taxonomy_video_category() {
 add_action( 'init', 'create_taxonomy_video_category' );
 
 // Custom Query Var: Video Embedded
-// 
+//
 // function add_query_var_m( $vars ){
 //   $vars[] = "m";
 //   return $vars;
@@ -121,3 +121,50 @@ if(function_exists("register_field_group"))
 		'menu_order' => 0,
 	));
 }
+
+
+/**
+ * Register meta box(es).
+ */
+function wpdocs_register_meta_box_video() {
+    add_meta_box( 'meta-box-video', __( 'Video Details', 'Video Details Custom Post Type' ), 'wpdocs_display_callback_video', 'vb_video' );
+}
+add_action( 'add_meta_boxes', 'wpdocs_register_meta_box_video' );
+
+/**
+ * Meta box display callback.
+ *
+ * @param WP_Post $post Current post object.
+ */
+function wpdocs_display_callback_video( $post ) {
+  $json     = file_get_contents('http://videos.united-studios.com/api/video_ids_of_kunde.php?kunde=gfke');
+  $ids      = json_decode($json);
+  $selected = get_post_meta($post_id, 'video-id');
+  debug_to_console($selected);
+  echo '<select name="video-id">';
+  foreach ($ids as $id) {
+    $output  = '';
+    $output .= '<option value="';
+    $output .= $id;
+    $output .= '" ';
+    if ($selected == $id ) {
+      $output .= 'selected';
+    }
+    $output .= '>' . $id . '</option>';
+    echo $output;
+  }
+  echo '</select>';
+
+}
+
+/**
+ * Save meta box content.
+ *
+ * @param int $post_id Post ID
+ */
+function wpdocs_save_meta_box( $post_id, $post, $update ) {
+  if ( isset( $_REQUEST['video-id'] ) ) {
+      update_post_meta( $post_id, 'video-id', $_REQUEST['book_author'] );
+  }
+}
+add_action( 'save_post', 'wpdocs_save_meta_box' );
