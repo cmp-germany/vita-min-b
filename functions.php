@@ -129,6 +129,41 @@ function create_taxonomy_onepagerelement() {
 }
 add_action( 'init', 'create_taxonomy_onepagerelement' );
 
+// TAXONOMY: Video Kategorisierung
+
+function create_taxonomy_video_category() {
+	// create a new taxonomy
+	register_taxonomy(
+		'vb_video_category',
+		'vb_video',
+		array(
+			'labels'       => array(
+				                  'name'          => 'Video Kategorien',
+													'singular_name' => 'Video Kategorie',
+													'menu_name'     => 'Video Kategorien',
+													'all_items'     => 'Alle Kategorien',
+													'edit_item'     => 'Kategorie bearbeiten',
+													'view_item'     => 'Video Übersicht',
+													// 'update_item' => '',
+													// 'add_new_item' => '',
+													// 'new_item_name' => '',
+													// 'parent_item' => '',
+													// 'parent_item_colon' => '',
+													// 'search_items' => '',
+													// 'popular_items' => '',
+													// 'separate_items_with_commas' => '',
+													// 'add_or_remove_items' => '',
+													// 'choose_from_most_used' => '',
+													// 'not_found' => '',
+			                  ),
+			'rewrite'      => array( 'slug' => 'video-category' ),
+			'hierarchical' => true,
+		)
+	);
+}
+add_action( 'init', 'create_taxonomy_video_category' );
+
+
 // OnePagerElement: In der Liste die Order Values anzeigen
 function add_new_vb_onepagerelement_column($vb_onepagerelement_columns) {
   $vb_onepagerelement_columns['menu_order'] = "Order";
