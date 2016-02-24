@@ -121,8 +121,9 @@ function create_taxonomy_onepagerelement() {
 		'vb_onepage',
 		'vb_onepagerelement',
 		array(
-			'label' => __( 'OnePage Seite' ),
-			'rewrite' => array( 'slug' => 'onepage' )
+			'label'        => __( 'OnePage Seite' ),
+			'rewrite'      => array( 'slug' => 'onepage' ),
+			'hierarchical' => true,
 		)
 	);
 }
