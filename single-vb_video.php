@@ -1,3 +1,13 @@
+
+
+<?php
+  // Embedded Video wenn in der URL ?embedded gegeben ist
+  if (isset($_GET['embedded'])) {
+    get_template_part( 'video_embedded' );
+  } else {
+?>
+
+
 <?php wp_enqueue_style( 'footer-fix', get_template_directory_uri() . '/css/vita-min-b/footer-fix.css' ); ?>
 <?php
   // Zusätzliche MetaTags für Social Media hinzufügen
@@ -44,6 +54,8 @@
   }
 ?>
 <?php get_header(); ?>
+
+
 <?php while ( have_posts() ) : the_post();
 $currentVideo = get_field('video-id');
 ?>
@@ -96,3 +108,4 @@ $currentVideo = get_field('video-id');
 
 <?php endwhile; // end of the loop. ?>
 <?php get_footer(); ?>
+<?php } ?>
