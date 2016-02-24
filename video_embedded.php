@@ -2,7 +2,7 @@
   if ( $_GET['embedded'] > 100 ) {
     $width = $_GET['embedded'];
   } else {
-    $width = 700;
+    $width = 1280;
   }
 ?>
 <!DOCTYPE html>
