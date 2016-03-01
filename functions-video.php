@@ -141,7 +141,6 @@ function wpdocs_display_callback_video( $post ) {
   $ids       = json_decode($json);
   $post_meta = get_post_meta($post->ID);
   $selected  = $post_meta['video-id'][0];
-  debug_to_console($post_meta);
   echo '<select name="video-id">';
   foreach ($ids as $id) {
     $output  = '';
