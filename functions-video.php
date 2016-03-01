@@ -72,7 +72,7 @@ add_action( 'init', 'create_taxonomy_video_category' );
 // Advanced Custom Fields
 
 //define( 'ACF_LITE', true );
-include_once('advanced-custom-fields/acf.php');
+//include_once('advanced-custom-fields/acf.php');
 
 if(function_exists("register_field_group"))
 {
@@ -137,10 +137,11 @@ add_action( 'add_meta_boxes', 'wpdocs_register_meta_box_video' );
  * @param WP_Post $post Current post object.
  */
 function wpdocs_display_callback_video( $post ) {
-  $json     = file_get_contents('http://videos.united-studios.com/api/video_ids_of_kunde.php?kunde=gfke');
-  $ids      = json_decode($json);
-  $selected = get_post_meta($post_id, 'video-id');
-  debug_to_console($selected);
+  $json      = file_get_contents('http://videos.united-studios.com/api/video_ids_of_kunde.php?kunde=gfke');
+  $ids       = json_decode($json);
+  $post_meta = get_post_meta($post->ID);
+  $selected  = $post_meta['video-id'][0];
+  debug_to_console($post_meta);
   echo '<select name="video-id">';
   foreach ($ids as $id) {
     $output  = '';
@@ -164,7 +165,7 @@ function wpdocs_display_callback_video( $post ) {
  */
 function wpdocs_save_meta_box( $post_id, $post, $update ) {
   if ( isset( $_REQUEST['video-id'] ) ) {
-      update_post_meta( $post_id, 'video-id', $_REQUEST['book_author'] );
+      update_post_meta( $post_id, 'video-id', $_REQUEST['video-id'] );
   }
 }
 add_action( 'save_post', 'wpdocs_save_meta_box' );
