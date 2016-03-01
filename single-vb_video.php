@@ -30,19 +30,19 @@
         <!-- Schema.org markup for Google+ -->
         <meta itemprop="name" content="' . get_the_title() . '">
         <meta itemprop="description" content="' . get_the_excerpt() . '">
-        <meta itemprop="image" content="http://videos.united-studios.com/thumbnail.php?file=' . get_field('video-id') . '.jpg&amp;width=1000">
+        <meta itemprop="image" content="http://videos.united-studios.com/thumbnail.php?file=' . get_post_meta($post->ID, 'video-id', true) . '.jpg&amp;width=1000">
 
         <!-- Twitter Card data -->
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="' . get_the_title() . '">
         <meta name="twitter:description" content="' . get_the_excerpt() . '">
-        <meta name="twitter:image:src" content="http://videos.united-studios.com/thumbnail.php?file=' . get_field('video-id') . '.jpg&amp;width=1200">
+        <meta name="twitter:image:src" content="http://videos.united-studios.com/thumbnail.php?file=' . get_post_meta($post->ID, 'video-id', true) . '.jpg&amp;width=1200">
 
         <!-- Open Graph data -->
         <meta property="og:title" content="' . get_the_title() . '" />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="' . get_permalink() . '" />
-        <meta property="og:image" content="http://videos.united-studios.com/thumbnail.php?file=' . get_field('video-id') . '.jpg&amp;width=1200" />
+        <meta property="og:image" content="http://videos.united-studios.com/thumbnail.php?file=' . get_post_meta($post->ID, 'video-id', true) . '.jpg&amp;width=1200" />
         <meta property="og:description" content="' . get_the_excerpt() . '" />
         <meta property="og:site_name" content="' . get_bloginfo('name') . '" />
         <meta property="article:published_time" content="' . get_the_time('c') . '" />
@@ -57,7 +57,7 @@
 
 
 <?php while ( have_posts() ) : the_post();
-$currentVideo = get_field('video-id');
+$currentVideo = get_post_meta($post->ID, 'video-id', true);
 ?>
 
 <?php get_template_part( 'headerleiste' ); ?>
@@ -71,8 +71,8 @@ $currentVideo = get_field('video-id');
             -moz-background-size:cover;
             -o-background-size:cover;
             background-size:cover;">
-          <video controls poster="//videos.united-studios.com/thumbnail.php?file=<?= get_field('video-id') ?>.jpg&amp;width=1000" id="video" onclick="openVideoLink();" onpause="showPlayButton(true);" onplay="showPlayButton(false);" ontimeupdate="onTimeUpdate();" preload="auto">
-            <source src="//videos.united-studios.com/<?= get_field('video-id') ?>.mp4" type="video/mp4">
+          <video controls poster="//videos.united-studios.com/thumbnail.php?file=<?= get_post_meta($post->ID, 'video-id', true) ?>.jpg&amp;width=1000" id="video" onclick="openVideoLink();" onpause="showPlayButton(true);" onplay="showPlayButton(false);" ontimeupdate="onTimeUpdate();" preload="auto">
+            <source src="//videos.united-studios.com/<?= get_post_meta($post->ID, 'video-id', true) ?>.mp4" type="video/mp4">
           </video>
         </div>
       </div>
