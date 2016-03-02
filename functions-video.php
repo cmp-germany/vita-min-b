@@ -1,8 +1,8 @@
 <?php
 
 
-add_action( 'wp_enqueue_scripts' , 'enqueue_frontend_css_js');
-function enqueue_frontend_css() {
+add_action( 'wp_enqueue_scripts' , 'enqueue_video_frontend_css_js');
+function enqueue_video_frontend_css_js() {
   // CSS: Video
   wp_enqueue_style( 'video', get_template_directory_uri() . '/css/vita-min-b/video.css' );
 
@@ -198,7 +198,7 @@ add_action( 'add_meta_boxes', 'wpdocs_register_meta_box_video' );
  * @param WP_Post $post Current post object.
  */
 function wpdocs_display_callback_video( $post ) {
-  //get_option('kunden-id')
+
   if ( get_option('kunden-id') == "" ) {
 
     echo '<p>Bitte gebe unter <a href="options-writing.php#kunden-id">Einstellungen › Schreiben</a> die nötigen Daten für die Kommunikation mit der United - Studios Video Plattform an.</p>';
@@ -226,6 +226,10 @@ function wpdocs_display_callback_video( $post ) {
     $json   = file_get_contents('http://videos.united-studios.com/api/videos_of_kunde.php?kunde=' . get_option('kunden-id'));
     $videos = json_decode($json);
 
+    $selectedIndex = 0;
+    $post_meta = get_post_meta($post->ID);
+    $selected  = $post_meta['video-id'][0];
+
     // Build the JSON Object
     $video_array   = array();
     $video_array[] = array(
@@ -233,13 +237,17 @@ function wpdocs_display_callback_video( $post ) {
       'value'       => '',
       'text'        => 'Video'
     );
-    foreach ($videos as $video ) {
+
+    foreach ($videos as $index => $video ) {
       $video_array[] = array(
         'image'       => 'http://videos.united-studios.com/thumbnail.php?file=' . $video->id . '.jpg&width=100',
         'description' => $video->name,
         'value'       => $video->id,
         'text'        => '',
       );
+      if ($selected == $video->id) {
+        $selectedIndex = $index+1;
+      }
     }
 
 
@@ -247,7 +255,7 @@ function wpdocs_display_callback_video( $post ) {
     echo '<div id="byjson"></div>';
     $script_html  = '<script>$=jQuery.noConflict(); function createByJson() {var jsonData = ';
     $script_html .= json_encode($video_array, JSON_UNESCAPED_UNICODE);
-    $script_html .= '; var jsn = $("#byjson").msDropDown({byJson:{data:jsonData, name:"payments"}}).data("dd");}';
+    $script_html .= '; var jsn = $("#byjson").msDropDown({byJson:{data:jsonData, selectedIndex: ' . $selectedIndex . ', name:"video-id", width: 280}, }).data("dd");}';
     $script_html .= '$(document).ready(function() {createByJson();});</script>';
     echo $script_html;
   }
