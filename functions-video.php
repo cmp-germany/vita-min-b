@@ -1,18 +1,22 @@
 <?php
 
-// CSS: Video
-wp_enqueue_style( 'video', get_template_directory_uri() . '/css/vita-min-b/video.css' );
 
-// JS: Video
-wp_enqueue_script( 'video-js', get_template_directory_uri() . '/js/video.js', null , null, true );
+add_action( 'wp_enqueue_scripts' , 'enqueue_frontend_css_js');
+function enqueue_frontend_css() {
+  // CSS: Video
+  wp_enqueue_style( 'video', get_template_directory_uri() . '/css/vita-min-b/video.css' );
 
+  // JS: Video
+  wp_enqueue_script( 'video-js', get_template_directory_uri() . '/js/video.js', null , null, true );
+}
 
-// ADMIN JS
+// ENQUEUE ADMIN STUFF
 function enqueue_admin_js($hook) {
-    if ( 'edit.php' != $hook ) {
+    if ( 'post.php' != $hook ) {
         return;
     }
     wp_enqueue_script( 'ms_dropdown_js', get_template_directory_uri() . '/js/jquery.dd.min.js' );
+    wp_enqueue_style( 'ms_dropdown_css', get_template_directory_uri() . '/css/dd.css' );
 }
 add_action( 'admin_enqueue_scripts', 'enqueue_admin_js' );
 
@@ -205,7 +209,7 @@ function wpdocs_display_callback_video( $post ) {
     $ids       = json_decode($json);
     $post_meta = get_post_meta($post->ID);
     $selected  = $post_meta['video-id'][0];
-    echo '<select name="video-id">';
+    echo '<!--<select name="video-id">';
     foreach ($ids as $id) {
       $output  = '';
       $output .= '<option value="';
@@ -217,26 +221,35 @@ function wpdocs_display_callback_video( $post ) {
       $output .= '>' . $id . '</option>';
       echo $output;
     }
-    echo '</select>';
-    echo '<button id="btn1">Test</button>';
-    echo '<script>$=jQuery.noConflict();
-function createByJson() {
-	var jsonData = [
-					{description:"Choos your payment gateway", value:"", text:"Payment Gateway"},
-					{image:"../images/msdropdown/icons/Amex-56.png", description:"My life. My card...", value:"amex", text:"Amex"},
-					{image:"../images/msdropdown/icons/Discover-56.png", description:"It pays to Discover...", value:"Discover", text:"Discover"},
-					{image:"../images/msdropdown/icons/Mastercard-56.png", title:"For everything else...", description:"For everything else...", value:"Mastercard", text:"Mastercard"},
-					{image:"../images/msdropdown/icons/Cash-56.png", description:"Sorry not available...", value:"cash", text:"Cash on devlivery", disabled:true},
-					{image:"../images/msdropdown/icons/Visa-56.png", description:"All you need...", value:"Visa", text:"Visa"},
-					{image:"../images/msdropdown/icons/Paypal-56.png", description:"Pay and get paid...", value:"Paypal", text:"Paypal"}
-					];
-	var jsn = $("#byjson").msDropDown({byJson:{data:jsonData, name:"payments"}}).data("dd");
-}
-$(document).ready(function() {
-  createByJson();
-});
-</script>';
+    echo '</select>-->';
 
+    $json   = file_get_contents('http://videos.united-studios.com/api/videos_of_kunde.php?kunde=' . get_option('kunden-id'));
+    $videos = json_decode($json);
+
+    // Build the JSON Object
+    $video_array   = array();
+    $video_array[] = array(
+      'description' => 'Bitte wähle ein Video aus',
+      'value'       => '',
+      'text'        => 'Video'
+    );
+    foreach ($videos as $video ) {
+      $video_array[] = array(
+        'image'       => 'http://videos.united-studios.com/thumbnail.php?file=' . $video->id . '.jpg&width=100',
+        'description' => $video->name,
+        'value'       => $video->id,
+        'text'        => '',
+      );
+    }
+
+
+
+    echo '<div id="byjson"></div>';
+    $script_html  = '<script>$=jQuery.noConflict(); function createByJson() {var jsonData = ';
+    $script_html .= json_encode($video_array, JSON_UNESCAPED_UNICODE);
+    $script_html .= '; var jsn = $("#byjson").msDropDown({byJson:{data:jsonData, name:"payments"}}).data("dd");}';
+    $script_html .= '$(document).ready(function() {createByJson();});</script>';
+    echo $script_html;
   }
 }
 
