@@ -26,12 +26,12 @@
             background-size:cover;">
           <video
             controls
-            poster="//videos.united-studios.com/thumbnail.php?file=<?= get_field('video-id') ?>.jpg&amp;width=<?= $width ?>"
+            poster="//videos.united-studios.com/thumbnail.php?file=<?= get_post_meta($post->ID, 'video-id', true) ?>.jpg&amp;width=<?= $width ?>"
             id="video"
             onclick="openVideoLink();"
             preload="auto"
           >
-            <source src="//videos.united-studios.com/<?= get_field('video-id') ?>.mp4" type="video/mp4">
+            <source src="//videos.united-studios.com/<?= get_post_meta($post->ID, 'video-id', true) ?>.mp4" type="video/mp4">
           </video>
         </div>
       </div>
