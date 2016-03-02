@@ -205,25 +205,7 @@ function wpdocs_display_callback_video( $post ) {
     echo '<p>Bitte gebe unter <a href="options-writing.php#kunden-id">Einstellungen › Schreiben</a> die nötigen Daten für die Kommunikation mit der United - Studios Video Plattform an.</p>';
 
   } else {
-
-    $json      = file_get_contents('http://videos.united-studios.com/api/video_ids_of_kunde.php?kunde=' . get_option('kunden-id'));
-    $ids       = json_decode($json);
-    $post_meta = get_post_meta($post->ID);
-    $selected  = $post_meta['video-id'][0];
-    echo '<!--<select name="video-id">';
-    foreach ($ids as $id) {
-      $output  = '';
-      $output .= '<option value="';
-      $output .= $id;
-      $output .= '" ';
-      if ($selected == $id ) {
-        $output .= 'selected';
-      }
-      $output .= '>' . $id . '</option>';
-      echo $output;
-    }
-    echo '</select>-->';
-
+    // Get Data for the JSON Object
     $json   = file_get_contents('http://videos.united-studios.com/api/videos_of_kunde.php?kunde=' . get_option('kunden-id'));
     $videos = json_decode($json);
 
@@ -251,7 +233,7 @@ function wpdocs_display_callback_video( $post ) {
       }
     }
 
-
+    // Output the JSON Object
 
     echo '<div id="byjson"></div>';
     $script_html  = '<script>$=jQuery.noConflict(); function createByJson() {var jsonData = ';
