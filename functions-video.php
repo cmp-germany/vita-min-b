@@ -35,6 +35,7 @@ function create_post_type_video() {
       'show_in_menu'=> true,
       'show_in_nav_menus' => true,
       'rewrite' => array('slug' => 'video'),
+      'menu_icon' => 'dashicons-video-alt3',
     )
   );
 }
