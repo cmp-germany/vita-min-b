@@ -15,8 +15,10 @@ function enqueue_admin_js($hook) {
     if ( 'post.php' != $hook ) {
         return;
     }
-    wp_enqueue_script( 'ms_dropdown_js', get_template_directory_uri() . '/js/jquery.dd.min.js' );
-    wp_enqueue_style( 'ms_dropdown_css', get_template_directory_uri() . '/css/dd.css' );
+    wp_enqueue_script( 'ms_dropdown_js',    get_template_directory_uri() . '/js/jquery.dd.min.js' );
+    wp_enqueue_style(  'ms_dropdown_css',   get_template_directory_uri() . '/css/dd.css' );
+    wp_enqueue_script( 'video_details_js',  get_template_directory_uri() . '/js/video-details.js' );
+    wp_enqueue_style(  'video_details_css', get_template_directory_uri() . '/css/video-details.css' );
 }
 add_action( 'admin_enqueue_scripts', 'enqueue_admin_js' );
 
@@ -190,6 +192,7 @@ function united_studios_menu_section() {
  */
 function wpdocs_register_meta_box_video() {
     add_meta_box( 'meta-box-video', __( 'Video Details', 'Video Details Custom Post Type' ), 'wpdocs_display_callback_video', 'vb_video' );
+    add_meta_box( 'meta-box-video-embedded', __( 'Embedded Video', 'Embedded Video Code Creator' ), 'wpdocs_display_callback_video_embedded', 'vb_video', 'side' );
 }
 add_action( 'add_meta_boxes', 'wpdocs_register_meta_box_video' );
 
@@ -234,13 +237,21 @@ function wpdocs_display_callback_video( $post ) {
     }
 
     // Output the JSON Object
+    ?>
+    <div id="byjson"></div>
+    <script>
+      $=jQuery.noConflict();
 
-    echo '<div id="byjson"></div>';
-    $script_html  = '<script>$=jQuery.noConflict(); function createByJson() {var jsonData = ';
-    $script_html .= json_encode($video_array, JSON_UNESCAPED_UNICODE);
-    $script_html .= '; var jsn = $("#byjson").msDropDown({byJson:{data:jsonData, selectedIndex: ' . $selectedIndex . ', name:"video-id", width: 280}, }).data("dd");}';
-    $script_html .= '$(document).ready(function() {createByJson();});</script>';
-    echo $script_html;
+      function createByJson(){
+        var jsonData = <?= json_encode($video_array, JSON_UNESCAPED_UNICODE) ?>;
+        var jsn = $("#byjson").msDropDown({byJson:{data:jsonData, selectedIndex: <?= $selectedIndex ?>, name:"video-id", width: 280}, }).data("dd");
+      }
+      $(document).ready(function() {
+        createByJson();
+      });
+    </script>
+
+    <?php
   }
 }
 
@@ -255,3 +266,28 @@ function wpdocs_save_meta_box( $post_id, $post, $update ) {
   }
 }
 add_action( 'save_post', 'wpdocs_save_meta_box' );
+
+
+function wpdocs_display_callback_video_embedded($post) {?>
+  <div class="create-embedded-code">
+    <!--<h3>Breite</h3>
+    <form class="form-breite">
+      <ul>
+        <li><input type="radio" id="breite-200" name="breite" value="200"> <label for="breite-200">200</label></li>
+        <li><input type="radio" id="breite-500" name="breite" value="500"> <label for="breite-500">500</label></li>
+        <li><input type="radio" id="breite-700" name="breite" value="700" checked="checked"> <label for="breite-700">700</label></li>
+        <li>
+          <input type="radio" id="breite-own" name="breite" value="own">
+          <label for="breite-own">
+            Eigene Größe: <input type="text" name="own-width" id="own-width" value="560">
+          </label>
+        </li>
+      </ul>
+    </form>-->
+
+    <h3>Code</h3>
+    <p>
+      <textarea rows="4" cols="30"><iframe width="560" height="315" src="<?= get_permalink($post) ?>?embedded=560" frameborder="0" allowfullscreen></iframe></textarea>
+    </p>
+  </div>
+<?php }
