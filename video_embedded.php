@@ -14,10 +14,6 @@
       #videoBackground #videoContainer {
         max-width: <?= $width ?>px;
       }
-
-      body {
-        overflow: hidden;
-      }
     </style>
   </head>
   <body>
