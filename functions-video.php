@@ -260,7 +260,7 @@ function wpdocs_display_callback_video( $post ) {
  *
  * @param int $post_id Post ID
  */
-function wpdocs_save_meta_box( $post_id, $post, $update ) {
+function wpdocs_save_meta_box( $post_id ) {
   if ( isset( $_REQUEST['video-id'] ) ) {
       update_post_meta( $post_id, 'video-id', $_REQUEST['video-id'] );
   }
@@ -270,24 +270,25 @@ add_action( 'save_post', 'wpdocs_save_meta_box' );
 
 function wpdocs_display_callback_video_embedded($post) {?>
   <div class="create-embedded-code">
-    <!--<h3>Breite</h3>
+    <h3>Größe</h3>
     <form class="form-breite">
       <ul>
-        <li><input type="radio" id="breite-200" name="breite" value="200"> <label for="breite-200">200</label></li>
-        <li><input type="radio" id="breite-500" name="breite" value="500"> <label for="breite-500">500</label></li>
-        <li><input type="radio" id="breite-700" name="breite" value="700" checked="checked"> <label for="breite-700">700</label></li>
+        <li><input type="radio" id="breite-300" class="breite-fixed" name="breite" value="300"> <label for="breite-300">300</label></li>
+        <li><input type="radio" id="breite-560" class="breite-fixed" name="breite" value="560" checked="checked"> <label for="breite-560">560</label></li>
+        <li><input type="radio" id="breite-720" class="breite-fixed" name="breite" value="720"> <label for="breite-720">720</label></li>
+        <li><input type="radio" id="breite-1280" class="breite-fixed" name="breite" value="1280"> <label for="breite-1280">1280</label></li>
         <li>
           <input type="radio" id="breite-own" name="breite" value="own">
           <label for="breite-own">
-            Eigene Größe: <input type="text" name="own-width" id="own-width" value="560">
+            Eigene Größe: <input type="number" name="own-width" id="own-width" value="560" disabled="disabled">
           </label>
         </li>
       </ul>
-    </form>-->
+    </form>
 
     <h3>Code</h3>
     <p>
-      <textarea rows="4" cols="30"><iframe width="560" height="315" src="<?= get_permalink($post) ?>?embedded=560" frameborder="0" allowfullscreen></iframe></textarea>
+      <textarea id="iframe-textarea" rows="4" cols="30"><iframe width="560" height="315" src="<?= get_permalink($post) ?>?embedded=560" frameborder="0" allowfullscreen></iframe></textarea>
     </p>
   </div>
 <?php }
