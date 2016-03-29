@@ -288,7 +288,7 @@ function wpdocs_display_callback_video_embedded($post) {?>
 
     <h3>Code</h3>
     <p>
-      <textarea id="iframe-textarea" rows="4" cols="30"><iframe width="560" height="315" src="<?= get_permalink($post) ?>?embedded=560" frameborder="0" allowfullscreen></iframe></textarea>
+      <textarea id="iframe-textarea" rows="2" cols="30" style="width: 100%;" readonly><iframe width="560" height="315" src="<?= get_permalink($post) ?>?embedded=560" frameborder="0" allowfullscreen></iframe></textarea>
     </p>
   </div>
 <?php }
