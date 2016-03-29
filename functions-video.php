@@ -89,7 +89,7 @@ add_action( 'init', 'create_taxonomy_video_category' );
 // Advanced Custom Fields
 
 //define( 'ACF_LITE', true );
-include_once('advanced-custom-fields/acf.php');
+include_once('plugins/advanced-custom-fields/acf.php');
 
 // if(function_exists("register_field_group"))
 // {

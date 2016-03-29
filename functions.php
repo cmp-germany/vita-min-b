@@ -196,7 +196,8 @@ function register_my_menus() {
 // Advanced Custom Fields
 
 //define( 'ACF_LITE', true );
-include_once('advanced-custom-fields/acf.php');
+include_once('plugins/advanced-custom-fields/acf.php');
+include_once('plugins/menu-image/menu-image.php');
 
 
 //PLUGINS
