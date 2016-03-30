@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<?php get_template_part('headerleiste');
+<?php get_template_part('headerleiste'); ?>
 <div class="container vb-content">
   <div class="row">
     <div class="col-md-9 contentsection">
