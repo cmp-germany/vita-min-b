@@ -20,7 +20,11 @@ class Walker_Footer extends Walker_Nav_Menu {
     // @see Walker::start_el()
     function start_el(&$output, $item, $depth=0, $args=array()) {
       ob_start();
-      ?><a href="<?= $item->url ?>"><?= $item->title ?></a> <span class="sep">|</span> <?php
+      ?><?php if ($item->menu_order > 1)
+      {
+        ?> <span class="sep">|</span> <?php
+      }
+      ?><a href="<?= $item->url ?>"><?= $item->title ?></a><?php
       $output .= ob_get_contents();
       ob_end_clean();
     }
