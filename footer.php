@@ -19,7 +19,6 @@ class Walker_Footer extends Walker_Nav_Menu {
     // Displays start of an element. E.g '<li> Item Name'
     // @see Walker::start_el()
     function start_el(&$output, $item, $depth=0, $args=array()) {
-      debug_to_console($item);
       ob_start();
       ?><a href="<?= $item->url ?>"><?= $item->title ?></a> <span class="sep">|</span> <?php
       $output .= ob_get_contents();
@@ -39,9 +38,9 @@ class Walker_Footer extends Walker_Nav_Menu {
         <footer class="site-footer" id="colophon" role="contentinfo">
           <div class="site-info">
             <?php wp_nav_menu( array(
-              'menu'      => 'footermenu',
-              'depth'     => 1,
-              'walker'    => new Walker_Footer()
+              'theme_location' => 'footermenu',
+              'depth'          => 1,
+              'walker'         => new Walker_Footer()
             ));?>
           </div>
         </footer>

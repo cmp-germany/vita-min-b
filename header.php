@@ -16,11 +16,11 @@
       <div class="navmenu navmenu-default navmenu-inverse navmenu-fixed-right offcanvas">
         <a href="<?= home_url(); ?>"><img src="<?= get_template_directory_uri(); ?>/gfx/vita-min-b-logo-300.png" class="vmb-logo"/></a>
         <?php wp_nav_menu( array(
-          'menu'      => 'mainmenu',
-          'container' => '',
-          'menu_class'=> 'nav navmenu-nav',
-          'menu_id'   => '',
-          'walker'    => new My_Nav_Menu_Walker()
+          'theme_location' => 'mainmenu',
+          'container'      => '',
+          'menu_class'     => 'nav navmenu-nav',
+          'menu_id'        => '',
+          'walker'         => new My_Nav_Menu_Walker()
         ));?>
       </div>
 
